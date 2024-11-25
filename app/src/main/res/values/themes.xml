@@ -1,0 +1,49 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ApiProject" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+         <item name="colorPrimary">@color/primary</item>
+        <item name="backgroundColor">@color/background_color</item>
+        <item name="fontFamily">@font/popins</item>
+        <item name="bottomSheetDialogTheme">@style/SheetDialog</item>
+
+
+
+    </style>
+    <style name="SheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.5</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@android:color/transparent</item>
+    </style>
+    <style name="Theme.ApiProject" parent="Base.Theme.ApiProject" />
+
+
+    <style name="CustomChipChoiceStyle" parent="@style/Widget.MaterialComponents.Chip.Filter">
+
+
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="chipBackgroundColor">
+            @color/dialog_bottom_sheet_download_chip_bg_color_selector
+        </item>
+        <item name="checkedIcon">@drawable/ic_done_all</item>
+        <item name="checkedIconTint">
+            @color/dialog_bottom_sheet_download_chip_bg_text_color_selector
+        </item>
+        <item name="android:textColor">@color/dialog_bottom_sheet_download_chip_bg_text_color_selector</item>
+
+    </style>
+
+
+    <style name="ChipCustomStyle" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="checkedIconEnabled">false</item>
+        <item name="checkedIcon">@null</item>
+    </style>
+
+
+</resources>

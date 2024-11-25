@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_map"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.apiproject.ui.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.apiproject.ui.fragments.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_feedbackFragment"
+            app:destination="@id/feedbackFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoDownloadingFragment"
+        android:name="com.example.apiproject.ui.fragments.VideoDownloadingFragment"
+        android:label="fragment_video_downloading"
+        tools:layout="@layout/fragment_video_downloading" />
+    <fragment
+        android:id="@+id/videoCompletedFragment"
+        android:name="com.example.apiproject.ui.fragments.VideoCompletedFragment"
+        android:label="fragment_video_completed"
+        tools:layout="@layout/fragment_video_completed" >
+        <action
+            android:id="@+id/action_videoCompletedFragment_to_playerFragment"
+            app:destination="@id/playerFragment" />
+        <action
+            android:id="@+id/action_videoCompletedFragment_to_completedVideoPlayerFragment"
+            app:destination="@id/completedVideoPlayerFragment" />
+    </fragment>
+<!--    <fragment
+        android:id="@+id/videoReelFragment"
+        android:name="com.example.apiproject.ui.fragments.VideoReelFragment"
+        android:label="fragment_video_reel"
+        tools:layout="@layout/fragment_video_reel" >
+        <action
+            android:id="@+id/action_videoReelFragment_to_playerFragment"
+            app:destination="@id/playerFragment" />
+    </fragment>-->
+    <fragment
+        android:id="@+id/playerFragment"
+        android:name="com.example.apiproject.PlayerFragment"
+        android:label="fragment_player"
+        tools:layout="@layout/fragment_player" />
+    <fragment
+        android:id="@+id/completedVideoPlayerFragment"
+        android:name="com.example.apiproject.ui.fragments.CompletedVideoPlayerFragment"
+        android:label="fragment_completed_video_player"
+        tools:layout="@layout/fragment_completed_video_player" />
+    <fragment
+        android:id="@+id/feedbackFragment"
+        android:name="com.example.apiproject.ui.fragments.FeedbackFragment"
+        android:label="FeedbackFragment" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.apiproject.ui.fragments.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Video Downloader2.0</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="downloading">Downloading</string>
+    <string name="completed">Completed </string>
+    <string name="settings">Settings</string>
+    <string name="video_downloader">Video Downloader</string>
+    <string name="reels">Reels</string>
+    <string name="paste">Paste</string>
+
+
+    <string name="delete">Delete</string>
+    <string name="video">Video</string>
+    <string name="audio">Audio</string>
+    <string name="image">Image</string>
+
+
+    <string name="video_deleted_permanantly">Video will be removed from your device permanently.</string>
+    <string name="audio_deleted_permanantly">Audio will be removed from your device permanently.</string>
+    <string name="image_deleted_permanantly">Image will be removed from your device permanently.</string>
+    <string name="video_deleted">Video deleted succeesfully.</string>
+    <string name="audio_deleted">Audio deleted successfully.</string>
+    <string name="image_deleted">Image deleted successfully.</string>
+    <string name="feedback">Feedback</string>
+    <string name="one_tap_downloader">One Tap \nVideo Downloader</string>
+
+</resources>

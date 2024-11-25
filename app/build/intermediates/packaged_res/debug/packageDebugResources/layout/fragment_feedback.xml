@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="@dimen/_12sdp">
+
+            <TextView
+                android:id="@+id/problems_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose the issue"
+                android:textColor="@color/icons"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/problems_chip_group"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/_8sdp"
+                android:background="@drawable/feedback_bg_card"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:paddingHorizontal="@dimen/_12sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/problems_text"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip1"
+                    style="@style/ChipCustomStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:textColor="@color/white"
+                    android:text="Can't load Videos"
+                    android:textSize="@dimen/_11sdp"
+                    app:chipBackgroundColor="@color/subtitle_color" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip2"
+                    style="@style/ChipCustomStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:text="Too many ads"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp"
+                    app:chipBackgroundColor="@color/subtitle_color" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip3"
+                    style="@style/ChipCustomStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:text="Download Timeout"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp"
+                    app:chipBackgroundColor="@color/subtitle_color" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip4"
+                    style="@style/ChipCustomStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:text="Download Failed"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp"
+                    app:chipBackgroundColor="@color/subtitle_color" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip5"
+                    style="@style/ChipCustomStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:text="Slow speed"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/subtitle_color" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip8"
+                    style="@style/ChipCustomStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:text="Others"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/subtitle_color" />
+            </com.google.android.material.chip.ChipGroup>
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/problems_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/feedback_bg_card"
+                app:layout_constraintTop_toBottomOf="@+id/problems_chip_group"
+                android:lines="7"
+                android:hint="Describe your problem."
+                android:textColorHint="@color/icons"
+                android:scrollbars="vertical"
+
+                android:textColor="@color/icons"
+                android:gravity="top"
+                android:padding="@dimen/_10sdp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/submit_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:text="Submit"
+                android:textSize="@dimen/_14sdp"
+                android:includeFontPadding="false"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/primary"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:paddingVertical="@dimen/_8sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/problems_description" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

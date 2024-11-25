@@ -1,0 +1,32 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.liulishuo.filedownloader" >
+4
+5    <uses-sdk android:minSdkVersion="9" />
+6
+7    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+7-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\filedownload\src\main\AndroidManifest.xml:4:5-77
+7-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\filedownload\src\main\AndroidManifest.xml:4:22-74
+8    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+8-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\filedownload\src\main\AndroidManifest.xml:5:5-87
+8-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\filedownload\src\main\AndroidManifest.xml:5:22-84
+9
+10    <application>
+10-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\filedownload\src\main\AndroidManifest.xml:7:5-16:19
+11        <service
+11-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\filedownload\src\main\AndroidManifest.xml:8:9-9:55
+12            android:name="com.liulishuo.filedownloader.services.FileDownloadService$SharedMainProcessService"
+12-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\filedownload\src\main\AndroidManifest.xml:8:18-87
+13            android:foregroundServiceType="dataSync" />
+13-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\filedownload\src\main\AndroidManifest.xml:9:13-53
+14        <service
+14-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\filedownload\src\main\AndroidManifest.xml:10:9-13:55
+15            android:name="com.liulishuo.filedownloader.services.FileDownloadService$SeparateProcessService"
+15-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\filedownload\src\main\AndroidManifest.xml:11:13-80
+16            android:foregroundServiceType="dataSync"
+16-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\filedownload\src\main\AndroidManifest.xml:13:13-53
+17            android:process=":filedownloader" />
+17-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\filedownload\src\main\AndroidManifest.xml:12:13-46
+18    </application>
+19
+20</manifest>

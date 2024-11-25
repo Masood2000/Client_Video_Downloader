@@ -1,0 +1,3 @@
+com.liulishuo.filedownloader
+string default_filedownloader_notification_content
+string default_filedownloader_notification_title

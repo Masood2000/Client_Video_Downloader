@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#F2573b</color>
+    <color name="textHeading">#222222</color>
+    <color name="textDescription">#CC222222</color>
+    <color name="transparent">#00000000</color>
+    <color name="background_color">#F5F5F5</color>
+    <color name="green">#4CAF50</color>
+    <color name="blue">#2663FA</color>
+    <color name="button_bg">#CCB5B3B3</color>
+    <color name="subtitle_color">#7A7474</color>
+
+
+
+
+    <!-- Icons -->
+    <color name="icons">#000000</color>
+    <color name="icons_night">#FFFFFF</color>
+
+    <color name="icons_50">#80000000</color>
+    <color name="icons_50_night">#80FFFFFF</color>
+
+    <color name="icons_inv_50">#80FFFFFF</color>
+    <color name="icons_inv_50_night">#80000000</color>
+
+    <color name="icons_inverse">#FFFFFF</color>
+    <color name="icons_inverse_night">#000000</color>
+</resources>

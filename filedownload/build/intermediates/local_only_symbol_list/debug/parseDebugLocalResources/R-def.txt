@@ -1,0 +1,4 @@
+R_DEF: Internal format may change without notice
+local
+string default_filedownloader_notification_content
+string default_filedownloader_notification_title
