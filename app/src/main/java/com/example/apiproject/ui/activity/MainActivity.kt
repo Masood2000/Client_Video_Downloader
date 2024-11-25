@@ -70,6 +70,12 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
     private var permissionStateListener: ClickHandler? = null
 
 
+
+
+
+
+
+
     private lateinit var navController: NavController
     var clipboardManager: ClipboardManager? = null
 
