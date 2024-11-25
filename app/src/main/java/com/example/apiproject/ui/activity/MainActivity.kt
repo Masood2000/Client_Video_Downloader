@@ -72,6 +72,8 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
 
 
 
+
+
     private lateinit var navController: NavController
     var clipboardManager: ClipboardManager? = null
 
