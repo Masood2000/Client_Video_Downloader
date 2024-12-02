@@ -19,7 +19,7 @@ object NetworkHelper {
     var cookie: String? = null
 
     val retrofit = Retrofit.Builder()
-        .baseUrl("http://13.61.3.119:8000/")
+        .baseUrl("http://51.20.105.33:8000/")
         .addConverterFactory(GsonConverterFactory.create())
         .build()
     val apiService = retrofit.create(DataAPI::class.java)
