@@ -18,9 +18,14 @@ import com.example.apiproject.data.di.AppModule_ProvideDownloadingDaoFactory;
 import com.example.apiproject.domain.db.AppDb;
 import com.example.apiproject.domain.viewmodels.MainActivityViewModel;
 import com.example.apiproject.domain.viewmodels.MainActivityViewModel_HiltModules_KeyModule_ProvideFactory;
+import com.example.apiproject.ui.activity.BrowserActivity;
 import com.example.apiproject.ui.activity.MainActivity;
 import com.example.apiproject.ui.fragments.HomeFragment;
 import com.example.apiproject.ui.fragments.VideoCompletedFragment;
+import com.example.apiproject.ui.fragments.browser.WebViewFragment;
+import com.example.universaltvremote.presentation.fragment.bowserCasting.BrowserAppSelectionFragment;
+import com.example.universaltvremote.presentation.viewmodel.BrowserCastingViewModel;
+import com.example.universaltvremote.presentation.viewmodel.BrowserCastingViewModel_HiltModules_KeyModule_ProvideFactory;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.ImmutableSet;
 import dagger.hilt.android.ActivityRetainedLifecycle;
@@ -355,6 +360,15 @@ public final class DaggerDownloadApplication_HiltComponents_SingletonC {
     }
 
     @Override
+    public void injectWebViewFragment(WebViewFragment webViewFragment) {
+    }
+
+    @Override
+    public void injectBrowserAppSelectionFragment(
+        BrowserAppSelectionFragment browserAppSelectionFragment) {
+    }
+
+    @Override
     public DefaultViewModelFactories.InternalFactoryFactory getHiltInternalFactoryFactory() {
       return activityCImpl.getHiltInternalFactoryFactory();
     }
@@ -400,6 +414,10 @@ public final class DaggerDownloadApplication_HiltComponents_SingletonC {
     }
 
     @Override
+    public void injectBrowserActivity(BrowserActivity browserActivity) {
+    }
+
+    @Override
     public void injectMainActivity(MainActivity mainActivity) {
     }
 
@@ -410,7 +428,7 @@ public final class DaggerDownloadApplication_HiltComponents_SingletonC {
 
     @Override
     public Set<String> getViewModelKeys() {
-      return ImmutableSet.<String>of(MainActivityViewModel_HiltModules_KeyModule_ProvideFactory.provide());
+      return ImmutableSet.<String>of(BrowserCastingViewModel_HiltModules_KeyModule_ProvideFactory.provide(), MainActivityViewModel_HiltModules_KeyModule_ProvideFactory.provide());
     }
 
     @Override
@@ -436,23 +454,61 @@ public final class DaggerDownloadApplication_HiltComponents_SingletonC {
 
     private final ViewModelCImpl viewModelCImpl = this;
 
+    private Provider<BrowserCastingViewModel> browserCastingViewModelProvider;
+
     private ViewModelCImpl(SingletonCImpl singletonCImpl,
         ActivityRetainedCImpl activityRetainedCImpl, SavedStateHandle savedStateHandleParam,
         ViewModelLifecycle viewModelLifecycleParam) {
       this.singletonCImpl = singletonCImpl;
       this.activityRetainedCImpl = activityRetainedCImpl;
 
+      initialize(savedStateHandleParam, viewModelLifecycleParam);
 
+    }
+
+    @SuppressWarnings("unchecked")
+    private void initialize(final SavedStateHandle savedStateHandleParam,
+        final ViewModelLifecycle viewModelLifecycleParam) {
+      this.browserCastingViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 0);
     }
 
     @Override
     public Map<String, Provider<ViewModel>> getHiltViewModelMap() {
-      return ImmutableMap.<String, Provider<ViewModel>>of("com.example.apiproject.domain.viewmodels.MainActivityViewModel", ((Provider) singletonCImpl.getMainActivityViewModelProvider));
+      return ImmutableMap.<String, Provider<ViewModel>>of("com.example.universaltvremote.presentation.viewmodel.BrowserCastingViewModel", ((Provider) browserCastingViewModelProvider), "com.example.apiproject.domain.viewmodels.MainActivityViewModel", ((Provider) singletonCImpl.getMainActivityViewModelProvider));
     }
 
     @Override
     public Map<String, Object> getHiltViewModelAssistedMap() {
       return ImmutableMap.<String, Object>of();
+    }
+
+    private static final class SwitchingProvider<T> implements Provider<T> {
+      private final SingletonCImpl singletonCImpl;
+
+      private final ActivityRetainedCImpl activityRetainedCImpl;
+
+      private final ViewModelCImpl viewModelCImpl;
+
+      private final int id;
+
+      SwitchingProvider(SingletonCImpl singletonCImpl, ActivityRetainedCImpl activityRetainedCImpl,
+          ViewModelCImpl viewModelCImpl, int id) {
+        this.singletonCImpl = singletonCImpl;
+        this.activityRetainedCImpl = activityRetainedCImpl;
+        this.viewModelCImpl = viewModelCImpl;
+        this.id = id;
+      }
+
+      @SuppressWarnings("unchecked")
+      @Override
+      public T get() {
+        switch (id) {
+          case 0: // com.example.universaltvremote.presentation.viewmodel.BrowserCastingViewModel 
+          return (T) new BrowserCastingViewModel();
+
+          default: throw new AssertionError(id);
+        }
+      }
     }
   }
 

@@ -1,5 +1,10 @@
 [
   {
+    "name": "broswer_casting_nav_graph",
+    "navigationXmlIds": [],
+    "deepLinks": []
+  },
+  {
     "name": "nav_map",
     "navigationXmlIds": [],
     "deepLinks": []

@@ -4052,9 +4052,11 @@ drawable ic_call_decline_low
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
 drawable ic_close
+drawable ic_dailymotion
 drawable ic_delete
 drawable ic_done_all
 drawable ic_download
+drawable ic_fb
 drawable ic_goto_website
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -4066,9 +4068,13 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_pin
 drawable ic_rename
 drawable ic_search_black_24
 drawable ic_sheet_holder
+drawable ic_twitch
+drawable ic_vimeo
+drawable ic_youtube
 drawable indeterminate_static
 drawable info_circle_svgrepo_com__1_
 drawable light_grad
@@ -4243,6 +4249,7 @@ id action_context_bar
 id action_copy
 id action_delete
 id action_divider
+id action_fragment_browser_app_selection_to_fragment_web_view
 id action_image
 id action_menu_divider
 id action_menu_presenter
@@ -4320,6 +4327,15 @@ id chip5
 id chip8
 id chronometer
 id circle_center
+id cl_dailymotion
+id cl_fb
+id cl_google
+id cl_insta
+id cl_pin
+id cl_reddit
+id cl_twitch
+id cl_vimeo
+id cl_youtube
 id clear
 id clear_text
 id clip_horizontal
@@ -4471,7 +4487,10 @@ id flip
 id floating
 id forever
 id fragmentContainerView
+id fragment_browser_app_selection
+id fragment_browser_container_view
 id fragment_container_view_tag
+id fragment_web_view
 id frost
 id fullscreen_header
 id ghost_view
@@ -4498,6 +4517,15 @@ id homeAsUp
 id homeFragment
 id honorRequest
 id horizontal_only
+id ic_dailymotion
+id ic_fb
+id ic_google
+id ic_insta
+id ic_pin
+id ic_reddit
+id ic_twitch
+id ic_vimeo
+id ic_youtube
 id icon
 id icon_group
 id ifRoom
@@ -4629,6 +4657,7 @@ id north
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id nsv
 id nsv_home
 id off
 id on
@@ -4718,8 +4747,10 @@ id search_go_btn
 id search_mag_icon
 id search_plate
 id search_src_text
+id search_text_field
 id search_voice_btn
 id section_1
+id section_2
 id select_dialog_listview
 id selected
 id selection_type
@@ -4870,6 +4901,7 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id web_view
 id west
 id whatsappAnim
 id whatsapp_card
@@ -5000,7 +5032,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_browser
+layout activity_browser_casting
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -5035,6 +5067,7 @@ layout exo_styled_sub_settings_list_item
 layout exo_track_selection_dialog
 layout fetching_download_dialog
 layout fragment_blank
+layout fragment_broswer_app_selection
 layout fragment_completed_video_player
 layout fragment_feedback
 layout fragment_home
@@ -5044,6 +5077,7 @@ layout fragment_splash
 layout fragment_video_completed
 layout fragment_video_downloading
 layout fragment_video_reel
+layout fragment_web_view
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout layout_permissions_dialog
@@ -5128,6 +5162,7 @@ menu main_menu
 mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
+navigation broswer_casting_nav_graph
 navigation nav_map
 plurals exo_controls_fastforward_by_amount_description
 plurals exo_controls_rewind_by_amount_description

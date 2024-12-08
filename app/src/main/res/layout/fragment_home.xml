@@ -227,7 +227,7 @@
                 android:layout_height="wrap_content"
 
 
-                android:text="Masood"
+                android:text="Browser"
 
                 android:layout_marginTop="@dimen/_16sdp"
                 android:layout_marginHorizontal="@dimen/_16sdp"
