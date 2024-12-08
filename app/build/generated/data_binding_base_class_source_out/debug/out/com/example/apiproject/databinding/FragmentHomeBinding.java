@@ -27,6 +27,9 @@ public final class FragmentHomeBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final Button btnAhsan;
+
+  @NonNull
   public final Button btnMasood;
 
   @NonNull
@@ -62,13 +65,15 @@ public final class FragmentHomeBinding implements ViewBinding {
   @NonNull
   public final MaterialCardView whatsappCard;
 
-  private FragmentHomeBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnMasood,
-      @NonNull ImageView clear, @NonNull ConstraintLayout constraintLayout2,
-      @NonNull MaterialButton downloadbutton, @NonNull EditText linkfield,
-      @NonNull NestedScrollView nsvHome, @NonNull MaterialButton pasteText,
-      @NonNull MaterialCardView section1, @NonNull TextView textView3, @NonNull TextView textView6,
+  private FragmentHomeBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnAhsan,
+      @NonNull Button btnMasood, @NonNull ImageView clear,
+      @NonNull ConstraintLayout constraintLayout2, @NonNull MaterialButton downloadbutton,
+      @NonNull EditText linkfield, @NonNull NestedScrollView nsvHome,
+      @NonNull MaterialButton pasteText, @NonNull MaterialCardView section1,
+      @NonNull TextView textView3, @NonNull TextView textView6,
       @NonNull LottieAnimationView whatsappAnim, @NonNull MaterialCardView whatsappCard) {
     this.rootView = rootView;
+    this.btnAhsan = btnAhsan;
     this.btnMasood = btnMasood;
     this.clear = clear;
     this.constraintLayout2 = constraintLayout2;
@@ -110,6 +115,12 @@ public final class FragmentHomeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btn_ahsan;
+      Button btnAhsan = ViewBindings.findChildViewById(rootView, id);
+      if (btnAhsan == null) {
+        break missingId;
+      }
+
       id = R.id.btn_masood;
       Button btnMasood = ViewBindings.findChildViewById(rootView, id);
       if (btnMasood == null) {
@@ -182,7 +193,7 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentHomeBinding((ConstraintLayout) rootView, btnMasood, clear,
+      return new FragmentHomeBinding((ConstraintLayout) rootView, btnAhsan, btnMasood, clear,
           constraintLayout2, downloadbutton, linkfield, nsvHome, pasteText, section1, textView3,
           textView6, whatsappAnim, whatsappCard);
     }

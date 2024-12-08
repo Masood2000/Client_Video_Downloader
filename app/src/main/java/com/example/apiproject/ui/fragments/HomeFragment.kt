@@ -12,6 +12,8 @@ import android.widget.Toast
 import androidx.activity.addCallback
 import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
+import com.example.apiproject.R
 import com.example.apiproject.ui.activity.MainActivity
 import com.example.apiproject.databinding.FragmentHomeBinding
 import com.example.apiproject.ui.activity.BrowserActivity
@@ -136,6 +138,10 @@ class HomeFragment : BaseFragment() {
             btnMasood.setOnClickListener {
                 startActivity(Intent(requireContext(), BrowserActivity::class.java))
 
+            }
+
+            btnAhsan.setOnClickListener {
+                findNavController().navigate(R.id.action_homeFragment_to_reelsFragment)
             }
         }
 

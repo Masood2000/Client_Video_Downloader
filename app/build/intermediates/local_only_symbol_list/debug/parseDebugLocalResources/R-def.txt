@@ -24,6 +24,7 @@ color transparent
 color white
 drawable audio_svgrepo_com
 drawable back_svgrepo_com__1_
+drawable bg_web_link
 drawable completed_card_bg
 drawable completed_order_svgrepo_com__1_
 drawable cross_svgrepo_com
@@ -41,6 +42,7 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_rename
 drawable ic_sheet_holder
+drawable ic_web
 drawable info_circle_svgrepo_com__1_
 drawable light_grad
 drawable ninegag
@@ -76,6 +78,7 @@ font poppins_regular
 font poppins_thin
 id action_copy
 id action_delete
+id action_homeFragment_to_reelsFragment
 id action_play
 id action_rename
 id action_settingsFragment_to_feedbackFragment
@@ -85,8 +88,10 @@ id action_videoCompletedFragment_to_completedVideoPlayerFragment
 id action_videoCompletedFragment_to_playerFragment
 id action_website
 id back
+id backButton
 id bt_maybe_later
 id bt_submit
+id btn_ahsan
 id btn_masood
 id cancel
 id cancel_btn
@@ -96,6 +101,7 @@ id chip3
 id chip4
 id chip5
 id chip8
+id cl_link
 id clear
 id close
 id completedVideoPlayerFragment
@@ -142,10 +148,12 @@ id problems_chip_group
 id problems_description
 id problems_text
 id progress
+id progressBar
 id rate_us
 id rc
 id recycleView
 id reelchannel
+id reelsFragment
 id reeltitle
 id resolution_item
 id resolution_text
@@ -178,7 +186,9 @@ id textView36
 id textView5
 id textView6
 id title_heading_tv
+id topBar
 id top_bar
+id tv_link
 id tv_sub
 id tv_title
 id type
@@ -188,6 +198,8 @@ id videoDownloadingFragment
 id videoProgress
 id video_title
 id video_type
+id webView
+id web_icon
 id whatsappAnim
 id whatsapp_card
 layout activity_browser
@@ -202,6 +214,7 @@ layout fragment_completed_video_player
 layout fragment_feedback
 layout fragment_home
 layout fragment_player
+layout fragment_reels
 layout fragment_settings
 layout fragment_splash
 layout fragment_video_completed

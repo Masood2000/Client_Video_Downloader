@@ -3940,6 +3940,7 @@ drawable audio_svgrepo_com
 drawable avd_hide_password
 drawable avd_show_password
 drawable back_svgrepo_com__1_
+drawable bg_web_link
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -4069,6 +4070,7 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_rename
 drawable ic_search_black_24
 drawable ic_sheet_holder
+drawable ic_web
 drawable indeterminate_static
 drawable info_circle_svgrepo_com__1_
 drawable light_grad
@@ -4243,6 +4245,7 @@ id action_context_bar
 id action_copy
 id action_delete
 id action_divider
+id action_homeFragment_to_reelsFragment
 id action_image
 id action_menu_divider
 id action_menu_presenter
@@ -4280,6 +4283,7 @@ id autoCompleteToEnd
 id autoCompleteToStart
 id automatic
 id back
+id backButton
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -4293,6 +4297,7 @@ id bounceEnd
 id bounceStart
 id bt_maybe_later
 id bt_submit
+id btn_ahsan
 id btn_masood
 id buttonPanel
 id cache_measures
@@ -4320,6 +4325,7 @@ id chip5
 id chip8
 id chronometer
 id circle_center
+id cl_link
 id clear
 id clear_text
 id clip_horizontal
@@ -4676,6 +4682,7 @@ id problems_chip_group
 id problems_description
 id problems_text
 id progress
+id progressBar
 id progress_circular
 id progress_horizontal
 id radio
@@ -4685,6 +4692,7 @@ id rc
 id rectangles
 id recycleView
 id reelchannel
+id reelsFragment
 id reeltitle
 id report_drawn
 id resolution_item
@@ -4832,6 +4840,7 @@ id title_heading_tv
 id title_template
 id toggle
 id top
+id topBar
 id topPanel
 id top_bar
 id touch_outside
@@ -4846,6 +4855,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tv_link
 id tv_sub
 id tv_title
 id type
@@ -4870,6 +4880,8 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id webView
+id web_icon
 id west
 id whatsappAnim
 id whatsapp_card
@@ -5039,6 +5051,7 @@ layout fragment_completed_video_player
 layout fragment_feedback
 layout fragment_home
 layout fragment_player
+layout fragment_reels
 layout fragment_settings
 layout fragment_splash
 layout fragment_video_completed

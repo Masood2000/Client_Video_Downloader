@@ -9,7 +9,11 @@
         android:id="@+id/homeFragment"
         android:name="com.example.apiproject.ui.fragments.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_reelsFragment"
+            app:destination="@id/reelsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.example.apiproject.ui.fragments.SettingsFragment"
@@ -68,4 +72,9 @@
             android:id="@+id/action_splashFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/reelsFragment"
+        android:name="com.example.apiproject.ui.fragments.reels.ReelsFragment"
+        android:label="fragment_reels"
+        tools:layout="@layout/fragment_reels" />
 </navigation>
