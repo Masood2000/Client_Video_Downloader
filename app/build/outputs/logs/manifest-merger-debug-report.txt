@@ -220,12 +220,12 @@ MERGED from [com.github.bumptech.glide:okhttp3-integration:4.12.0] D:\AndriodStu
 		ADDED from D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:28:9-44
 	android:name
 		ADDED from D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:19:9-44
-activity#com.example.apiproject.ui.activity.BrowserActivity
+activity#com.example.apiproject.ui.activity.BrowserCastingActivity
 ADDED from D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:30:9-32:40
 	android:exported
 		ADDED from D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:31:13-56
+		ADDED from D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:31:13-63
 service#com.liulishuo.filedownloader.services.FileDownloadService$SharedMainProcessService
 ADDED from D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:34:9-36:56
 MERGED from [:filedownload] D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\filedownload\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:9-13:56

@@ -18,12 +18,12 @@ import com.example.apiproject.data.di.AppModule_ProvideDownloadingDaoFactory;
 import com.example.apiproject.domain.db.AppDb;
 import com.example.apiproject.domain.viewmodels.MainActivityViewModel;
 import com.example.apiproject.domain.viewmodels.MainActivityViewModel_HiltModules_KeyModule_ProvideFactory;
-import com.example.apiproject.ui.activity.BrowserActivity;
+import com.example.apiproject.ui.activity.BrowserCastingActivity;
 import com.example.apiproject.ui.activity.MainActivity;
 import com.example.apiproject.ui.fragments.HomeFragment;
 import com.example.apiproject.ui.fragments.VideoCompletedFragment;
+import com.example.apiproject.ui.fragments.browser.BrowserAppSelectionFragment;
 import com.example.apiproject.ui.fragments.browser.WebViewFragment;
-import com.example.universaltvremote.presentation.fragment.bowserCasting.BrowserAppSelectionFragment;
 import com.example.universaltvremote.presentation.viewmodel.BrowserCastingViewModel;
 import com.example.universaltvremote.presentation.viewmodel.BrowserCastingViewModel_HiltModules_KeyModule_ProvideFactory;
 import com.google.common.collect.ImmutableMap;
@@ -360,12 +360,12 @@ public final class DaggerDownloadApplication_HiltComponents_SingletonC {
     }
 
     @Override
-    public void injectWebViewFragment(WebViewFragment webViewFragment) {
+    public void injectBrowserAppSelectionFragment(
+        BrowserAppSelectionFragment browserAppSelectionFragment) {
     }
 
     @Override
-    public void injectBrowserAppSelectionFragment(
-        BrowserAppSelectionFragment browserAppSelectionFragment) {
+    public void injectWebViewFragment(WebViewFragment webViewFragment) {
     }
 
     @Override
@@ -414,7 +414,7 @@ public final class DaggerDownloadApplication_HiltComponents_SingletonC {
     }
 
     @Override
-    public void injectBrowserActivity(BrowserActivity browserActivity) {
+    public void injectBrowserCastingActivity(BrowserCastingActivity browserCastingActivity) {
     }
 
     @Override

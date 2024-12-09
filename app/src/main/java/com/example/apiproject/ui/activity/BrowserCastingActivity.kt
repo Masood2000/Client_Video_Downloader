@@ -137,8 +137,8 @@ class BrowserCastingActivity : AppCompatActivity() {
             return
         }
 
-        var dialogBinding = FetchingDownloadDialogBinding.inflate(layoutInflater)
-        var dialog = createAndShowDialog(dialogBinding.root)
+       /* var dialogBinding = FetchingDownloadDialogBinding.inflate(layoutInflater)
+        var dialog = createAndShowDialog(dialogBinding.root)*/
         lifecycleScope.launch(Dispatchers.IO) {
 
 
@@ -171,7 +171,7 @@ class BrowserCastingActivity : AppCompatActivity() {
                         }
                         withContext(Dispatchers.Main) {
                             downloadOptionSheet(extractedData!!, link)
-                            dialog.dismiss()
+                            //dialog.dismiss()
 
                         }
                     }
@@ -182,13 +182,13 @@ class BrowserCastingActivity : AppCompatActivity() {
                         if (secondExtractedData != null) {
                             withContext(Dispatchers.Main) {
                                 downloadOptionSheet(secondExtractedData!!, link)
-                                dialog.dismiss()
+                               // dialog.dismiss()
                             }
                         } else {
                             withContext(Dispatchers.Main) {
                                 Toast.makeText(this@BrowserCastingActivity, "No Video Found", Toast.LENGTH_SHORT)
                                     .show()
-                                dialog.dismiss()
+                              //  dialog.dismiss()
                             }
                         }
 
@@ -206,13 +206,13 @@ class BrowserCastingActivity : AppCompatActivity() {
                     if (secondExtractedData != null) {
                         withContext(Dispatchers.Main) {
                             downloadOptionSheet(secondExtractedData!!, link)
-                            dialog.dismiss()
+                            //dialog.dismiss()
                         }
                     } else {
                         withContext(Dispatchers.Main) {
                             Toast.makeText(this@BrowserCastingActivity, "No Video Found", Toast.LENGTH_SHORT)
                                 .show()
-                            dialog.dismiss()
+                            //dialog.dismiss()
                         }
                     }
 
@@ -223,7 +223,7 @@ class BrowserCastingActivity : AppCompatActivity() {
                 withContext(Dispatchers.Main) {
                     Toast.makeText(this@BrowserCastingActivity, "Error Occured", Toast.LENGTH_SHORT).show()
                     Log.d("ApiResponse", "Error Occured ${e.message}")
-                    dialog.dismiss()
+                    //dialog.dismiss()
 
                 }
             }

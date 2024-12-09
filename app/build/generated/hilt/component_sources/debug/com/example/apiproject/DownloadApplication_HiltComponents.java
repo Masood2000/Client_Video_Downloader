@@ -3,12 +3,12 @@ package com.example.apiproject;
 import androidx.hilt.work.HiltWrapper_WorkerFactoryModule;
 import com.example.apiproject.data.di.AppModule;
 import com.example.apiproject.domain.viewmodels.MainActivityViewModel_HiltModules;
-import com.example.apiproject.ui.activity.BrowserActivity_GeneratedInjector;
+import com.example.apiproject.ui.activity.BrowserCastingActivity_GeneratedInjector;
 import com.example.apiproject.ui.activity.MainActivity_GeneratedInjector;
 import com.example.apiproject.ui.fragments.HomeFragment_GeneratedInjector;
 import com.example.apiproject.ui.fragments.VideoCompletedFragment_GeneratedInjector;
+import com.example.apiproject.ui.fragments.browser.BrowserAppSelectionFragment_GeneratedInjector;
 import com.example.apiproject.ui.fragments.browser.WebViewFragment_GeneratedInjector;
-import com.example.universaltvremote.presentation.fragment.bowserCasting.BrowserAppSelectionFragment_GeneratedInjector;
 import com.example.universaltvremote.presentation.viewmodel.BrowserCastingViewModel_HiltModules;
 import dagger.Binds;
 import dagger.Component;
@@ -180,7 +180,7 @@ public final class DownloadApplication_HiltComponents {
       }
   )
   @ActivityScoped
-  public abstract static class ActivityC implements BrowserActivity_GeneratedInjector,
+  public abstract static class ActivityC implements BrowserCastingActivity_GeneratedInjector,
       MainActivity_GeneratedInjector,
       ActivityComponent,
       DefaultViewModelFactories.ActivityEntryPoint,
@@ -224,8 +224,8 @@ public final class DownloadApplication_HiltComponents {
   @FragmentScoped
   public abstract static class FragmentC implements HomeFragment_GeneratedInjector,
       VideoCompletedFragment_GeneratedInjector,
-      WebViewFragment_GeneratedInjector,
       BrowserAppSelectionFragment_GeneratedInjector,
+      WebViewFragment_GeneratedInjector,
       FragmentComponent,
       DefaultViewModelFactories.FragmentEntryPoint,
       ViewComponentManager.ViewWithFragmentComponentBuilderEntryPoint,

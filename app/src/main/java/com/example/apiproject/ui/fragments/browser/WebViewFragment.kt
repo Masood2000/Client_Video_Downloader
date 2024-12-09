@@ -34,8 +34,10 @@ import com.example.apiproject.data.models.NavigationBundleKeys.PINTEREST
 import com.example.apiproject.data.models.NavigationBundleKeys.REDDIT
 import com.example.apiproject.data.models.NavigationBundleKeys.TWITCH
 import com.example.apiproject.data.models.NavigationBundleKeys.VIMEO
+import com.example.apiproject.ui.activity.BrowserCastingActivity
 
 import com.example.universaltvremote.presentation.viewmodel.BrowserCastingViewModel
+import com.example.universaltvremote.presentation.viewmodel.BrowserCastingViewModel_HiltModules_KeyModule_ProvideFactory
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -289,6 +291,11 @@ class WebViewFragment : Fragment() {
 
 
                     //getLinks(prevLink)
+                    activity.let{
+                        if(it is BrowserCastingActivity){
+                            it.getDownloadMetaData(prevLink)
+                        }
+                    }
                     Log.d(TAG, "onLoadResource: ${binding.webView.url}")
                     Log.d(TAG, "onLoadResource: ${binding.webView.title}")
 

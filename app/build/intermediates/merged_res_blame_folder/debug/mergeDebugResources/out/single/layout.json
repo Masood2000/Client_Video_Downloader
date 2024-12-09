@@ -12,6 +12,10 @@
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\fragment_broswer_app_selection.xml"
     },
     {
+        "merged": "com.example.apiproject.app-mergeDebugResources-3:/layout/fragment_reels.xml",
+        "source": "com.example.apiproject.app-main-6:/layout/fragment_reels.xml"
+    },
+    {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-mergeDebugResources-3:\\layout\\fragment_player.xml",
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\fragment_player.xml"
     },
@@ -70,6 +74,10 @@
     {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-mergeDebugResources-3:\\layout\\fragment_video_reel.xml",
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\fragment_video_reel.xml"
+    },
+    {
+        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-mergeDebugResources-3:\\layout\\fragment_browser_app_selection.xml",
+        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\fragment_browser_app_selection.xml"
     },
     {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-mergeDebugResources-3:\\layout\\downloading_item.xml",

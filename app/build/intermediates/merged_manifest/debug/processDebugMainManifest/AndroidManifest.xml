@@ -45,7 +45,7 @@
         android:theme="@style/Theme.ApiProject"
         android:usesCleartextTraffic="true" >
         <activity
-            android:name="com.example.apiproject.ui.activity.BrowserActivity"
+            android:name="com.example.apiproject.ui.activity.BrowserCastingActivity"
             android:exported="false" />
 
         <service

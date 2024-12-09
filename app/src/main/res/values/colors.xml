@@ -44,5 +44,6 @@
 
     <color name="search_text_color">#999999</color>
     <color name="search_text_color_night">#141E26</color>
-
+    <color name="selection">#EBEDEE</color>
+    <color name="newselection">#FFFFFF</color>
 </resources>

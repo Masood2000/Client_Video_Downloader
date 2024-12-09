@@ -174,6 +174,9 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
 
     fun getDownloadMetaData(link: String) {
 
+
+        Log.d(TAG, "getDownloadMetaData: ${link.toString()}")
+        
         if (link.contains("youtube", ignoreCase = true) ||
             link.contains("youtu.be", ignoreCase = true) ||
             link.contains("encrypted-vtbn0.gstatic", ignoreCase = true)
@@ -396,7 +399,7 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
         return progress.coerceIn(0, 100)
     }
 
-    private fun downloadOptionSheet(extractedData: ExtractedData, url: String) {
+     fun downloadOptionSheet(extractedData: ExtractedData, url: String) {
         val dialogBinding = DownloadOptionSheetBinding.inflate(layoutInflater)
         dialogBinding.heading.text = extractedData.title
         val maxStorage = getTotalPhoneStorage()

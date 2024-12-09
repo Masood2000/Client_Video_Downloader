@@ -88,8 +88,8 @@
 46-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:28:9-44
 47        <activity
 47-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:30:9-32:40
-48            android:name="com.example.apiproject.ui.activity.BrowserActivity"
-48-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:31:13-56
+48            android:name="com.example.apiproject.ui.activity.BrowserCastingActivity"
+48-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:31:13-63
 49            android:exported="false" />
 49-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:32:13-37
 50
