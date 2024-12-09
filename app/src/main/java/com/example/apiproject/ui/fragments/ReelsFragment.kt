@@ -11,6 +11,7 @@ import android.view.ViewGroup
 import android.webkit.JavascriptInterface
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import androidx.activity.addCallback
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.example.apiproject.data.api.ExtractedData
@@ -38,11 +39,15 @@ class ReelsFragment : Fragment() {
         FragmentReelsBinding.inflate(layoutInflater)
     }
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
+        arguments?.let {
+            appType = it.getString("url_type").toString()
+        }
         return binding.root
     }
 
@@ -368,111 +373,11 @@ class ReelsFragment : Fragment() {
 
                     }
 
-                    /*override fun onPageFinished(view: WebView?, url: String?) {
+                    override fun onPageFinished(view: WebView?, url: String?) {
                         super.onPageFinished(view, url)
-
                         binding.progressBar.visibility = View.GONE
                         binding.tvLink.text = url
-
-                        binding.webView
-                            .loadUrl(
-                                "javascript:" +
-
-                                        "try {" +
-                                        "var doc = document.getElementsByClassName(\"x5yr21d x10l6tqk x13vifvy xh8yej3\");\n" +
-                                        "for (var f = 0; f < doc.length; f++) {\n" +
-                                        "    var DButton = doc[f].querySelector(\"#download-button-video\") != null;\n" +
-                                        "    if (!DButton) {\n" +
-                                        "        var Download_Img = document.createElement(\"img\");\n" +
-                                        "        var baseuri = doc[f].parentNode.parentNode.childNodes[0].baseURI.toString;\n" +
-                                        "        var videourl = doc[f].parentNode.parentNode.childNodes[0].src;\n" +
-                                        "        Download_Img.style.height=\"60px\";\n" +
-                                        "        Download_Img.style.width=\"60px\";\n" +
-                                        "        Download_Img.id=\"download-button-video\";\n" +
-                                        "        Download_Img.name=baseuri;\n" +
-                                        "        Download_Img.longDesc=videourl;\n" +
-                                        "        Download_Img.style.position=\"absolute\";\n" +
-                                        "        Download_Img.style.marginLeft=\"10px\";\n" +
-                                        "        Download_Img.style.marginBottom=\"50px\";\n" +
-                                        "        Download_Img.style.marginTop=\"50px\";\n" +
-                                        "        Download_Img.style.marginRight=\"10px\";\n" +
-                                        "        Download_Img.style.zIndex=10;\n" +
-                                        "        Download_Img.zIndex=10;\n" +
-                                        "        Download_Img.src =\"$scriptButton\";\n" +
-                                        "        Download_Img.addEventListener(\"click\",function(){\n" +
-                                        "            var title=document.title;\n" +
-                                        "            Android.showToast(\"Button clicked!\");"+
-                                        "            newJava.scriptData(this.name.toString(),this.longDesc.toString(),\"instagram\",title,\"\");\n" +
-                                        "        });\n" +
-                                        "        doc[f].appendChild(Download_Img)\n" +
-                                        "    } else{}\n" +
-                                        "}" +
-                                        "} catch (error) {" +
-                                        "" +
-                                        "}" +
-                                        "try {" +
-                                        "var ij=document.getElementsByClassName(\"_aagv\");\n" +
-                                        "    for(var f=0;f<ij.length;f++)\n" +
-                                        "    {\n" +
-                                        "      var dbutton=ij[f].querySelector(\"#download-button\") != null;" +
-                                        "     if(!dbutton){" +
-                                        "      var DOM_img = document.createElement(\"img\");\n" +
-                                        "      var baseuri=ij[f].childNodes[0].baseURI;" +
-                                        "      var videourl=ij[f].childNodes[0].src;" +
-                                        "      DOM_img.style.height=\"60px\";\n" +
-                                        "      DOM_img.style.width=\"60px\";\n" +
-                                        "      DOM_img.style.zIndex=7;\n" +
-                                        "      DOM_img.bottom=10;\n" +
-                                        "      DOM_img.name=baseuri.toString();\n" +
-                                        "      DOM_img.longDesc=videourl.toString();\n" +
-                                        "      DOM_img.id=\"download-button\";\n" +
-                                        "      DOM_img.style.position=\"relative\";\n" +
-                                        "      DOM_img.style.marginLeft=\"10px\";\n" +
-                                        "      DOM_img.style.marginTop=\"10px\";\n" +
-                                        "      DOM_img.src =\"$scriptButton\";\n" +
-                                        "      DOM_img.addEventListener(\"click\",function(){" +
-                                        "       var title=document.title;" +
-                                        "      newJava.scriptData(this.name.toString(),this.longDesc.toString(),\"instagram\",title,\"\")});\n" +
-                                        "      ij[f].appendChild(DOM_img);\n" +
-                                        "       \n" +
-                                        "    }" +
-                                        "}" +
-                                        "}" +
-                                        " catch (error) {" +
-                                        "" +
-                                        "}" +
-                                        "try {" +
-                                        "var ij=document.getElementsByClassName(\"KL4Bh\");\n" +
-                                        "    for(var f=0;f<ij.length;f++)\n" +
-                                        "    {\n" +
-                                        "      var dbutton=ij[f].querySelector(\"#download-button\") != null;" +
-                                        "     if(!dbutton){" +
-                                        "      var DOM_img = document.createElement(\"img\");\n" +
-                                        "      var baseuri=ij[f].childNodes[0].baseURI;" +
-                                        "      var videourl=ij[f].childNodes[0].src;" +
-                                        "      DOM_img.style.height=\"60px\";\n" +
-                                        "      DOM_img.style.width=\"60px\";\n" +
-                                        "      DOM_img.style.zIndex=7;\n" +
-                                        "      DOM_img.bottom=10;\n" +
-                                        "      DOM_img.name=baseuri.toString();\n" +
-                                        "      DOM_img.longDesc=videourl.toString();\n" +
-                                        "      DOM_img.id=\"download-button\";\n" +
-                                        "      DOM_img.style.position=\"relative\";\n" +
-                                        "      DOM_img.style.marginLeft=\"10px\";\n" +
-                                        "      DOM_img.style.marginTop=\"10px\";\n" +
-                                        "      DOM_img.src =\"$scriptButton\";\n" +
-                                        "      DOM_img.addEventListener(\"click\",function(){" +
-                                        "       var title=document.title;" +
-                                        "      newJava.scriptData(this.name.toString(),this.longDesc.toString(),\"instagram\",title,\"\")});\n" +
-                                        "      ij[f].appendChild(DOM_img);\n" +
-                                        "       \n" +
-                                        "    }" +
-                                        "}" +
-                                        "} catch (error) {" +
-                                        "" +
-                                        "}"
-                            )
-                    }*/
+                    }
 
                 }
 
@@ -712,6 +617,16 @@ class ReelsFragment : Fragment() {
                 binding.webView.goBack()
             } else {
                 findNavController().popBackStack()
+            }
+        }
+
+        activity?.let {
+            it.onBackPressedDispatcher.addCallback(viewLifecycleOwner){
+                if (binding.webView.canGoBack()){
+                    binding.webView.goBack()
+                } else {
+                    findNavController().popBackStack()
+                }
             }
         }
     }

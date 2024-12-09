@@ -1,546 +1,538 @@
 [
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_film_reel_cinema_svgrepo_com.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\film_reel_cinema_svgrepo_com.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\layout_sheet_video_options.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\layout\\sheet_video_options.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_feedback_bg_card.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\feedback_bg_card.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\anim_fade_in.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\anim\\fade_in.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\font_poppins_bold.ttf.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\font\\poppins_bold.ttf"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_ic_insta.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\ic_insta.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_download_svgrepo_com.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\download_svgrepo_com.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_ic_search.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\ic_search.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\layout_download_option_sheet.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\download_option_sheet.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\mipmap-xhdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\layout_fragment_feedback.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\fragment_feedback.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\layout_fragment_completed_video_player.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\layout\\fragment_completed_video_player.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_ic_more.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\ic_more.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_rounded_background.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\rounded_background.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_audio_svgrepo_com.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\audio_svgrepo_com.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\layout_fetching_download_dialog.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\fetching_download_dialog.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\navigation_browser_casting_nav_graph.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\navigation\\browser_casting_nav_graph.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\layout_fragment_blank.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\fragment_blank.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\layout_download_option_sheet.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\layout\\download_option_sheet.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\layout_activity_main.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_suggested_websites_bg.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\suggested_websites_bg.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_ic_youtube.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\ic_youtube.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\mipmap-mdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_pastelink_bg.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\pastelink_bg.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\layout_fragment_video_completed.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\fragment_video_completed.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\layout_selection_item.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\layout\\selection_item.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_policy_term_and_condition_term_svgrepo_com.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\policy_term_and_condition_term_svgrepo_com.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_star_selector.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\star_selector.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\mipmap-xxxhdpi\\ic_launcher_foreground.webp"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_rounded_bg_reddit.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\rounded_bg_reddit.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\layout_fragment_web_view.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\fragment_web_view.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_ic_download.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\ic_download.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_search_bg.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\search_bg.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_ic_close.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\ic_close.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_sp_bg.png.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\sp_bg.png"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\raw_loading_final.json.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\raw\\loading_final.json"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\navigation_nav_map.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\navigation\\nav_map.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\layout_downloaded_item.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\layout\\downloaded_item.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_ic_google.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\ic_google.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_cross_svgrepo_com.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\cross_svgrepo_com.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\layout_fragment_splash.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\fragment_splash.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\layout_tablayout.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\layout\\tablayout.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_door_home_home_page_homepage_house_svgrepo_com.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\door_home_home_page_homepage_house_svgrepo_com.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\layout_fragment_web_view.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\layout\\fragment_web_view.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_ic_done_all.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\ic_done_all.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_back_svgrepo_com__1_.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\back_svgrepo_com__1_.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\layout_fragment_broswer_app_selection.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\fragment_broswer_app_selection.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\raw_finding_video.json.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\raw\\finding_video.json"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\raw_vimeo_white.json.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\raw\\vimeo_white.json"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_ninegag.png.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\ninegag.png"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_splash_icon.png.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\splash_icon.png"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_video_svgrepo_com.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\video_svgrepo_com.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\layout\\fragment_home.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_ic_launcher_foreground.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\layout_fetching_download_dialog.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\layout\\fetching_download_dialog.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_suggested_websites_bg.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\suggested_websites_bg.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_ic_arrow_back.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\ic_arrow_back.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_ic_fb.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\ic_fb.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\font_poppins_medium.ttf.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\font\\poppins_medium.ttf"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\xml_data_extraction_rules.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\xml\\data_extraction_rules.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_bg_web_link.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\bg_web_link.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\mipmap-xhdpi_ic_launcher_foreground.webp.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\mipmap-xhdpi\\ic_launcher_foreground.webp"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_stars_star_svgrepo_com__1_.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\stars_star_svgrepo_com__1_.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_back_svgrepo_com__1_.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\back_svgrepo_com__1_.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_ic_fb.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\ic_fb.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_options_svgrepo_com.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\options_svgrepo_com.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_websites_bg.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\websites_bg.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\raw_novid.json.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\raw\\novid.json"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\mipmap-xxxhdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_audio_svgrepo_com.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\audio_svgrepo_com.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_tikitok.png.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\tikitok.png"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_outline_content_copy_24.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\outline_content_copy_24.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_vimeo_bg.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\vimeo_bg.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_ic_pin.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\ic_pin.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\layout_fragment_reels.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\layout\\fragment_reels.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_ic_sheet_holder.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\ic_sheet_holder.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\layout_activity_browser_casting.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\layout\\activity_browser_casting.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_rate_us_selected.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\rate_us_selected.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\font_popins.ttf.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\font\\popins.ttf"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_rounded_background.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\rounded_background.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_completed_order_svgrepo_com__1_.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\completed_order_svgrepo_com__1_.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_non_selection_bg.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\non_selection_bg.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\raw_novid.json.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\raw\\novid.json"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_rounded_bg_reddit.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\rounded_bg_reddit.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\raw_insta_new.json.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\raw\\insta_new.json"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_options_svgrepo_com.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\options_svgrepo_com.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\layout_tablayout.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\tablayout.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\layout_activity_browser_casting.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\activity_browser_casting.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\layout_fragment_broswer_app_selection.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\layout\\fragment_broswer_app_selection.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\layout_selection_item.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\selection_item.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\raw_whatsapp_anim.json.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\raw\\whatsapp_anim.json"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\font_poppins_black.ttf.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\font\\poppins_black.ttf"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\menu_main_menu.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\menu\\main_menu.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\layout_fragment_home.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\fragment_home.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_ic_rename.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\ic_rename.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_ic_dailymotion.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\ic_dailymotion.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_ic_vimeo.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\ic_vimeo.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_rate_us_unselected.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\rate_us_unselected.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_feedback.png.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\feedback.png"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_ic_twitch.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\ic_twitch.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_door_home_home_page_homepage_house_svgrepo_com.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\door_home_home_page_homepage_house_svgrepo_com.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\navigation_broswer_casting_nav_graph.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\navigation\\broswer_casting_nav_graph.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\layout_downloading_item.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\layout\\downloading_item.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_stars_star_svgrepo_com__1_.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\stars_star_svgrepo_com__1_.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\layout_fragment_video_reel.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\layout\\fragment_video_reel.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\mipmap-xxhdpi\\ic_launcher_foreground.webp"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\raw_insta_new.json.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\raw\\insta_new.json"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_ninegag.png.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\ninegag.png"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\layout_fragment_video_downloading.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\layout\\fragment_video_downloading.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_ic_rename.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\ic_rename.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_settings_svgrepo_com__1_.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\settings_svgrepo_com__1_.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\layout_reel_item.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\layout\\reel_item.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\font_poppins_medium.ttf.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\font\\poppins_medium.ttf"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_feedback_bg_card.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\feedback_bg_card.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_ic_download.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\ic_download.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\raw_download_now.json.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\raw\\download_now.json"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\layout_layout_permissions_dialog.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\layout_permissions_dialog.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_ic_youtube.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\ic_youtube.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_ic_insta.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\ic_insta.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\raw_videosfinal.json.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\raw\\videosfinal.json"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_ic_dailymotion.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\ic_dailymotion.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_info_circle_svgrepo_com__1_.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\info_circle_svgrepo_com__1_.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_rate_us_unselected.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\rate_us_unselected.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_ic_pin.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\ic_pin.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\color_dialog_bottom_sheet_download_chip_bg_text_color_selector.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\color\\dialog_bottom_sheet_download_chip_bg_text_color_selector.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\layout_fragment_settings.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\layout\\fragment_settings.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_ic_search.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\ic_search.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_textgrad.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\textgrad.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\mipmap-mdpi_ic_launcher_foreground.webp.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\mipmap-mdpi\\ic_launcher_foreground.webp"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\font_poppins_thin.ttf.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\font\\poppins_thin.ttf"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_ic_more.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\ic_more.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\layout_layout_permissions_dialog.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\layout\\layout_permissions_dialog.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\raw_finding_video.json.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\raw\\finding_video.json"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_download_svgrepo_com.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\download_svgrepo_com.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\layout_downloaded_item.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\downloaded_item.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\color_dialog_bottom_sheet_download_chip_bg_text_color_selector.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\color\\dialog_bottom_sheet_download_chip_bg_text_color_selector.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_ic_arrow_back.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\ic_arrow_back.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_ic_google.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\ic_google.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_cross_svgrepo_com.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\cross_svgrepo_com.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_policy_term_and_condition_term_svgrepo_com.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\policy_term_and_condition_term_svgrepo_com.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\layout_activity_browser.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\activity_browser.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\font_poppins_bold.ttf.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\font\\poppins_bold.ttf"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_sheet_background.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\sheet_background.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\navigation_nav_map.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\navigation\\nav_map.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_ic_goto_website.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\ic_goto_website.xml"
+        "merged": "com.example.apiproject.app-debug-64:/layout_fragment_home.xml.flat",
+        "source": "com.example.apiproject.app-main-66:/layout/fragment_home.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\layout_fragment_reels.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\fragment_reels.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\raw_whatsapp_anim.json.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\raw\\whatsapp_anim.json"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_ic_web.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\ic_web.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\layout_fragment_browser_app_selection.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\fragment_browser_app_selection.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_search_bg.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\search_bg.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\menu_main_menu.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\menu\\main_menu.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_completed_order_svgrepo_com__1_.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\completed_order_svgrepo_com__1_.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_rate_us_selected.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\rate_us_selected.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_ic_web.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\ic_web.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_ic_sheet_holder.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\ic_sheet_holder.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_ic_close.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\ic_close.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\raw_splash_animation.json.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\raw\\splash_animation.json"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_star_selector.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\star_selector.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\mipmap-hdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_selection_bg.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\selection_bg.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_video_svgrepo_com.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\video_svgrepo_com.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_websites_bg.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\websites_bg.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_sp_bg.png.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\sp_bg.png"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\raw_loading_final.json.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\raw\\loading_final.json"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_search_view_bg.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\search_view_bg.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\xml_backup_rules.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\xml\\backup_rules.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_ic_twitch.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\ic_twitch.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\layout_sheet_video_options.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\sheet_video_options.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_play_arrow_24px.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\play_arrow_24px.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\raw_videosfinal.json.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\raw\\videosfinal.json"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_play_arrow_24px.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\play_arrow_24px.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\layout\\activity_main.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_pastelink_bg.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\pastelink_bg.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\layout_fragment_splash.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\layout\\fragment_splash.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\layout_fragment_settings.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\fragment_settings.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_selection_bg.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\selection_bg.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_bg_web_link.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\bg_web_link.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_outline_share_24.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\outline_share_24.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\layout_downloading_item.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\downloading_item.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\font_poppins_regular.ttf.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\font\\poppins_regular.ttf"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_vimeo_bg.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\vimeo_bg.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_non_selection_bg.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\non_selection_bg.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_tikitok.png.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\tikitok.png"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\font_popins.ttf.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\font\\popins.ttf"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_completed_card_bg.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\completed_card_bg.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\font_poppins_black.ttf.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\font\\poppins_black.ttf"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_info_circle_svgrepo_com__1_.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\info_circle_svgrepo_com__1_.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_settings_svgrepo_com__1_.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\settings_svgrepo_com__1_.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\raw_download_now.json.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\raw\\download_now.json"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\anim_fade_in.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\anim\\fade_in.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\color_dialog_bottom_sheet_download_chip_bg_color_selector.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\color\\dialog_bottom_sheet_download_chip_bg_color_selector.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_completed_card_bg.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\completed_card_bg.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\layout_fragment_video_downloading.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\fragment_video_downloading.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\font_poppins_thin.ttf.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\font\\poppins_thin.ttf"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_selected_item_text_colour.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\selected_item_text_colour.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_selected_item_text_colour.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\selected_item_text_colour.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\layout_fragment_video_completed.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\layout\\fragment_video_completed.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\layout_reel_item.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\reel_item.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\layout_fragment_browser_app_selection.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\layout\\fragment_browser_app_selection.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\navigation_browser_casting_nav_graph.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\navigation\\browser_casting_nav_graph.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\layout_dialog_rate_us.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\layout\\dialog_rate_us.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\raw_reddit_new.json.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\raw\\reddit_new.json"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\raw_reels.json.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\raw\\reels.json"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\font_poppins_regular.ttf.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\font\\poppins_regular.ttf"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_film_reel_cinema_svgrepo_com.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\film_reel_cinema_svgrepo_com.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_ic_goto_website.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\ic_goto_website.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\layout_dialog_rate_us.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\dialog_rate_us.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\mipmap-xxhdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_feedback.png.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\feedback.png"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\layout_fragment_blank.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\layout\\fragment_blank.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_ic_delete.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\ic_delete.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\layout_fragment_player.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\layout\\fragment_player.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\layout_fragment_feedback.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\layout\\fragment_feedback.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\xml_provider_paths.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\xml\\provider_paths.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_search_view_bg.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\search_view_bg.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\xml_provider_paths.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\xml\\provider_paths.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\layout_fragment_completed_video_player.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\fragment_completed_video_player.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_light_grad.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\light_grad.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\raw_splash_animation.json.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\raw\\splash_animation.json"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_ic_vimeo.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\ic_vimeo.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\raw_fb_last.json.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\raw\\fb_last.json"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_outline_content_copy_24.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\outline_content_copy_24.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\layout_fragment_video_reel.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\fragment_video_reel.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_textgrad.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\textgrad.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\raw_fb_last.json.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\raw\\fb_last.json"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\mipmap-hdpi_ic_launcher_foreground.webp.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\mipmap-hdpi\\ic_launcher_foreground.webp"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_splash_icon.png.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\splash_icon.png"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_rounded_bg.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\rounded_bg.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\raw_reddit_new.json.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\raw\\reddit_new.json"
     },
     {
-        "merged": "com.example.apiproject.app-debug-4:/navigation_nav_map.xml.flat",
-        "source": "com.example.apiproject.app-main-6:/navigation/nav_map.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_sheet_background.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\sheet_background.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\layout_fragment_player.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\fragment_player.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_ic_delete.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\ic_delete.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_outline_share_24.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\outline_share_24.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_rounded_bg.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\rounded_bg.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_ic_launcher_background.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\raw_vimeo_white.json.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\raw\\vimeo_white.json"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_light_grad.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\light_grad.xml"
-    },
-    {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\color_dialog_bottom_sheet_download_chip_bg_color_selector.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\color\\dialog_bottom_sheet_download_chip_bg_color_selector.xml"
-    },
-    {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\raw_reels.json.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\raw\\reels.json"
+        "merged": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-debug-64:\\drawable_ic_done_all.xml.flat",
+        "source": "C:\\Users\\ahsan\\.gradle\\daemon\\8.6\\com.example.apiproject.app-main-66:\\drawable\\ic_done_all.xml"
     }
 ]

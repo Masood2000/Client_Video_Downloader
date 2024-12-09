@@ -480,7 +480,7 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
             binding.topBar.visibility = View.VISIBLE
             binding.mainBottomNav.visibility = View.VISIBLE
             binding.back.visibility = View.GONE
-            binding.settings.visibility = View.VISIBLE
+            //binding.settings.visibility = View.VISIBLE
             // binding.help.visibility = View.VISIBLE
 
             when (destination.id) {
@@ -539,6 +539,14 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
                     binding.back.setOnOneClickListener {
                         navController.navigateUp()
                     }
+                }
+
+                R.id.reelsFragment -> {
+                    binding.mainBottomNav.visibility = View.GONE
+                    binding.back.visibility = View.VISIBLE
+                    // binding.help.visibility = View.GONE
+                    binding.settings.visibility = View.GONE
+                    binding.topBar.visibility = View.GONE
                 }
 
                 R.id.completedVideoPlayerFragment -> {

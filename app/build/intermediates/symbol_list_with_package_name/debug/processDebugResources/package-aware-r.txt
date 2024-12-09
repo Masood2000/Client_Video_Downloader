@@ -4336,7 +4336,8 @@ id browser_casting_nav_graph
 id bt_maybe_later
 id bt_submit
 id btn_browser
-id btn_reels
+id btn_fb_watch
+id btn_insta_reels
 id buttonPanel
 id cache_measures
 id callMeasure

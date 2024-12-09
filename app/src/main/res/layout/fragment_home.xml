@@ -235,16 +235,23 @@
                 />
 
             <Button
-                android:id="@+id/btn_reels"
+                android:id="@+id/btn_insta_reels"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
-
-                android:text="Reels"
-
+                android:text="Insta Reels"
                 android:layout_marginTop="@dimen/_16sdp"
                 android:layout_marginHorizontal="@dimen/_16sdp"
                 app:layout_constraintTop_toBottomOf="@id/btn_browser"
+                />
+
+            <Button
+                android:id="@+id/btn_fb_watch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FB watch"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                app:layout_constraintTop_toBottomOf="@id/btn_insta_reels"
                 />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

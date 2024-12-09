@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Video Downloader2.0</string>
+    <string name="app_name">X Downloader</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="home">Home</string>
     <string name="downloading">Downloading</string>
@@ -23,7 +23,7 @@
     <string name="audio_deleted">Audio deleted successfully.</string>
     <string name="image_deleted">Image deleted successfully.</string>
     <string name="feedback">Feedback</string>
-    <string name="one_tap_downloader">One Tap \nVideo Downloader</string>
+    <string name="one_tap_downloader">X \nVideo Downloader</string>
     <string name="youtube">Youtube</string>
     <string name="browse_here">Browse here</string>
     <string name="suggested_websites">Suggested Websites</string>

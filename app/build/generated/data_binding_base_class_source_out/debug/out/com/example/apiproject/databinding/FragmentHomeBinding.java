@@ -30,7 +30,10 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final Button btnBrowser;
 
   @NonNull
-  public final Button btnReels;
+  public final Button btnFbWatch;
+
+  @NonNull
+  public final Button btnInstaReels;
 
   @NonNull
   public final ImageView clear;
@@ -66,7 +69,7 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final MaterialCardView whatsappCard;
 
   private FragmentHomeBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnBrowser,
-      @NonNull Button btnReels, @NonNull ImageView clear,
+      @NonNull Button btnFbWatch, @NonNull Button btnInstaReels, @NonNull ImageView clear,
       @NonNull ConstraintLayout constraintLayout2, @NonNull MaterialButton downloadbutton,
       @NonNull EditText linkfield, @NonNull NestedScrollView nsvHome,
       @NonNull MaterialButton pasteText, @NonNull MaterialCardView section1,
@@ -74,7 +77,8 @@ public final class FragmentHomeBinding implements ViewBinding {
       @NonNull LottieAnimationView whatsappAnim, @NonNull MaterialCardView whatsappCard) {
     this.rootView = rootView;
     this.btnBrowser = btnBrowser;
-    this.btnReels = btnReels;
+    this.btnFbWatch = btnFbWatch;
+    this.btnInstaReels = btnInstaReels;
     this.clear = clear;
     this.constraintLayout2 = constraintLayout2;
     this.downloadbutton = downloadbutton;
@@ -121,9 +125,15 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btn_reels;
-      Button btnReels = ViewBindings.findChildViewById(rootView, id);
-      if (btnReels == null) {
+      id = R.id.btn_fb_watch;
+      Button btnFbWatch = ViewBindings.findChildViewById(rootView, id);
+      if (btnFbWatch == null) {
+        break missingId;
+      }
+
+      id = R.id.btn_insta_reels;
+      Button btnInstaReels = ViewBindings.findChildViewById(rootView, id);
+      if (btnInstaReels == null) {
         break missingId;
       }
 
@@ -193,9 +203,9 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentHomeBinding((ConstraintLayout) rootView, btnBrowser, btnReels, clear,
-          constraintLayout2, downloadbutton, linkfield, nsvHome, pasteText, section1, textView3,
-          textView6, whatsappAnim, whatsappCard);
+      return new FragmentHomeBinding((ConstraintLayout) rootView, btnBrowser, btnFbWatch,
+          btnInstaReels, clear, constraintLayout2, downloadbutton, linkfield, nsvHome, pasteText,
+          section1, textView3, textView6, whatsappAnim, whatsappCard);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

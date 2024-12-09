@@ -3,6 +3,7 @@ package com.example.apiproject.ui.fragments
 import android.content.ClipboardManager
 import android.content.Context
 import android.content.Intent
+import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
@@ -22,6 +23,7 @@ import com.example.apiproject.ui.activity.MainActivity.Companion
 import com.example.apiproject.ui.base.BaseFragment
 import com.example.apiproject.util.Helper.setOnOneClickListener
 import com.example.apiproject.util.NetworkHelper
+import com.example.apiproject.util.SocialMediaType
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
@@ -140,8 +142,16 @@ class HomeFragment : BaseFragment() {
 
             }
 
-            btnReels.setOnClickListener {
-                findNavController().navigate(R.id.action_homeFragment_to_reelsFragment)
+            btnFbWatch.setOnClickListener {
+                val bundle = Bundle()
+                bundle.putString("url_type", SocialMediaType.FB_WATCH.name)
+                findNavController().navigate(R.id.action_homeFragment_to_reelsFragment, bundle)
+            }
+
+            btnInstaReels.setOnClickListener {
+                val bundle = Bundle()
+                bundle.putString("url_type", SocialMediaType.INSTA_REELS.name)
+                findNavController().navigate(R.id.action_homeFragment_to_reelsFragment, bundle)
             }
 
 

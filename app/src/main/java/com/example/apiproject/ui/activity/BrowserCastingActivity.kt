@@ -385,13 +385,13 @@ class BrowserCastingActivity : AppCompatActivity() {
                             var video = extractedData?.video!![selectedCell]
                             viewModel.downloadVideo(
                                 this@BrowserCastingActivity,
-                                extractedData.title,
+                                "video_"+(0..10000000).random().toString(),
                                 video.url,
                                 Helper.getNewDownloadPath(),
                                 extractedData.cookie,
                                 false,
-                                extractedData.imageUrl,
-                                extractedData.title
+                                "",
+                                "Video"
                             )
                         } else {
                             viewModel.downloadAudio(
