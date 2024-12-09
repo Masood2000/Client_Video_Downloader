@@ -27,4 +27,22 @@
 
     <color name="icons_inverse">#FFFFFF</color>
     <color name="icons_inverse_night">#000000</color>
+
+
+
+    <color name="whiteBlack">#FFFFFFFF</color>
+    <color name="whiteBlackNight">#FF000000</color>
+    <color name="Text">#222222</color>
+
+
+    <color name="card_bg">#F4F4F4</color>
+    <color name="card_bg_night">#141E26</color>
+
+    <color name="websites_card_bg">#FFFFFF</color>
+    <color name="websites_card_bg_night">#11171C</color>
+
+
+    <color name="search_text_color">#999999</color>
+    <color name="search_text_color_night">#141E26</color>
+
 </resources>

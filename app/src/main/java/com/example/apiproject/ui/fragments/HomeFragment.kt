@@ -14,7 +14,6 @@ import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
 import com.example.apiproject.ui.activity.MainActivity
 import com.example.apiproject.databinding.FragmentHomeBinding
-import com.example.apiproject.ui.activity.BrowserActivity
 
 import com.example.apiproject.ui.activity.MainActivity.Companion
 import com.example.apiproject.ui.base.BaseFragment

@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/whiteBlack"
+    android:paddingHorizontal="@dimen/_16sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+
+        android:paddingVertical="@dimen/_8sdp"
+
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        >
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+
+            android:src="@drawable/ic_arrow_back"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            />
+
+        <ImageView
+            android:id="@+id/ic_search_icon"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+
+            android:src="@drawable/ic_search"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:elevation="1dp"
+
+            app:layout_constraintStart_toStartOf="@id/search_text_field"
+            app:layout_constraintTop_toTopOf="@id/search_text_field"
+            app:layout_constraintBottom_toBottomOf="@id/search_text_field"
+
+
+            />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/search_text_field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/browse_here"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/Text"
+
+            android:background="@drawable/search_view_bg"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+
+
+            android:paddingVertical="@dimen/_11sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:paddingStart="@dimen/_32sdp"
+            android:paddingEnd="@dimen/_4sdp"
+
+
+
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ic_back"
+            app:layout_constraintEnd_toStartOf="@id/ic_more"
+
+            />
+
+
+
+
+        <ImageView
+            android:id="@+id/ic_more"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+
+            android:src="@drawable/ic_more"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nsv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintTop_toBottomOf="@id/cl_top_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_suggested_apps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/suggested_websites_bg"
+
+                android:paddingHorizontal="@dimen/_16sdp"
+                android:paddingVertical="@dimen/_12sdp"
+
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+
+                    android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+
+                       android:text="@string/suggested_websites"
+                       android:textColor="@color/Text"
+                       android:textSize="@dimen/_14sdp"
+
+
+
+                       android:layout_marginTop="@dimen/_2sdp"
+                       android:layout_marginBottom="@dimen/_8sdp"
+
+                       />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+                        android:layout_marginVertical="@dimen/_6sdp"
+
+
+                        >
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:id="@+id/cl_youtube"
+
+
+                            android:paddingTop="@dimen/_12sdp"
+                            android:paddingBottom="@dimen/_10sdp"
+
+                            android:layout_weight="1"
+
+                            android:background="@drawable/websites_bg"
+
+                            >
+                            <ImageView
+                                android:id="@+id/ic_youtube"
+                                android:layout_width="@dimen/_24sdp"
+                                android:layout_height="@dimen/_24sdp"
+
+                                android:layout_marginHorizontal="@dimen/_16sdp"
+                                android:src="@drawable/ic_youtube"
+
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                >
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="@string/youtube"
+
+                                android:maxLines="1"
+                                android:maxWidth="@dimen/_60sdp"
+
+                                android:textColor="@color/Text"
+                                android:textAlignment="center"
+                                android:includeFontPadding="false"
+                                android:textSize="@dimen/_8sdp"
+
+                                android:textStyle="normal"
+
+
+
+                                app:layout_constrainedWidth="true"
+                                android:ellipsize="end"
+
+
+
+                                android:layout_marginTop="@dimen/_12sdp"
+
+
+                                app:layout_constraintVertical_bias="1"
+                                app:layout_constraintTop_toBottomOf="@id/ic_youtube"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                >
+
+
+                            </TextView>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:id="@+id/cl_reddit"
+
+                            android:layout_marginHorizontal="@dimen/_12sdp"
+                            android:layout_weight="1"
+
+                            android:paddingTop="@dimen/_12sdp"
+                            android:paddingBottom="@dimen/_10sdp"
+
+                            android:background="@drawable/websites_bg"
+
+                            >
+                            <ImageView
+                                android:id="@+id/ic_reddit"
+                                android:layout_width="@dimen/_24sdp"
+                                android:layout_height="@dimen/_24sdp"
+
+                                android:src="@drawable/ic_youtube"
+                                android:layout_marginHorizontal="@dimen/_16sdp"
+
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                >
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="@string/reddit"
+                                android:textColor="@color/Text"
+                                android:textAlignment="center"
+                                android:includeFontPadding="false"
+                                android:textSize="@dimen/_8sdp"
+
+
+
+
+
+
+                                android:maxLines="1"
+                                android:textStyle="normal"
+                                android:maxWidth="@dimen/_60sdp"
+                                app:layout_constrainedWidth="true"
+                                android:ellipsize="end"
+
+                                android:layout_marginTop="@dimen/_12sdp"
+
+                                app:layout_constraintVertical_bias="1"
+                                app:layout_constraintTop_toBottomOf="@id/ic_reddit"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                >
+
+
+                            </TextView>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:id="@+id/cl_dailymotion"
+
+                            android:layout_weight="1"
+
+
+                            android:paddingTop="@dimen/_12sdp"
+                            android:paddingBottom="@dimen/_10sdp"
+
+                            android:background="@drawable/websites_bg"
+
+                            >
+                            <ImageView
+                                android:id="@+id/ic_dailymotion"
+                                android:layout_width="@dimen/_24sdp"
+                                android:layout_height="@dimen/_24sdp"
+
+                                android:src="@drawable/ic_dailymotion"
+                                android:layout_marginHorizontal="@dimen/_16sdp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                >
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="@string/dailymotion"
+                                android:textColor="@color/Text"
+                                android:textAlignment="center"
+                                android:includeFontPadding="false"
+                                android:textSize="@dimen/_8sdp"
+
+
+                                android:maxLines="1"
+                                android:textStyle="normal"
+
+                                app:layout_constrainedWidth="true"
+                                android:ellipsize="end"
+                                android:maxWidth="@dimen/_60sdp"
+                                android:layout_marginTop="@dimen/_12sdp"
+
+                                app:layout_constraintVertical_bias="1"
+                                app:layout_constraintTop_toBottomOf="@id/ic_dailymotion"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+                        android:layout_marginVertical="@dimen/_6sdp"
+
+
+                        >
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:id="@+id/cl_vimeo"
+
+
+                            android:paddingTop="@dimen/_12sdp"
+                            android:paddingBottom="@dimen/_10sdp"
+
+                            android:layout_weight="1"
+
+                            android:background="@drawable/websites_bg"
+
+                            >
+                            <ImageView
+                                android:id="@+id/ic_vimeo"
+                                android:layout_width="@dimen/_24sdp"
+                                android:layout_height="@dimen/_24sdp"
+
+                                android:layout_marginHorizontal="@dimen/_16sdp"
+                                android:src="@drawable/ic_vimeo"
+
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                >
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="@string/vimeo"
+
+                                android:maxLines="1"
+                                android:maxWidth="@dimen/_60sdp"
+
+                                android:textColor="@color/Text"
+                                android:textAlignment="center"
+                                android:includeFontPadding="false"
+                                android:textSize="@dimen/_8sdp"
+
+                                android:textStyle="normal"
+
+
+
+                                app:layout_constrainedWidth="true"
+                                android:ellipsize="end"
+
+
+
+                                android:layout_marginTop="@dimen/_12sdp"
+
+
+                                app:layout_constraintVertical_bias="1"
+                                app:layout_constraintTop_toBottomOf="@id/ic_vimeo"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                >
+
+
+                            </TextView>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:id="@+id/cl_insta"
+
+                            android:layout_marginHorizontal="@dimen/_12sdp"
+                            android:layout_weight="1"
+
+                            android:paddingTop="@dimen/_12sdp"
+                            android:paddingBottom="@dimen/_10sdp"
+
+                            android:background="@drawable/websites_bg"
+
+                            >
+                            <ImageView
+                                android:id="@+id/ic_insta"
+                                android:layout_width="@dimen/_24sdp"
+                                android:layout_height="@dimen/_24sdp"
+
+                                android:src="@drawable/ic_insta"
+                                android:layout_marginHorizontal="@dimen/_16sdp"
+
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                >
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="@string/insta"
+                                android:textColor="@color/Text"
+                                android:textAlignment="center"
+                                android:includeFontPadding="false"
+                                android:textSize="@dimen/_8sdp"
+
+
+
+
+
+                                android:maxLines="1"
+                                android:textStyle="normal"
+                                android:maxWidth="@dimen/_60sdp"
+                                app:layout_constrainedWidth="true"
+                                android:ellipsize="end"
+
+                                android:layout_marginTop="@dimen/_12sdp"
+
+                                app:layout_constraintVertical_bias="1"
+                                app:layout_constraintTop_toBottomOf="@id/ic_insta"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                >
+
+
+                            </TextView>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:id="@+id/cl_fb"
+
+                            android:layout_weight="1"
+
+
+                            android:paddingTop="@dimen/_12sdp"
+                            android:paddingBottom="@dimen/_10sdp"
+
+                            android:background="@drawable/websites_bg"
+
+                            >
+                            <ImageView
+                                android:id="@+id/ic_fb"
+                                android:layout_width="@dimen/_24sdp"
+                                android:layout_height="@dimen/_24sdp"
+
+                                android:src="@drawable/ic_fb"
+                                android:layout_marginHorizontal="@dimen/_16sdp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                >
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="@string/fb"
+                                android:textColor="@color/Text"
+                                android:textAlignment="center"
+                                android:includeFontPadding="false"
+                                android:textSize="@dimen/_8sdp"
+
+
+                                android:maxLines="1"
+                                android:textStyle="normal"
+
+                                app:layout_constrainedWidth="true"
+                                android:ellipsize="end"
+                                android:maxWidth="@dimen/_60sdp"
+                                android:layout_marginTop="@dimen/_12sdp"
+
+                                app:layout_constraintVertical_bias="1"
+                                app:layout_constraintTop_toBottomOf="@id/ic_fb"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+                        android:layout_marginVertical="@dimen/_6sdp"
+
+
+                        >
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:id="@+id/cl_google"
+
+
+                            android:paddingTop="@dimen/_12sdp"
+                            android:paddingBottom="@dimen/_10sdp"
+
+                            android:layout_weight="1"
+
+                            android:background="@drawable/websites_bg"
+
+                            >
+                            <ImageView
+                                android:id="@+id/ic_google"
+                                android:layout_width="@dimen/_24sdp"
+                                android:layout_height="@dimen/_24sdp"
+
+                                android:layout_marginHorizontal="@dimen/_16sdp"
+                                android:src="@drawable/ic_google"
+
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                >
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="@string/google"
+
+                                android:maxLines="1"
+                                android:maxWidth="@dimen/_60sdp"
+
+                                android:textColor="@color/Text"
+                                android:textAlignment="center"
+                                android:includeFontPadding="false"
+                                android:textSize="@dimen/_8sdp"
+                                android:textStyle="normal"
+
+
+
+                                app:layout_constrainedWidth="true"
+                                android:ellipsize="end"
+
+
+
+                                android:layout_marginTop="@dimen/_12sdp"
+
+
+                                app:layout_constraintVertical_bias="1"
+                                app:layout_constraintTop_toBottomOf="@id/ic_google"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                >
+
+
+                            </TextView>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:id="@+id/cl_pin"
+
+                            android:layout_marginHorizontal="@dimen/_12sdp"
+                            android:layout_weight="1"
+
+                            android:paddingTop="@dimen/_12sdp"
+                            android:paddingBottom="@dimen/_10sdp"
+
+                            android:background="@drawable/websites_bg"
+
+                            >
+                            <ImageView
+                                android:id="@+id/ic_pin"
+                                android:layout_width="@dimen/_24sdp"
+                                android:layout_height="@dimen/_24sdp"
+
+                                android:src="@drawable/ic_pin"
+                                android:layout_marginHorizontal="@dimen/_16sdp"
+
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                >
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="@string/pin"
+                                android:textColor="@color/Text"
+                                android:textAlignment="center"
+                                android:includeFontPadding="false"
+                                android:textSize="@dimen/_8sdp"
+
+
+
+
+
+                                android:maxLines="1"
+                                android:textStyle="normal"
+                                android:maxWidth="@dimen/_60sdp"
+                                app:layout_constrainedWidth="true"
+                                android:ellipsize="end"
+
+                                android:layout_marginTop="@dimen/_12sdp"
+
+                                app:layout_constraintVertical_bias="1"
+                                app:layout_constraintTop_toBottomOf="@id/ic_pin"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                >
+
+
+                            </TextView>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:id="@+id/cl_twitch"
+
+                            android:layout_weight="1"
+
+
+                            android:paddingTop="@dimen/_12sdp"
+                            android:paddingBottom="@dimen/_10sdp"
+
+                            android:background="@drawable/websites_bg"
+
+                            >
+                            <ImageView
+                                android:id="@+id/ic_twitch"
+                                android:layout_width="@dimen/_24sdp"
+                                android:layout_height="@dimen/_24sdp"
+
+                                android:src="@drawable/ic_twitch"
+                                android:layout_marginHorizontal="@dimen/_16sdp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                >
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="@string/twitch"
+                                android:textColor="@color/Text"
+                                android:textAlignment="center"
+                                android:includeFontPadding="false"
+                                android:textSize="@dimen/_8sdp"
+
+                                android:maxLines="1"
+                                android:textStyle="normal"
+
+                                app:layout_constrainedWidth="true"
+                                android:ellipsize="end"
+                                android:maxWidth="@dimen/_60sdp"
+                                android:layout_marginTop="@dimen/_12sdp"
+
+                                app:layout_constraintVertical_bias="1"
+                                app:layout_constraintTop_toBottomOf="@id/ic_twitch"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

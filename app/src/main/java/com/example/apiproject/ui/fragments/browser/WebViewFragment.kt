@@ -2,8 +2,6 @@ package com.example.apiproject.ui.fragments.browser
 
 import android.annotation.SuppressLint
 import android.graphics.Bitmap
-import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -11,20 +9,31 @@ import android.view.View
 import android.view.ViewGroup
 import android.webkit.WebView
 import android.webkit.WebViewClient
-import android.widget.PopupWindow
-import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
+
+import com.example.apiproject.data.models.NavigationBundleKeys
+import com.example.apiproject.data.models.NavigationBundleKeys.GENERAL
+import com.example.apiproject.data.models.NavigationBundleKeys.INSTA
+import com.example.apiproject.data.models.NavigationBundleKeys.WEBSITE_TYPE
+import com.example.apiproject.data.models.NavigationBundleKeys.YOUTUBE
 
 
 import com.google.android.material.bottomsheet.BottomSheetDialog
 
 import com.example.apiproject.R
 import com.example.apiproject.databinding.FragmentWebViewBinding
-import com.example.apiproject.ui.activity.BrowserActivity
+
+import com.example.apiproject.data.models.NavigationBundleKeys.DAILYMOTION
+import com.example.apiproject.data.models.NavigationBundleKeys.FB
+import com.example.apiproject.data.models.NavigationBundleKeys.GOOGLE
+import com.example.apiproject.data.models.NavigationBundleKeys.NONE
+import com.example.apiproject.data.models.NavigationBundleKeys.PINTEREST
+import com.example.apiproject.data.models.NavigationBundleKeys.REDDIT
+import com.example.apiproject.data.models.NavigationBundleKeys.TWITCH
+import com.example.apiproject.data.models.NavigationBundleKeys.VIMEO
 
 import com.example.universaltvremote.presentation.viewmodel.BrowserCastingViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -48,7 +57,7 @@ class WebViewFragment : Fragment() {
 
 
 
-    private var websiteType = "general"
+    private var websiteType = GENERAL
 
     private var backPressedCallback: OnBackPressedCallback? = null
 
@@ -70,8 +79,8 @@ class WebViewFragment : Fragment() {
 
         Log.d(TAG, "onCreate: called")
         arguments.let { it ->
-            if (it?.getString("website_type") != null) {
-                websiteType = it.getString("website_type").toString()
+            if (it?.getString(WEBSITE_TYPE) != null) {
+                websiteType = it.getString(WEBSITE_TYPE).toString()
                 Log.d(TAG, "onCreate: fetching nav args...")
 
             }
@@ -103,11 +112,9 @@ class WebViewFragment : Fragment() {
 
 
 
-
         Log.d(TAG, "onViewCreated: ${websiteType.toString()}")
         initViews();
         initListeners();
-
 
 
         binding.webView.settings.javaScriptEnabled = true
@@ -130,7 +137,7 @@ class WebViewFragment : Fragment() {
         else{
             when (websiteType) {
 
-                "general" -> {
+                GENERAL -> {
                     if(websiteToLoad !=null )
                         binding.webView.loadUrl(websiteToLoad!!)
                     else
@@ -138,43 +145,43 @@ class WebViewFragment : Fragment() {
                     websiteToLoad = null
                 }
 
-                "insta" -> {
+                INSTA -> {
                     binding.webView.loadUrl("https://www.instagram.com/explore/")
                 }
 
-                "youtube" -> {
+                YOUTUBE -> {
                     binding.webView.loadUrl(" https://www.youtube.com/")
                 }
 
-                "google" -> {
+                GOOGLE -> {
                     binding.webView.loadUrl("https://www.google.com")
                 }
 
-                "pinterest" -> {
+                PINTEREST -> {
                     binding.webView.loadUrl("https://www.pinterest.com/videos/")
                 }
 
-                "vimeo" -> {
+                VIMEO -> {
                     binding.webView.loadUrl("https://vimeo.com/watch")
                 }
 
-                "twitch" -> {
+                TWITCH -> {
                     binding.webView.loadUrl("https://www.twitch.tv/")
                 }
 
-                "fb" -> {
+                FB -> {
                     binding.webView.loadUrl("https://www.facebook.com/watch/")
                 }
 
-                "reddit" -> {
+                REDDIT -> {
                     binding.webView.loadUrl("https://www.reddit.com/")
                 }
 
-                "dailymotion" -> {
+                DAILYMOTION -> {
                     binding.webView.loadUrl("https://www.dailymotion.com/")
                 }
 
-                "none" -> {
+                NONE -> {
 
                 }
 
@@ -186,7 +193,7 @@ class WebViewFragment : Fragment() {
 
             }
 
-            websiteType = "none"
+            websiteType = NavigationBundleKeys.NONE
         }
 
 
@@ -207,7 +214,6 @@ class WebViewFragment : Fragment() {
         binding.webView.clearHistory()
         binding.webView.clearFormData()
         binding.webView.removeAllViews()
-
 
     }
 
@@ -264,6 +270,7 @@ class WebViewFragment : Fragment() {
 
 
 
+
                 //binding.searchTextField.setText(url.toString())
 
             }
@@ -279,7 +286,9 @@ class WebViewFragment : Fragment() {
 
 
                     prevLink = binding.webView.url.toString()
-                    getLinks(prevLink)
+
+
+                    //getLinks(prevLink)
                     Log.d(TAG, "onLoadResource: ${binding.webView.url}")
                     Log.d(TAG, "onLoadResource: ${binding.webView.title}")
 
@@ -303,7 +312,7 @@ class WebViewFragment : Fragment() {
 
     private fun initListeners() {
 
-/*        binding.icBack.setOnClickListener() {
+        binding.icBack.setOnClickListener() {
             try {
 
                 findNavController().popBackStack(R.id.browserAppSelectionFragment,false)
@@ -312,13 +321,16 @@ class WebViewFragment : Fragment() {
             } catch (_: Exception) {
             }
 
-        }*/
+        }
 
 
+        binding.icMore.setOnClickListener {
+            showMenu(binding.icMore, "hello", 1.toFloat(), 1.toFloat())
+        }
 
     }
 
-/*    private fun showDialog(list:MutableList<DlpLinks>){
+ /*   private fun showDialog(list:MutableList<DlpLinks>){
 
         activity?.let { context ->
 
@@ -376,12 +388,268 @@ class WebViewFragment : Fragment() {
         }
 
 
-    }
+    }*/
+
+   /* private fun showDialogForDevices(){
 
 
+        isResolutionDialOpen = false
+
+        Log.d(TAG, "showDialogForDevices: opening")
+        viewModel.getDevices()
+
+        activity?.let { context ->
+
+
+            val bottomSheetConnectableDevicesBinding by lazy { FragmentConnectableDevicesForBrowserBinding.inflate(layoutInflater) }
+
+            devicesBottomSheetDialog = BottomSheetDialog(context)
+            devicesBottomSheetDialog?.setContentView(bottomSheetConnectableDevicesBinding.root)
+            devicesBottomSheetDialog?.setCanceledOnTouchOutside(true)
+            devicesBottomSheetDialog?.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+
+           
+
+            bottomSheetConnectableDevicesBinding.icRefresh.setOnClickListener {
+
+                viewModel.getDevices()
+                Log.d("CDF_TAG", "onViewCreated: clicked not place holder ")
+                activity?.let {
+                    if (it is MainActivity) {
+                        it.postAnalytic("refreshing_remote")
+                    }
+                }
+                lifecycleScope.launch {
+                   adapter.setData(listOf())
+                    delay(500)
+
+
+                    withContext(Dispatchers.Main){
+                        adapter.setData(
+                            viewModel.devices.value)
+
+                        bottomSheetConnectableDevicesBinding.tvCnt.text = "Found ${viewModel.devices.value.size} Device(s)."
+                    }
+
+//                viewModel.getDevices()
+//                adapter.setData(DiscoveryManager.getInstance().allDevices.values.toList())
+
+                }
+            }
+            bottomSheetConnectableDevicesBinding.icClose.setOnClickListener(){
+
+                isDevicesDialOpen = false
+                devicesBottomSheetDialog?.dismiss()
+
+            }
+
+            Log.d(TAG, "showDialogForDevices: ${isDevicesDialOpen}")
+            if (!isDevicesDialOpen && !isResolutionDialOpen) {
+                devicesBottomSheetDialog?.show()
+
+
+                isDevicesDialOpen = true
+            }
+
+            devicesBottomSheetDialog?.setOnDismissListener {
+                isDevicesDialOpen = false
+
+            }
+            bottomSheetConnectableDevicesBinding.tvCnt.text = "Found ${viewModel.devices.value.size} Device(s)."
+            adapter.setData(viewModel.devices.value)
+            *//***
+             * NEW_FLOW_WORK [/1] TODO
+             * Date 14 Oct 2024 Monday
+             *//*
+
+            //Log.d("LastFragment", "onViewCreated: "+findNavController().previousBackStackEntry?.destination?.displayName)
+            if (findNavController().previousBackStackEntry?.destination == null || findNavController().previousBackStackEntry?.destination?.id == R.id.splashFragment || findNavController().previousBackStackEntry?.destination?.id == R.id.tvBrandsFragment || findNavController().previousBackStackEntry?.destination?.id == R.id.loadingAnimationFragment || (UserSelection.openedHomeScreenBrands == true)) {
+
+                adapter.clickListener = object : DeviceClickListener {
+                    override fun successfullyConnected(device: ConnectableDevice, serviceName: String) {
+                        UserSelection.openedSavedRemote = false
+                        ConnectedDevice.device = device
+                        Log.d("Connection", "successfullyConnected: 1 ")
+
+                        activity?.let {
+                            if (it is BrowserCastingActivity) {
+
+                                if (findNavController().currentDestination?.id == R.id.connectableDevicesForBrowserFragment) {
+
+                                    device.addListener(object : ConnectableDeviceListener {
+                                        override fun onDeviceReady(device: ConnectableDevice?) {
+                                            Toast.makeText(
+                                                requireContext(),
+                                                getString(R.string.connection_successful4),
+                                                Toast.LENGTH_SHORT
+                                            ).show()
+                                            ConnectedDevice.device = device
+                                            *//* if(mediaURL!=""){
+                                                 playVideo(mediaURL)
+                                             }*//*
+
+                                            //findNavController().popBackStack()
+                                        }
+
+                                        override fun onDeviceDisconnected(device: ConnectableDevice?) {
+                                        }
+
+                                        override fun onPairingRequired(
+                                            device: ConnectableDevice?,
+                                            service: DeviceService?,
+                                            pairingType: DeviceService.PairingType?
+                                        ) {
+
+                                        }
+
+                                        override fun onCapabilityUpdated(
+                                            device: ConnectableDevice?,
+                                            added: MutableList<String>?,
+                                            removed: MutableList<String>?
+                                        ) {
+
+                                        }
+
+                                        override fun onConnectionFailed(
+                                            device: ConnectableDevice?,
+                                            error: ServiceCommandError?
+                                        ) {
+                                            Toast.makeText(
+                                                requireContext(),
+                                                getString(R.string.connection_failed4),
+                                                Toast.LENGTH_SHORT
+                                            ).show()
+                                        }
+
+                                    })
+                                    try {
+                                        device.connect()
+                                    } catch (e: Exception) {
+                                        Toast.makeText(
+                                            requireContext(),
+                                            getString(R.string.error_while_connecting4),
+                                            Toast.LENGTH_SHORT
+                                        ).show()
+                                    }
+
+
+                                }
+
+
+                            }
+                        }
+
+
+                    }
+                }
+            }
+            else {
+
+                var clickListener = (object : DeviceClickListener {
+                    override fun successfullyConnected(device: ConnectableDevice, serviceName: String) {
+                        ConnectedDevice.device = device
+                        Log.d("Connection", "successfullyConnected: 2 ")
+
+                        activity?.let {
+                            if (it is BrowserCastingActivity) {
+
+                                if (findNavController().currentDestination?.id == R.id.webViewFragment) {
+
+                                    device.addListener(object : ConnectableDeviceListener {
+                                        override fun onDeviceReady(device: ConnectableDevice?) {
+                                            Toast.makeText(
+                                                requireContext(),
+                                                getString(R.string.connection_successful4),
+                                                Toast.LENGTH_SHORT
+                                            ).show()
+
+                                            Log.d("Connection", "on device ready ")
+                                            ConnectedDevice.device = device
+                                            if(mediaURL!=""){
+                                                playVideo(mediaURL)
+                                            }
+
+                                            devicesBottomSheetDialog?.dismiss()
+
+
+
+                                        }
+
+                                        override fun onDeviceDisconnected(device: ConnectableDevice?) {
+                                            Log.d("Connection", "on device disconnected ")
+                                        }
+
+                                        override fun onPairingRequired(
+                                            device: ConnectableDevice?,
+                                            service: DeviceService?,
+                                            pairingType: DeviceService.PairingType?
+                                        ) {
+
+                                        }
+
+                                        override fun onCapabilityUpdated(
+                                            device: ConnectableDevice?,
+                                            added: MutableList<String>?,
+                                            removed: MutableList<String>?
+                                        ) {
+
+                                        }
+
+                                        override fun onConnectionFailed(
+                                            device: ConnectableDevice?,
+                                            error: ServiceCommandError?
+                                        ) {
+                                            Toast.makeText(
+                                                requireContext(),
+                                                getString(R.string.connection_failed4),
+                                                Toast.LENGTH_SHORT
+                                            ).show()
+                                        }
+
+                                    })
+                                    try {
+                                        device.connect()
+                                    } catch (e: Exception) {
+                                        Toast.makeText(
+                                            requireContext(),
+                                            getString(R.string.error_while_connecting4),
+                                            Toast.LENGTH_SHORT
+                                        ).show()
+
+                                        Log.d("Connection", "on error ")
+                                    }
+
+
+                                }
+
+
+                            }
+                        }
+
+
+
+                    }
+                })
+                adapter.clickListener = clickListener
+            }
+            bottomSheetConnectableDevicesBinding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
+            bottomSheetConnectableDevicesBinding.recyclerView.adapter = adapter
+            if (findNavController().previousBackStackEntry?.destination?.id == R.id.tvBrandsFragment || findNavController().previousBackStackEntry?.destination?.id == R.id.loadingAnimationFragment || (UserSelection.openedHomeScreenBrands == true)) {
+                adapter.showTvDevices = true
+            }
+
+
+
+
+
+
+        }
+
+
+    }*/
 
     fun showMenu(itemview: View, url: String, x: Float, y: Float) {
-
+    /*
         val customView = BrowserPopupMenuBinding.inflate(layoutInflater)
         var moreDetailsPopUp = PopupWindow(requireContext())
         moreDetailsPopUp.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
@@ -433,8 +701,8 @@ class WebViewFragment : Fragment() {
 
         }
 
-        moreDetailsPopUp.showAsDropDown(itemview)
-    }*/
+        moreDetailsPopUp.showAsDropDown(itemview)*/
+    }
 
     /***
      * / Views Handling Functions...
@@ -446,10 +714,9 @@ class WebViewFragment : Fragment() {
      */
 
 
-    fun getLinks(link: String) {
+    /*fun getLinks(link: String) {
 
-        Log.d(TAG, "getLinks: ${link.toString()}")
-        /*var retrofit = Retrofit.Builder()
+        var retrofit = Retrofit.Builder()
             .baseUrl("https://downloaderv2.funsol.cloud/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
@@ -501,18 +768,11 @@ class WebViewFragment : Fragment() {
                 }
             })
 
-        }*/
-        
-        activity.let{
-            if (it is BrowserActivity){
-                it.getDownloadMetaData(link)
-            }
         }
 
-    }
+    }*/
 
 
-    
 
 
 
@@ -529,7 +789,7 @@ class WebViewFragment : Fragment() {
                         binding.webView.goBack()
                     } else {
 
-                        findNavController().popBackStack(R.id.fragment_browser_app_selection,false)
+                        findNavController().popBackStack(R.id.browserAppSelectionFragment,false)
 
                     }
 

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/browser_casting_nav_graph"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/browserAppSelectionFragment"
+    >
+
+
+    <fragment
+        android:id="@+id/browserAppSelectionFragment"
+        android:name="com.example.apiproject.ui.fragments.browser.BrowserAppSelectionFragment"
+        android:label="fragment_browser_app_selection"
+        tools:layout="@layout/fragment_browser_app_selection" >
+        <action
+            android:id="@+id/action_browserAppSelectionFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
+        <action
+            android:id="@+id/action_browserAppSelectionFragment_to_connectableDevicesForBrowserFragment"
+            app:destination="@id/connectableDevicesForBrowserFragment" />
+        <action
+            android:id="@+id/action_browserAppSelectionFragment_to_historyFragment"
+            app:destination="@id/historyFragment" />
+        <action
+            android:id="@+id/action_browserAppSelectionFragment_to_bookmarksFragment"
+            app:destination="@id/bookmarksFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/webViewFragment"
+        android:name="com.example.apiproject.ui.fragments.browser.WebViewFragment"
+        android:label="fragment_web_view"
+        tools:layout="@layout/fragment_web_view" >
+        <action
+            android:id="@+id/action_webViewFragment_to_connectableDevicesForBrowserFragment"
+            app:destination="@id/connectableDevicesForBrowserFragment" />
+        <action
+            android:id="@+id/action_webViewFragment_to_historyFragment"
+            app:destination="@id/historyFragment" />
+        <action
+            android:id="@+id/action_webViewFragment_to_bookmarksFragment"
+            app:destination="@id/bookmarksFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/connectableDevicesForBrowserFragment"
+        android:name="com.example.universaltvremote.presentation.fragment.home.viewpager.shared.connection.ConnectableDevicesForBrowserFragment"
+        android:label="fragment_connectable_devices_for_browser"
+        tools:layout="@layout/fragment_connectable_devices_for_browser" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.universaltvremote.presentation.fragment.bowserCasting.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" >
+        <action
+            android:id="@+id/action_historyFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookmarksFragment"
+        android:name="com.example.universaltvremote.presentation.fragment.bowserCasting.BookmarksFragment"
+        android:label="fragment_bookmarks"
+        tools:layout="@layout/fragment_bookmarks" >
+        <action
+            android:id="@+id/action_bookmarksFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
+    </fragment>
+
+</navigation>

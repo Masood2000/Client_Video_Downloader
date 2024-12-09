@@ -1,4 +1,4 @@
-package com.example.universaltvremote.presentation.fragment.bowserCasting
+package com.example.apiproject.ui.fragments.browser
 
 import android.os.Bundle
 import android.util.Log
@@ -7,7 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.EditorInfo
-import android.webkit.URLUtil.isValidUrl
 import android.widget.TextView
 import android.widget.TextView.OnEditorActionListener
 import android.widget.Toast
@@ -15,10 +14,20 @@ import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.apiproject.R
-import com.example.apiproject.databinding.FragmentBroswerAppSelectionBinding
-import com.example.apiproject.ui.activity.BrowserActivity
-import com.example.apiproject.ui.fragments.browser.WebViewFragment
+import com.example.apiproject.data.models.NavigationBundleKeys.DAILYMOTION
+import com.example.apiproject.data.models.NavigationBundleKeys.FB
+import com.example.apiproject.data.models.NavigationBundleKeys.GENERAL
+import com.example.apiproject.data.models.NavigationBundleKeys.GOOGLE
+import com.example.apiproject.data.models.NavigationBundleKeys.PINTEREST
+import com.example.apiproject.data.models.NavigationBundleKeys.REDDIT
+import com.example.apiproject.data.models.NavigationBundleKeys.TWITCH
+import com.example.apiproject.data.models.NavigationBundleKeys.VIMEO
+import com.example.apiproject.data.models.NavigationBundleKeys.WEBSITE_TYPE
+import com.example.apiproject.data.models.NavigationBundleKeys.YOUTUBE
+import com.example.apiproject.databinding.FragmentBrowserAppSelectionBinding
+import com.example.apiproject.ui.activity.BrowserCastingActivity
 import com.example.apiproject.util.Helper.setOnOneClickListener
+import com.example.apiproject.util.pushdown.PushDownAnim
 
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import dagger.hilt.android.AndroidEntryPoint
@@ -28,12 +37,14 @@ import dagger.hilt.android.AndroidEntryPoint
 class BrowserAppSelectionFragment : Fragment() {
 
     val binding by lazy {
-        FragmentBroswerAppSelectionBinding.inflate(layoutInflater)
+        FragmentBrowserAppSelectionBinding.inflate(layoutInflater)
     }
 
     private var backPressedCallback: OnBackPressedCallback? = null
 
     var devicesBottomSheetDialog: BottomSheetDialog? = null
+
+
 
 
     /***
@@ -95,19 +106,18 @@ class BrowserAppSelectionFragment : Fragment() {
     private fun initListeners() {
 
 
-        binding.searchTextField.setOnEditorActionListener(object : OnEditorActionListener {
+        binding.searchTextField.setOnEditorActionListener(object :OnEditorActionListener{
             override fun onEditorAction(v: TextView?, actionId: Int, event: KeyEvent?): Boolean {
-                if (actionId == EditorInfo.IME_ACTION_SEARCH) {
+                if(actionId == EditorInfo.IME_ACTION_SEARCH){
 
                     var url = binding.searchTextField.text.toString()
 
-                    val newQuery = if (isValidUrl(url)) {
-                        //formatUrl(url)
-                        url
-                    } else {
-                        //constructSearchUrl(url)
-                        url
+                    val newQuery = url/*if (isValidUrl(url)) {
+                        formatUrl(url)
                     }
+                    else {
+                        constructSearchUrl(url)
+                    }*/
 
 
                     WebViewFragment.websiteToLoad = newQuery
@@ -115,33 +125,29 @@ class BrowserAppSelectionFragment : Fragment() {
                     binding.searchTextField.text?.clear()
 
                     val bundle = Bundle()
-                    bundle.putString("website_type", "general")
-                    findNavController().navigate(R.id.fragment_web_view, bundle)
+                    bundle.putString(WEBSITE_TYPE, GENERAL)
+                    findNavController().navigate(R.id.webViewFragment,bundle)
 
 
-                    Toast.makeText(
-                        requireContext(),
-                        binding.searchTextField.text.toString(),
-                        Toast.LENGTH_LONG
-                    ).show()
+                    Toast.makeText(requireContext(),binding.searchTextField.text.toString(),Toast.LENGTH_LONG).show()
                 }
-                return false
+               return  false
             }
         })
 
-        /* binding.icBack.setOnClickListener() {
-             try {
+        binding.icBack.setOnClickListener() {
+            try {
 
-                 try {
+                try {
 
-                     activity.let {
-                         if (it is BrowserActivity) {
-                             if (findNavController().currentDestination?.id == R.id.fragment_browser_app_selection) {
-                                 it.finish()
-                             }
-                         }
-                     }
-                     *//*findNavController().popBackStack()*//*
+                    activity.let {
+                        if (it is BrowserCastingActivity) {
+                            if (findNavController().currentDestination?.id == R.id.browserAppSelectionFragment) {
+                                it.finish()
+                            }
+                        }
+                    }
+                    /*findNavController().popBackStack()*/
 
                 } catch (_: java.lang.IllegalStateException) {
                 } catch (_: Exception) {
@@ -151,63 +157,68 @@ class BrowserAppSelectionFragment : Fragment() {
             } catch (_: Exception) {
             }
         }
-*/
 
 
-        binding.clYoutube.setOnOneClickListener {
 
-            val bundle = Bundle()
-            bundle.putString("website_type", "youtube")
-            findNavController().navigate(R.id.fragment_web_view, bundle)
+        binding.icMore.setOnOneClickListener {
+            showMenu(binding.icMore, "hello", 1.toFloat(), 1.toFloat())
         }
 
-        binding.clPin.setOnOneClickListener {
+
+        PushDownAnim.setPushDownAnimTo(binding.clYoutube).setOnClickListener {
 
             val bundle = Bundle()
-            bundle.putString("website_type", "pinterest")
-            findNavController().navigate(R.id.fragment_web_view, bundle)
+            bundle.putString(WEBSITE_TYPE, YOUTUBE)
+            findNavController().navigate(R.id.webViewFragment,bundle)
         }
 
-        binding.clVimeo.setOnOneClickListener {
+        PushDownAnim.setPushDownAnimTo(binding.clPin).setOnClickListener {
 
             val bundle = Bundle()
-            bundle.putString("website_type", "vimeo")
-            findNavController().navigate(R.id.fragment_web_view, bundle)
+            bundle.putString(WEBSITE_TYPE, PINTEREST)
+            findNavController().navigate(R.id.webViewFragment,bundle)
         }
 
-        binding.clTwitch.setOnOneClickListener {
+        PushDownAnim.setPushDownAnimTo(binding.clVimeo).setOnClickListener {
 
             val bundle = Bundle()
-            bundle.putString("website_type", "twitch")
-            findNavController().navigate(R.id.fragment_web_view, bundle)
+            bundle.putString(WEBSITE_TYPE, VIMEO)
+            findNavController().navigate(R.id.webViewFragment,bundle)
         }
 
-        binding.clDailymotion.setOnOneClickListener {
+        PushDownAnim.setPushDownAnimTo(binding.clTwitch).setOnClickListener {
 
             val bundle = Bundle()
-            bundle.putString("website_type", "dailymotion")
-            findNavController().navigate(R.id.fragment_web_view, bundle)
+            bundle.putString(WEBSITE_TYPE, TWITCH)
+            findNavController().navigate(R.id.webViewFragment,bundle)
         }
 
-        binding.clFb.setOnOneClickListener {
+        PushDownAnim.setPushDownAnimTo(binding.clDailymotion).setOnClickListener {
 
             val bundle = Bundle()
-            bundle.putString("website_type", "facebook")
-            findNavController().navigate(R.id.fragment_web_view, bundle)
+            bundle.putString(WEBSITE_TYPE, DAILYMOTION)
+            findNavController().navigate(R.id.webViewFragment,bundle)
         }
 
-        binding.icGoogle.setOnOneClickListener {
+        PushDownAnim.setPushDownAnimTo(binding.clFb).setOnClickListener {
 
             val bundle = Bundle()
-            bundle.putString("website_type", "google")
-            findNavController().navigate(R.id.fragment_web_view, bundle)
+            bundle.putString(WEBSITE_TYPE, FB)
+            findNavController().navigate(R.id.webViewFragment,bundle)
         }
 
-        binding.icReddit.setOnOneClickListener {
+        PushDownAnim.setPushDownAnimTo(binding.icGoogle).setOnClickListener {
 
             val bundle = Bundle()
-            bundle.putString("website_type", "reddit")
-            findNavController().navigate(R.id.fragment_web_view, bundle)
+            bundle.putString(WEBSITE_TYPE, GOOGLE)
+            findNavController().navigate(R.id.webViewFragment,bundle)
+        }
+
+        PushDownAnim.setPushDownAnimTo(binding.icReddit).setOnClickListener {
+
+            val bundle = Bundle()
+            bundle.putString(WEBSITE_TYPE, REDDIT)
+            findNavController().navigate(R.id.webViewFragment,bundle)
         }
 
         /*binding.searchTextField.setOnFocusChangeListener { view, b ->
@@ -226,6 +237,43 @@ class BrowserAppSelectionFragment : Fragment() {
     }
 
 
+
+    fun showMenu(itemview: View, url: String, x: Float, y: Float) {
+
+       /* val customView = BrowserPopupMenuBinding.inflate(layoutInflater)
+        var moreDetailsPopUp = PopupWindow(requireContext())
+        moreDetailsPopUp.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+        moreDetailsPopUp.isOutsideTouchable = true
+        moreDetailsPopUp.elevation = 5.0f
+        moreDetailsPopUp.contentView = customView.root
+
+
+        customView.icResolution.visibility = View.GONE
+
+        customView.adToBookmarks.visibility = View.GONE
+
+        customView.refresh.setOnOneClickListener(){
+
+            moreDetailsPopUp.dismiss()
+            Toast.makeText(requireContext(),"Refreshed",Toast.LENGTH_LONG).show()
+        }
+
+        customView.icHistory.setOnOneClickListener(){
+
+            moreDetailsPopUp.dismiss()
+            findNavController().navigate(R.id.action_browserAppSelectionFragment_to_historyFragment)
+        }
+
+        customView.bookmarks.setOnOneClickListener(){
+
+            moreDetailsPopUp.dismiss()
+            findNavController().navigate(R.id.action_browserAppSelectionFragment_to_bookmarksFragment)
+        }
+
+
+        moreDetailsPopUp.showAsDropDown(itemview)*/
+    }
+
     /***
      * / Views Handling Functions...
      */
@@ -242,14 +290,15 @@ class BrowserAppSelectionFragment : Fragment() {
                 try {
 
                     activity.let {
-                        if (it is BrowserActivity) {
-                            if (findNavController().currentDestination?.id == R.id.fragment_browser_app_selection)
+                        if (it is BrowserCastingActivity) {
+                            if (findNavController().currentDestination?.id == R.id.browserAppSelectionFragment) {
                                 it.finish()
+                            }
                         }
                     }
-                }
-                /*findNavController().popBackStack()*/
-                catch (_: java.lang.IllegalStateException) {
+                    /*findNavController().popBackStack()*/
+
+                } catch (_: java.lang.IllegalStateException) {
                 } catch (_: Exception) {
                 }
 

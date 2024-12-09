@@ -36,15 +36,15 @@
             android:id="@+id/action_videoCompletedFragment_to_completedVideoPlayerFragment"
             app:destination="@id/completedVideoPlayerFragment" />
     </fragment>
-<!--    <fragment
-        android:id="@+id/videoReelFragment"
-        android:name="com.example.apiproject.ui.fragments.VideoReelFragment"
-        android:label="fragment_video_reel"
-        tools:layout="@layout/fragment_video_reel" >
-        <action
-            android:id="@+id/action_videoReelFragment_to_playerFragment"
-            app:destination="@id/playerFragment" />
-    </fragment>-->
+    <!--    <fragment
+            android:id="@+id/videoReelFragment"
+            android:name="com.example.apiproject.ui.fragments.VideoReelFragment"
+            android:label="fragment_video_reel"
+            tools:layout="@layout/fragment_video_reel" >
+            <action
+                android:id="@+id/action_videoReelFragment_to_playerFragment"
+                app:destination="@id/playerFragment" />
+        </fragment>-->
     <fragment
         android:id="@+id/playerFragment"
         android:name="com.example.apiproject.PlayerFragment"

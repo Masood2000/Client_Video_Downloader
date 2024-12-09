@@ -2,6 +2,8 @@ package com.example.apiproject.ui.activity
 
 import android.Manifest
 import android.app.Dialog
+import android.content.ClipboardManager
+import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Build
@@ -14,12 +16,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
@@ -32,22 +31,22 @@ import com.example.apiproject.databinding.DownloadOptionSheetBinding
 import com.example.apiproject.databinding.FetchingDownloadDialogBinding
 import com.example.apiproject.domain.extractor.types.ExtractorManager
 import com.example.apiproject.domain.viewmodels.MainActivityViewModel
-import com.example.apiproject.ui.activity.BrowserActivity.Companion
+import com.example.apiproject.ui.activity.BrowserCastingActivity.Companion
 import com.example.apiproject.ui.adapters.ResolutionAdapter
 import com.example.apiproject.util.Converters.convertToExtractedData
 import com.example.apiproject.util.Helper
 import com.example.apiproject.util.NetworkHelper
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
+
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-
 @AndroidEntryPoint
-class BrowserActivity : AppCompatActivity() {
+class BrowserCastingActivity : AppCompatActivity() {
 
 
     private val binding: ActivityBrowserCastingBinding by lazy {
@@ -57,7 +56,6 @@ class BrowserActivity : AppCompatActivity() {
     val viewModel: MainActivityViewModel by viewModels()
 
     private var permissionStateListener: ClickHandler? = null
-
     private lateinit var navController: NavController
 
     /***
@@ -74,7 +72,7 @@ class BrowserActivity : AppCompatActivity() {
 
 
         val navHostFragment =
-            supportFragmentManager.findFragmentById(R.id.fragment_browser_container_view) as NavHostFragment
+            supportFragmentManager.findFragmentById(R.id.fragmentBrowserContainerView) as NavHostFragment
         navController = navHostFragment.navController
 
 
@@ -127,9 +125,9 @@ class BrowserActivity : AppCompatActivity() {
      * Other Functionality
      */
 
-    fun getDownloadMetaData(link: String) {
-/*
 
+
+    fun getDownloadMetaData(link: String) {
 
         if (link.contains("youtube", ignoreCase = true) ||
             link.contains("youtu.be", ignoreCase = true) ||
@@ -137,7 +135,7 @@ class BrowserActivity : AppCompatActivity() {
         ) {
             Toast.makeText(this, "YouTube links are not supported", Toast.LENGTH_SHORT).show()
             return
-        }*/
+        }
 
         var dialogBinding = FetchingDownloadDialogBinding.inflate(layoutInflater)
         var dialog = createAndShowDialog(dialogBinding.root)
@@ -157,15 +155,15 @@ class BrowserActivity : AppCompatActivity() {
                     if (extractedData != null) {
                         if (link.contains("tiktok")) {
                             var newExtractedData =
-                                ExtractorManager.getVideo(this@BrowserActivity, link)
+                                ExtractorManager.getVideo(this@BrowserCastingActivity, link)
                             if (newExtractedData != null) {
                                 extractedData.video = newExtractedData?.video
                                 extractedData.cookie = newExtractedData?.cookie
                             }
                         }
                         else if(link.contains("dailymotion.com")  || link.contains("dai.ly")){
-                            Log.d(BrowserActivity.TAG, "getDownloadMetaData: Dailymotion linked")
-                            var newExtractedData =  ExtractorManager.getVideo(this@BrowserActivity, link)
+                            Log.d(BrowserCastingActivity.TAG, "getDownloadMetaData: Dailymotion linked")
+                            var newExtractedData =  ExtractorManager.getVideo(this@BrowserCastingActivity, link)
                             if (newExtractedData != null) {
                                 extractedData.video = newExtractedData?.video
                                 extractedData.cookie = newExtractedData?.cookie
@@ -180,7 +178,7 @@ class BrowserActivity : AppCompatActivity() {
                     else {
 
                         Log.d("ApiResponse", "getDownloadMetaData: ${link}")
-                        var secondExtractedData = ExtractorManager.getVideo(this@BrowserActivity, link)
+                        var secondExtractedData = ExtractorManager.getVideo(this@BrowserCastingActivity, link)
                         if (secondExtractedData != null) {
                             withContext(Dispatchers.Main) {
                                 downloadOptionSheet(secondExtractedData!!, link)
@@ -188,7 +186,7 @@ class BrowserActivity : AppCompatActivity() {
                             }
                         } else {
                             withContext(Dispatchers.Main) {
-                                Toast.makeText(this@BrowserActivity, "No Video Found", Toast.LENGTH_SHORT)
+                                Toast.makeText(this@BrowserCastingActivity, "No Video Found", Toast.LENGTH_SHORT)
                                     .show()
                                 dialog.dismiss()
                             }
@@ -199,12 +197,12 @@ class BrowserActivity : AppCompatActivity() {
 
                     }
 
-                    Log.d(BrowserActivity.TAG, "getDownloadMetaData: ${extractedData?.video.toString()}")
+                    Log.d(BrowserCastingActivity.TAG, "getDownloadMetaData: ${extractedData?.video.toString()}")
 
                 }
                 else {
                     Log.d("ApiResponse", "getDownloadMetaData: ${link}")
-                    var secondExtractedData = ExtractorManager.getVideo(this@BrowserActivity, link)
+                    var secondExtractedData = ExtractorManager.getVideo(this@BrowserCastingActivity, link)
                     if (secondExtractedData != null) {
                         withContext(Dispatchers.Main) {
                             downloadOptionSheet(secondExtractedData!!, link)
@@ -212,7 +210,7 @@ class BrowserActivity : AppCompatActivity() {
                         }
                     } else {
                         withContext(Dispatchers.Main) {
-                            Toast.makeText(this@BrowserActivity, "No Video Found", Toast.LENGTH_SHORT)
+                            Toast.makeText(this@BrowserCastingActivity, "No Video Found", Toast.LENGTH_SHORT)
                                 .show()
                             dialog.dismiss()
                         }
@@ -223,7 +221,7 @@ class BrowserActivity : AppCompatActivity() {
 //                }
             } catch (e: Exception) {
                 withContext(Dispatchers.Main) {
-                    Toast.makeText(this@BrowserActivity, "Error Occured", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@BrowserCastingActivity, "Error Occured", Toast.LENGTH_SHORT).show()
                     Log.d("ApiResponse", "Error Occured ${e.message}")
                     dialog.dismiss()
 
@@ -265,14 +263,14 @@ class BrowserActivity : AppCompatActivity() {
                     }
 
                 } else {
-                    var secondExtractedData = ExtractorManager.getVideo(this@BrowserActivity, link)
+                    var secondExtractedData = ExtractorManager.getVideo(this@BrowserCastingActivity, link)
                     if (secondExtractedData != null) {
                         withContext(Dispatchers.Main) {
                             downloadOptionSheet(secondExtractedData!!, link)
                         }
                     } else {
                         withContext(Dispatchers.Main) {
-                            Toast.makeText(this@BrowserActivity, "No Video Found", Toast.LENGTH_SHORT)
+                            Toast.makeText(this@BrowserCastingActivity, "No Video Found", Toast.LENGTH_SHORT)
                                 .show()
                         }
                     }
@@ -282,7 +280,7 @@ class BrowserActivity : AppCompatActivity() {
 //                }
             } catch (e: Exception) {
                 withContext(Dispatchers.Main) {
-                    Toast.makeText(this@BrowserActivity, "Error Occured", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@BrowserCastingActivity, "Error Occured", Toast.LENGTH_SHORT).show()
                     Log.d("ApiResponse", "Error Occured ${e.message}")
                 }
             }
@@ -311,6 +309,14 @@ class BrowserActivity : AppCompatActivity() {
 
         dialog.show()
         return dialog
+    }
+
+    private fun getConsumedPhoneStorage(): Long {
+        val path = Environment.getDataDirectory() // Get the internal storage path
+        val stat = StatFs(path.path)
+        val blockSize = stat.blockSizeLong
+        val availableBlocks = stat.availableBlocksLong
+        return (stat.blockCountLong - availableBlocks) * blockSize
     }
 
     private fun formatSize(size: Long): String {
@@ -343,15 +349,6 @@ class BrowserActivity : AppCompatActivity() {
         // Calculate the progress percentage and cap between 0 and 100
         val progress = ((scaledConsumedStorage * 100) / scaledTotalStorage).toInt()
         return progress.coerceIn(0, 100)
-    }
-
-
-    private fun getConsumedPhoneStorage(): Long {
-        val path = Environment.getDataDirectory() // Get the internal storage path
-        val stat = StatFs(path.path)
-        val blockSize = stat.blockSizeLong
-        val availableBlocks = stat.availableBlocksLong
-        return (stat.blockCountLong - availableBlocks) * blockSize
     }
 
     private fun downloadOptionSheet(extractedData: ExtractedData, url: String) {
@@ -387,7 +384,7 @@ class BrowserActivity : AppCompatActivity() {
                         if (selectedCell < extractedData?.video!!.size) {
                             var video = extractedData?.video!![selectedCell]
                             viewModel.downloadVideo(
-                                this@BrowserActivity,
+                                this@BrowserCastingActivity,
                                 extractedData.title,
                                 video.url,
                                 Helper.getNewDownloadPath(),
@@ -398,7 +395,7 @@ class BrowserActivity : AppCompatActivity() {
                             )
                         } else {
                             viewModel.downloadAudio(
-                                this@BrowserActivity, extractedData.title, url,
+                                this@BrowserCastingActivity, extractedData.title, url,
                                 extractedData.cookie, false,
                                 extractedData.imageUrl, extractedData.title,
                                 extractedData.audio ?: "",
@@ -518,8 +515,6 @@ class BrowserActivity : AppCompatActivity() {
         }
     }
 
-
-
     /***
      * / Other Functionality
      */
@@ -529,7 +524,5 @@ class BrowserActivity : AppCompatActivity() {
         private const val TAG = "BROWSER_CASTING_ACTIVITY"
 
     }
-
-
 
 }
