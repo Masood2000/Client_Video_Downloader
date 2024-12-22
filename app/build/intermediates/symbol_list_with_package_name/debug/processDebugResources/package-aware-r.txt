@@ -1073,6 +1073,13 @@ attr rangeFillColor
 attr ratingBarStyle
 attr ratingBarStyleIndicator
 attr ratingBarStyleSmall
+attr rb_color
+attr rb_duration
+attr rb_radius
+attr rb_rippleAmount
+attr rb_scale
+attr rb_strokeWidth
+attr rb_type
 attr reactiveGuide_animateChange
 attr reactiveGuide_applyToAllConstraintSets
 attr reactiveGuide_applyToConstraintSet
@@ -2243,6 +2250,7 @@ color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
+color rippelColor
 color ripple_material_dark
 color ripple_material_light
 color search_text_color
@@ -3859,6 +3867,8 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen rippleRadius
+dimen rippleStrokeWidth
 dimen sliding_pane_detail_pane_width
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
@@ -4172,8 +4182,10 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable options_svgrepo_com
 drawable outline_content_copy_24
+drawable outline_play_arrow_24
 drawable outline_share_24
 drawable pastelink_bg
+drawable pause_outline_24
 drawable play_arrow_24px
 drawable policy_term_and_condition_term_svgrepo_com
 drawable rate_us_selected
@@ -4187,6 +4199,7 @@ drawable selected_item_text_colour
 drawable selection_bg
 drawable settings_svgrepo_com__1_
 drawable sheet_background
+drawable shorts_download
 drawable sp_bg
 drawable splash_icon
 drawable star_selector
@@ -4278,6 +4291,7 @@ id action_delete
 id action_divider
 id action_historyFragment_to_webViewFragment
 id action_homeFragment_to_reelsFragment
+id action_homeFragment_to_watchReelsFragment
 id action_image
 id action_menu_divider
 id action_menu_presenter
@@ -4336,8 +4350,8 @@ id browser_casting_nav_graph
 id bt_maybe_later
 id bt_submit
 id btn_browser
-id btn_fb_watch
-id btn_insta_reels
+id btn_download
+id btn_reels
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -4429,6 +4443,7 @@ id disabled
 id disjoint
 id download
 id downloadNow
+id download_vid
 id downloadbutton
 id dragAnticlockwise
 id dragClockwise
@@ -4506,12 +4521,14 @@ id exo_text
 id exo_time
 id exo_track_selection_view
 id exo_vr
+id exoplayerview
 id expand_activities_button
 id expanded_menu
 id fade
 id feedback
 id feedbackFragment
 id fill
+id fillRipple
 id fill_horizontal
 id fill_vertical
 id filled
@@ -4735,6 +4752,7 @@ id password_toggle
 id pasteText
 id path
 id pathRelative
+id pause
 id peekHeight
 id percent
 id pin
@@ -4809,6 +4827,7 @@ id sheet_storage_card
 id sheet_storage_progress
 id sheet_tv_storage
 id shortcut
+id shorts_player_progress
 id showCustom
 id showHome
 id showTitle
@@ -4855,6 +4874,7 @@ id staticPostLayout
 id status_bar_latest_event_content
 id stop
 id stretch
+id strokeRipple
 id submenuarrow
 id submit_area
 id submit_button
@@ -4949,6 +4969,8 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id vp_shorts
+id watchReelsFragment
 id webView
 id webViewFragment
 id web_icon
@@ -5129,9 +5151,12 @@ layout fragment_splash
 layout fragment_video_completed
 layout fragment_video_downloading
 layout fragment_video_reel
+layout fragment_watch_reels
 layout fragment_web_view
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_reels_player
+layout item_shorts_player
 layout layout_permissions_dialog
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -6791,6 +6816,7 @@ styleable RadialViewGroup materialCircleRadius
 styleable RangeSlider minSeparation values
 styleable RecycleListView paddingBottomNoButtons paddingTopNoTitle
 styleable RecyclerView android_orientation android_clipToPadding android_descendantFocusability fastScrollEnabled fastScrollHorizontalThumbDrawable fastScrollHorizontalTrackDrawable fastScrollVerticalThumbDrawable fastScrollVerticalTrackDrawable layoutManager reverseLayout spanCount stackFromEnd
+styleable RippleBackground rb_color rb_duration rb_radius rb_rippleAmount rb_scale rb_strokeWidth rb_type
 styleable ScrimInsetsFrameLayout insetForeground
 styleable ScrollingViewBehavior_Layout behavior_overlapTop
 styleable SearchBar android_textAppearance android_text android_hint backgroundTint defaultMarginsEnabled defaultScrollFlagsEnabled elevation forceDefaultNavigationOnClickListener hideNavigationIcon navigationIconTint strokeColor strokeWidth tintNavigationIcon

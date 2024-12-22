@@ -161,7 +161,7 @@ class SettingsFragment : BaseFragment() {
     }
 
     private fun rateUs(context: Context) {
-        val configString = BuildConfig.APPLICATION_ID
+        val configString = "to be changed"
         val uri = Uri.parse("market://details?id=$configString")
         val goToMarket = Intent(Intent.ACTION_VIEW, uri)
         goToMarket.addFlags(

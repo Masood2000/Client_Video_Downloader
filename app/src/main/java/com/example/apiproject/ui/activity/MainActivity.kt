@@ -192,7 +192,7 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
 
             try {
                 var data = NetworkHelper.getData(link)
-                if ((data != null && !data.isJsonNull && !link.contains("instagram"))) {
+                if ((data != null && !data.isJsonNull /*&& !link.contains("instagram")*/)) {
                     Log.d("ApiResponse", "${data}")
                     var extractedData = convertToExtractedData(data!!)
                     Log.d("ApiResponse", "Data is not Null ")
@@ -744,6 +744,18 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
 
         startActivity(Intent.createChooser(shareIntent, "Share Files"))
     }
+
+
+    fun showTopAndBottomBar(){
+        binding.topBar.visibility = View.VISIBLE
+        binding.mainBottomNav.visibility = View.VISIBLE
+    }
+
+    fun hideTopAndBottomBar(){
+        binding.topBar.visibility = View.GONE
+        binding.mainBottomNav.visibility = View.GONE
+    }
+
 
     companion object {
         const val TAG = "Main_Activity"

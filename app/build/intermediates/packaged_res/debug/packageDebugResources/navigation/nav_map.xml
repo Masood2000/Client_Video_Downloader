@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_homeFragment_to_reelsFragment"
             app:destination="@id/reelsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_watchReelsFragment"
+            app:destination="@id/watchReelsFragment" />
     </fragment>
     <fragment
         android:id="@+id/settingsFragment"
@@ -77,4 +80,9 @@
         android:name="com.example.apiproject.ui.fragments.ReelsFragment"
         android:label="fragment_reels"
         tools:layout="@layout/fragment_reels" />
+    <fragment
+        android:id="@+id/watchReelsFragment"
+        android:name="com.example.apiproject.ui.fragments.WatchReelsFragment"
+        android:label="fragment_watch_reels"
+        tools:layout="@layout/fragment_watch_reels" />
 </navigation>

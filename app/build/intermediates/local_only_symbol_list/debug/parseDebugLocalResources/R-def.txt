@@ -71,8 +71,10 @@ drawable ninegag
 drawable non_selection_bg
 drawable options_svgrepo_com
 drawable outline_content_copy_24
+drawable outline_play_arrow_24
 drawable outline_share_24
 drawable pastelink_bg
+drawable pause_outline_24
 drawable play_arrow_24px
 drawable policy_term_and_condition_term_svgrepo_com
 drawable rate_us_selected
@@ -86,6 +88,7 @@ drawable selected_item_text_colour
 drawable selection_bg
 drawable settings_svgrepo_com__1_
 drawable sheet_background
+drawable shorts_download
 drawable sp_bg
 drawable splash_icon
 drawable star_selector
@@ -111,6 +114,7 @@ id action_copy
 id action_delete
 id action_historyFragment_to_webViewFragment
 id action_homeFragment_to_reelsFragment
+id action_homeFragment_to_watchReelsFragment
 id action_play
 id action_rename
 id action_settingsFragment_to_feedbackFragment
@@ -130,8 +134,8 @@ id browser_casting_nav_graph
 id bt_maybe_later
 id bt_submit
 id btn_browser
-id btn_fb_watch
-id btn_insta_reels
+id btn_download
+id btn_reels
 id cancel
 id cancel_btn
 id chip1
@@ -162,7 +166,9 @@ id delete
 id details
 id download
 id downloadNow
+id download_vid
 id downloadbutton
+id exoplayerview
 id feedback
 id feedbackFragment
 id fragmentBrowserContainerView
@@ -208,6 +214,7 @@ id nsv
 id nsv_home
 id options
 id pasteText
+id pause
 id playerFragment
 id playerView
 id privacy_policy
@@ -233,6 +240,7 @@ id sheet_slider
 id sheet_storage_card
 id sheet_storage_progress
 id sheet_tv_storage
+id shorts_player_progress
 id splashFragment
 id splashTitle
 id start_1
@@ -267,6 +275,8 @@ id videoDownloadingFragment
 id videoProgress
 id video_title
 id video_type
+id vp_shorts
+id watchReelsFragment
 id webView
 id webViewFragment
 id web_icon
@@ -292,7 +302,10 @@ layout fragment_splash
 layout fragment_video_completed
 layout fragment_video_downloading
 layout fragment_video_reel
+layout fragment_watch_reels
 layout fragment_web_view
+layout item_reels_player
+layout item_shorts_player
 layout layout_permissions_dialog
 layout reel_item
 layout selection_item

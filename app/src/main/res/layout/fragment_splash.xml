@@ -34,7 +34,7 @@
         app:layout_constraintWidth_percent="0.65"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/splash_animation"
+        app:lottie_rawRes="@raw/loading_final"
         app:lottie_repeatMode="reverse"
         app:lottie_speed="0.45" />
 

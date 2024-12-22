@@ -49,6 +49,11 @@ class HomeFragment : BaseFragment() {
 
     override fun initView() {
 
+        activity.let{
+            if(it is MainActivity){
+                it.showTopAndBottomBar()
+            }
+        }
 
         with(binding){
             downloadbutton.setOnOneClickListener {
@@ -138,7 +143,9 @@ class HomeFragment : BaseFragment() {
             })
 
             btnBrowser.setOnClickListener {
-                startActivity(Intent(requireContext(), BrowserCastingActivity::class.java))
+                //startActivity(Intent(requireContext(), BrowserCastingActivity::class.java))
+                findNavController().navigate(R.id.action_homeFragment_to_watchReelsFragment)
+
 
             }
 

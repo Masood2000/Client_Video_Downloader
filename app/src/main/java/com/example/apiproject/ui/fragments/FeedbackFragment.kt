@@ -93,7 +93,7 @@ class FeedbackFragment : BaseFragment() {
         try {
             val shareIntent = Intent(Intent.ACTION_SEND_MULTIPLE)
             shareIntent.type = "plain/text/images"
-            shareIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf("appsworld603@gmail.com"))
+            shareIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf("need to be changed"))
             shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Downloader App")
             shareIntent.putExtra(Intent.EXTRA_TEXT, feedBacksString)
             //shareIntent.setPackage("com.google.android.gm")
