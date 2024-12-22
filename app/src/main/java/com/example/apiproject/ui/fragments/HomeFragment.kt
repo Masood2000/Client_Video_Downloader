@@ -148,18 +148,11 @@ class HomeFragment : BaseFragment() {
 
 
             }
-
-            btnFbWatch.setOnClickListener {
-                val bundle = Bundle()
-                bundle.putString("url_type", SocialMediaType.FB_WATCH.name)
-                findNavController().navigate(R.id.action_homeFragment_to_reelsFragment, bundle)
+            btnReels.setOnClickListener {
+                findNavController().navigate(R.id.action_homeFragment_to_reelsFragment)
             }
 
-            btnInstaReels.setOnClickListener {
-                val bundle = Bundle()
-                bundle.putString("url_type", SocialMediaType.INSTA_REELS.name)
-                findNavController().navigate(R.id.action_homeFragment_to_reelsFragment, bundle)
-            }
+
 
 
         }

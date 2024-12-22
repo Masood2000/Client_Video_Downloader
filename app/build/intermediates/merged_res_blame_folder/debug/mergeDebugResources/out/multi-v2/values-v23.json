@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.apiproject.app-mergeDebugResources-62:/values-v23/values-v23.xml",
+            "outputFile": "com.example.apiproject.app-mergeDebugResources-2:/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ahsan\\.gradle\\caches\\transforms-4\\da15f88792f7ccb1b8d05707b349ce04\\transformed\\work-runtime-2.7.1\\res\\values-v23\\values-v23.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,121",
-                        "endColumns": "65,62",
-                        "endOffsets": "116,179"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ahsan\\.gradle\\caches\\transforms-4\\e1bebef7aaf648793ed73eaab5c50280\\transformed\\material-1.12.0\\res\\values-v23\\values-v23.xml",
+                    "source": "D:\\AndriodStudtio\\Projects\\humantic\\caches\\transforms-4\\e1bebef7aaf648793ed73eaab5c50280\\transformed\\material-1.12.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,5,9,13,16,19,22,25,28,32",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -33,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ahsan\\.gradle\\caches\\transforms-4\\7433a846a0e40bfbd6098abd25bf4220\\transformed\\appcompat-1.7.0\\res\\values-v23\\values-v23.xml",
+                    "source": "D:\\AndriodStudtio\\Projects\\humantic\\caches\\transforms-4\\7433a846a0e40bfbd6098abd25bf4220\\transformed\\appcompat-1.7.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -52,7 +42,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ahsan\\.gradle\\caches\\transforms-4\\dff899cf9cbd0d18342ecf0731ec357e\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "D:\\AndriodStudtio\\Projects\\humantic\\caches\\transforms-4\\dff899cf9cbd0d18342ecf0731ec357e\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -68,6 +58,16 @@
                         "endLines": "54",
                         "endColumns": "12",
                         "endOffsets": "3506"
+                    }
+                },
+                {
+                    "source": "D:\\AndriodStudtio\\Projects\\humantic\\caches\\transforms-4\\da15f88792f7ccb1b8d05707b349ce04\\transformed\\work-runtime-2.7.1\\res\\values-v23\\values-v23.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,121",
+                        "endColumns": "65,62",
+                        "endOffsets": "116,179"
                     }
                 }
             ]

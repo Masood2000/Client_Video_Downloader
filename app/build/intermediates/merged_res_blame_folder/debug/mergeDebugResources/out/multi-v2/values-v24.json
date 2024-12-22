@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.apiproject.app-mergeDebugResources-62:/values-v24/values-v24.xml",
+            "outputFile": "com.example.apiproject.app-mergeDebugResources-2:/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ahsan\\.gradle\\caches\\transforms-4\\e1bebef7aaf648793ed73eaab5c50280\\transformed\\material-1.12.0\\res\\values-v24\\values-v24.xml",
+                    "source": "D:\\AndriodStudtio\\Projects\\humantic\\caches\\transforms-4\\7433a846a0e40bfbd6098abd25bf4220\\transformed\\appcompat-1.7.0\\res\\values-v24\\values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
+                    }
+                },
+                {
+                    "source": "D:\\AndriodStudtio\\Projects\\humantic\\caches\\transforms-4\\e1bebef7aaf648793ed73eaab5c50280\\transformed\\material-1.12.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,9,12,15",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -23,17 +33,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ahsan\\.gradle\\caches\\transforms-4\\7433a846a0e40bfbd6098abd25bf4220\\transformed\\appcompat-1.7.0\\res\\values-v24\\values-v24.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,212",
-                        "endColumns": "156,134",
-                        "endOffsets": "207,342"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ahsan\\.gradle\\caches\\transforms-4\\dd6c139629da7830953a06d549474767\\transformed\\media-1.7.0\\res\\values-v24\\values-v24.xml",
+                    "source": "D:\\AndriodStudtio\\Projects\\humantic\\caches\\transforms-4\\dd6c139629da7830953a06d549474767\\transformed\\media-1.7.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

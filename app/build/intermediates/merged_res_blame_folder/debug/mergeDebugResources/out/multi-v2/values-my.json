@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.apiproject.app-mergeDebugResources-62:/values-my/values-my.xml",
+            "outputFile": "com.example.apiproject.app-mergeDebugResources-2:/values-my/values-my.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ahsan\\.gradle\\caches\\transforms-4\\e1bebef7aaf648793ed73eaab5c50280\\transformed\\material-1.12.0\\res\\values-my\\values-my.xml",
+                    "source": "D:\\AndriodStudtio\\Projects\\humantic\\caches\\transforms-4\\e1bebef7aaf648793ed73eaab5c50280\\transformed\\material-1.12.0\\res\\values-my\\values-my.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ahsan\\.gradle\\caches\\transforms-4\\7433a846a0e40bfbd6098abd25bf4220\\transformed\\appcompat-1.7.0\\res\\values-my\\values-my.xml",
+                    "source": "D:\\AndriodStudtio\\Projects\\humantic\\caches\\transforms-4\\7433a846a0e40bfbd6098abd25bf4220\\transformed\\appcompat-1.7.0\\res\\values-my\\values-my.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -40,24 +40,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ahsan\\.gradle\\caches\\transforms-4\\0000390a125b0b1ec25905869b5eef29\\transformed\\core-1.13.1\\res\\values-my\\values-my.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,158,262,365,467,572,678,797",
-                        "endColumns": "102,103,102,101,104,105,118,100",
-                        "endOffsets": "153,257,360,462,567,673,792,893"
-                    },
-                    "to": {
-                        "startLines": "55,56,57,58,59,60,61,185",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "4179,4282,4386,4489,4591,4696,4802,14707",
-                        "endColumns": "102,103,102,101,104,105,118,100",
-                        "endOffsets": "4277,4381,4484,4586,4691,4797,4916,14803"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ahsan\\.gradle\\caches\\transforms-4\\6f878e70bebca3032ec59c2bf837fec7\\transformed\\media3-exoplayer-1.4.0\\res\\values-my\\values-my.xml",
+                    "source": "D:\\AndriodStudtio\\Projects\\humantic\\caches\\transforms-4\\6f878e70bebca3032ec59c2bf837fec7\\transformed\\media3-exoplayer-1.4.0\\res\\values-my\\values-my.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -74,7 +57,41 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ahsan\\.gradle\\caches\\transforms-4\\9b2f6e712ced46e85e54d85768a65e8c\\transformed\\media3-ui-1.4.0\\res\\values-my\\values-my.xml",
+                    "source": "D:\\AndriodStudtio\\Projects\\humantic\\caches\\transforms-4\\340e7c4995fddebfef757a62aa34a02a\\transformed\\navigation-ui-2.7.7\\res\\values-my\\values-my.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,168",
+                        "endColumns": "112,125",
+                        "endOffsets": "163,289"
+                    },
+                    "to": {
+                        "startLines": "178,179",
+                        "startColumns": "4,4",
+                        "startOffsets": "14055,14168",
+                        "endColumns": "112,125",
+                        "endOffsets": "14163,14289"
+                    }
+                },
+                {
+                    "source": "D:\\AndriodStudtio\\Projects\\humantic\\caches\\transforms-4\\0000390a125b0b1ec25905869b5eef29\\transformed\\core-1.13.1\\res\\values-my\\values-my.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,158,262,365,467,572,678,797",
+                        "endColumns": "102,103,102,101,104,105,118,100",
+                        "endOffsets": "153,257,360,462,567,673,792,893"
+                    },
+                    "to": {
+                        "startLines": "55,56,57,58,59,60,61,185",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "4179,4282,4386,4489,4591,4696,4802,14707",
+                        "endColumns": "102,103,102,101,104,105,118,100",
+                        "endOffsets": "4277,4381,4484,4586,4691,4797,4916,14803"
+                    }
+                },
+                {
+                    "source": "D:\\AndriodStudtio\\Projects\\humantic\\caches\\transforms-4\\9b2f6e712ced46e85e54d85768a65e8c\\transformed\\media3-ui-1.4.0\\res\\values-my\\values-my.xml",
                     "from": {
                         "startLines": "2,11,15,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -90,23 +107,6 @@
                         "endLines": "10,14,18,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116",
                         "endColumns": "17,12,12,83,81,86,101,95,72,66,98,94,67,66,66,66,122,120,120,70,79,72,70,87,85,64,63,52,57,49,60,57,61,72,68,64,57,63,53,61,75,75,53,71",
                         "endOffsets": "382,581,777,5448,5530,5617,5719,5815,5888,5955,6054,6149,6217,6284,6351,6418,6541,6662,6783,6854,6934,7007,7078,7166,7252,7317,7381,8154,8212,8262,8323,8381,8443,8516,8585,8650,8708,8772,8826,8888,8964,9040,9094,9166"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ahsan\\.gradle\\caches\\transforms-4\\340e7c4995fddebfef757a62aa34a02a\\transformed\\navigation-ui-2.7.7\\res\\values-my\\values-my.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,168",
-                        "endColumns": "112,125",
-                        "endOffsets": "163,289"
-                    },
-                    "to": {
-                        "startLines": "178,179",
-                        "startColumns": "4,4",
-                        "startOffsets": "14055,14168",
-                        "endColumns": "112,125",
-                        "endOffsets": "14163,14289"
                     }
                 }
             ]
