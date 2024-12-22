@@ -30,7 +30,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="whiteBlack">#FFFFFFFF</color>
     <color name="whiteBlackNight">#FF000000</color>
-    <string name="app_name">X Downloader</string>
+    <string name="app_name">X Video Downloader</string>
     <string name="audio">Audio</string>
     <string name="audio_deleted">Audio deleted successfully.</string>
     <string name="audio_deleted_permanantly">Audio will be removed from your device permanently.</string>
@@ -48,7 +48,7 @@
     <string name="image_deleted">Image deleted successfully.</string>
     <string name="image_deleted_permanantly">Image will be removed from your device permanently.</string>
     <string name="insta">Instagram</string>
-    <string name="one_tap_downloader">X \nVideo Downloader</string>
+    <string name="one_tap_downloader">One Tap \nVideo Downloader</string>
     <string name="paste">Paste</string>
     <string name="pin">Pinterest</string>
     <string name="reddit">Reddit</string>
@@ -59,7 +59,7 @@
     <string name="video">Video</string>
     <string name="video_deleted">Video deleted succeesfully.</string>
     <string name="video_deleted_permanantly">Video will be removed from your device permanently.</string>
-    <string name="video_downloader">Video Downloader</string>
+    <string name="video_downloader">X Video Downloader</string>
     <string name="vimeo">Vimeo</string>
     <string name="youtube">Youtube</string>
     <style name="Base.Theme.ApiProject" parent="Theme.Material3.DayNight.NoActionBar">

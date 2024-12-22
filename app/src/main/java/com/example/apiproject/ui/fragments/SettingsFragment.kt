@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.OnBackPressedCallback
 import androidx.activity.addCallback
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
@@ -25,6 +26,38 @@ class SettingsFragment : BaseFragment() {
 
     private var dialogRateUs: Dialog? = null
     private val binding by lazy { FragmentSettingsBinding.inflate(layoutInflater) }
+
+    private var backPressedCallback: OnBackPressedCallback? = null
+
+    private fun configureBackPress() {
+        backPressedCallback = object : OnBackPressedCallback(true /* enabled by default */) {
+            override fun handleOnBackPressed() {
+                    findNavController().popBackStack()
+            }
+
+        }
+        activity?.onBackPressedDispatcher?.addCallback(viewLifecycleOwner, backPressedCallback!!)
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        backPressedCallback?.remove()
+        backPressedCallback = null
+    }
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        configureBackPress()
+
+        return super.onCreateView(inflater, container, savedInstanceState)
+
+
+
+    }
+
     override fun setViewBinding(): View {
         return binding.root
     }
@@ -52,9 +85,9 @@ class SettingsFragment : BaseFragment() {
 
         activity?.let {
             if (it is MainActivity){
-                it.onBackPressedDispatcher.addCallback (viewLifecycleOwner){
+              /*  it.onBackPressedDispatcher.addCallback (viewLifecycleOwner){
                     it.moveToFirstItem()
-                }
+                }*/
             }
         }
 

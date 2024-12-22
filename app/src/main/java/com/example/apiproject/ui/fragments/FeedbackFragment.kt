@@ -8,6 +8,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
+import androidx.navigation.fragment.findNavController
 import com.example.apiproject.R
 import com.example.apiproject.databinding.FragmentFeedbackBinding
 import com.example.apiproject.ui.activity.MainActivity
@@ -24,6 +26,34 @@ class FeedbackFragment : BaseFragment() {
     }
     private val checkedList = mutableListOf<String>()
 
+
+    private var backPressedCallback: OnBackPressedCallback? = null
+
+    private fun configureBackPress() {
+        backPressedCallback = object : OnBackPressedCallback(true /* enabled by default */) {
+            override fun handleOnBackPressed() {
+                findNavController().popBackStack()
+            }
+
+
+        }
+        activity?.onBackPressedDispatcher?.addCallback(viewLifecycleOwner, backPressedCallback!!)
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        backPressedCallback?.remove()
+        backPressedCallback = null
+    }
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        configureBackPress()
+        return super.onCreateView(inflater, container, savedInstanceState)
+    }
 
     override fun setViewBinding(): View {
         return binding.root

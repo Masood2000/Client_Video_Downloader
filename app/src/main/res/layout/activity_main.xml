@@ -42,7 +42,7 @@
                 android:includeFontPadding="false"
                 android:ellipsize="end"
                 android:singleLine="true"
-                android:text="Video Downloader"
+                android:text="X Video Downloader"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_16sdp"
                 android:letterSpacing="0.05"

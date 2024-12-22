@@ -11,7 +11,7 @@ import android.view.ViewGroup
 import android.webkit.JavascriptInterface
 import android.webkit.WebView
 import android.webkit.WebViewClient
-import androidx.activity.addCallback
+import androidx.activity.OnBackPressedCallback
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.example.apiproject.data.api.ExtractedData
@@ -40,19 +40,37 @@ class ReelsFragment : Fragment() {
     }
 
 
+    private var backPressedCallback: OnBackPressedCallback? = null
+
+    private fun configureBackPress() {
+        backPressedCallback = object : OnBackPressedCallback(true /* enabled by default */) {
+            override fun handleOnBackPressed() {
+                findNavController().popBackStack()
+            }
+
+        }
+        activity?.onBackPressedDispatcher?.addCallback(viewLifecycleOwner, backPressedCallback!!)
+    }
+
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        arguments?.let {
-            appType = it.getString("url_type").toString()
-        }
+        configureBackPress()
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        activity.let {
+            if (it is MainActivity) {
+                it.hideTopAndBottomBar()
+            }
+        }
+
         init()
         initListeners()
     }
@@ -76,10 +94,12 @@ class ReelsFragment : Fragment() {
                         binding.tvLink.text = url
 
                     }
+
                     override fun onLoadResource(view: WebView?, url: String?) {
                         super.onLoadResource(view, url)
 
                     }
+
                     override fun onPageFinished(view: WebView?, url: String?) {
                         super.onPageFinished(view, url)
 
@@ -373,11 +393,111 @@ class ReelsFragment : Fragment() {
 
                     }
 
-                    override fun onPageFinished(view: WebView?, url: String?) {
+                    /*override fun onPageFinished(view: WebView?, url: String?) {
                         super.onPageFinished(view, url)
+
                         binding.progressBar.visibility = View.GONE
                         binding.tvLink.text = url
-                    }
+
+                        binding.webView
+                            .loadUrl(
+                                "javascript:" +
+
+                                        "try {" +
+                                        "var doc = document.getElementsByClassName(\"x5yr21d x10l6tqk x13vifvy xh8yej3\");\n" +
+                                        "for (var f = 0; f < doc.length; f++) {\n" +
+                                        "    var DButton = doc[f].querySelector(\"#download-button-video\") != null;\n" +
+                                        "    if (!DButton) {\n" +
+                                        "        var Download_Img = document.createElement(\"img\");\n" +
+                                        "        var baseuri = doc[f].parentNode.parentNode.childNodes[0].baseURI.toString;\n" +
+                                        "        var videourl = doc[f].parentNode.parentNode.childNodes[0].src;\n" +
+                                        "        Download_Img.style.height=\"60px\";\n" +
+                                        "        Download_Img.style.width=\"60px\";\n" +
+                                        "        Download_Img.id=\"download-button-video\";\n" +
+                                        "        Download_Img.name=baseuri;\n" +
+                                        "        Download_Img.longDesc=videourl;\n" +
+                                        "        Download_Img.style.position=\"absolute\";\n" +
+                                        "        Download_Img.style.marginLeft=\"10px\";\n" +
+                                        "        Download_Img.style.marginBottom=\"50px\";\n" +
+                                        "        Download_Img.style.marginTop=\"50px\";\n" +
+                                        "        Download_Img.style.marginRight=\"10px\";\n" +
+                                        "        Download_Img.style.zIndex=10;\n" +
+                                        "        Download_Img.zIndex=10;\n" +
+                                        "        Download_Img.src =\"$scriptButton\";\n" +
+                                        "        Download_Img.addEventListener(\"click\",function(){\n" +
+                                        "            var title=document.title;\n" +
+                                        "            Android.showToast(\"Button clicked!\");"+
+                                        "            newJava.scriptData(this.name.toString(),this.longDesc.toString(),\"instagram\",title,\"\");\n" +
+                                        "        });\n" +
+                                        "        doc[f].appendChild(Download_Img)\n" +
+                                        "    } else{}\n" +
+                                        "}" +
+                                        "} catch (error) {" +
+                                        "" +
+                                        "}" +
+                                        "try {" +
+                                        "var ij=document.getElementsByClassName(\"_aagv\");\n" +
+                                        "    for(var f=0;f<ij.length;f++)\n" +
+                                        "    {\n" +
+                                        "      var dbutton=ij[f].querySelector(\"#download-button\") != null;" +
+                                        "     if(!dbutton){" +
+                                        "      var DOM_img = document.createElement(\"img\");\n" +
+                                        "      var baseuri=ij[f].childNodes[0].baseURI;" +
+                                        "      var videourl=ij[f].childNodes[0].src;" +
+                                        "      DOM_img.style.height=\"60px\";\n" +
+                                        "      DOM_img.style.width=\"60px\";\n" +
+                                        "      DOM_img.style.zIndex=7;\n" +
+                                        "      DOM_img.bottom=10;\n" +
+                                        "      DOM_img.name=baseuri.toString();\n" +
+                                        "      DOM_img.longDesc=videourl.toString();\n" +
+                                        "      DOM_img.id=\"download-button\";\n" +
+                                        "      DOM_img.style.position=\"relative\";\n" +
+                                        "      DOM_img.style.marginLeft=\"10px\";\n" +
+                                        "      DOM_img.style.marginTop=\"10px\";\n" +
+                                        "      DOM_img.src =\"$scriptButton\";\n" +
+                                        "      DOM_img.addEventListener(\"click\",function(){" +
+                                        "       var title=document.title;" +
+                                        "      newJava.scriptData(this.name.toString(),this.longDesc.toString(),\"instagram\",title,\"\")});\n" +
+                                        "      ij[f].appendChild(DOM_img);\n" +
+                                        "       \n" +
+                                        "    }" +
+                                        "}" +
+                                        "}" +
+                                        " catch (error) {" +
+                                        "" +
+                                        "}" +
+                                        "try {" +
+                                        "var ij=document.getElementsByClassName(\"KL4Bh\");\n" +
+                                        "    for(var f=0;f<ij.length;f++)\n" +
+                                        "    {\n" +
+                                        "      var dbutton=ij[f].querySelector(\"#download-button\") != null;" +
+                                        "     if(!dbutton){" +
+                                        "      var DOM_img = document.createElement(\"img\");\n" +
+                                        "      var baseuri=ij[f].childNodes[0].baseURI;" +
+                                        "      var videourl=ij[f].childNodes[0].src;" +
+                                        "      DOM_img.style.height=\"60px\";\n" +
+                                        "      DOM_img.style.width=\"60px\";\n" +
+                                        "      DOM_img.style.zIndex=7;\n" +
+                                        "      DOM_img.bottom=10;\n" +
+                                        "      DOM_img.name=baseuri.toString();\n" +
+                                        "      DOM_img.longDesc=videourl.toString();\n" +
+                                        "      DOM_img.id=\"download-button\";\n" +
+                                        "      DOM_img.style.position=\"relative\";\n" +
+                                        "      DOM_img.style.marginLeft=\"10px\";\n" +
+                                        "      DOM_img.style.marginTop=\"10px\";\n" +
+                                        "      DOM_img.src =\"$scriptButton\";\n" +
+                                        "      DOM_img.addEventListener(\"click\",function(){" +
+                                        "       var title=document.title;" +
+                                        "      newJava.scriptData(this.name.toString(),this.longDesc.toString(),\"instagram\",title,\"\")});\n" +
+                                        "      ij[f].appendChild(DOM_img);\n" +
+                                        "       \n" +
+                                        "    }" +
+                                        "}" +
+                                        "} catch (error) {" +
+                                        "" +
+                                        "}"
+                            )
+                    }*/
 
                 }
 
@@ -440,26 +560,41 @@ class ReelsFragment : Fragment() {
                                     }
                                 }*/
 
-                                activity.let{
-                                    if(it is MainActivity){
-                                        var video = Video( 200,"d",1,VideoPostUrl,200,"null")
-                                        it.downloadOptionSheet(ExtractedData(listOf(video)),VideoPostUrl)
+                                activity.let {
+                                    if (it is MainActivity) {
+                                        var video = Video(200, "d", 1, VideoPostUrl, 200, "null")
+                                        it.downloadOptionSheet(
+                                            ExtractedData(listOf(video),
+                                                title="Video_" + (1..1000000).random().toString(),
+                                            ),
+                                            VideoPostUrl
+                                        )
                                     }
                                 }
 
                                 withContext(Dispatchers.Main) {
                                     //downloadVideo(anyJson)
 
-                                    activity.let{
-                                        if(it is MainActivity){
-                                            var video = Video( 200,"d",1,VideoPostUrl,200,"null")
-                                            it.downloadOptionSheet(ExtractedData(listOf(video)),VideoPostUrl)
+                                    activity.let {
+                                        if (it is MainActivity) {
+                                            var video =
+                                                Video(200, "d", 1, VideoPostUrl, 200, "null")
+                                            it.downloadOptionSheet(
+                                                ExtractedData(listOf(video),
+                                                    title="Video_" + (1..1000000).random().toString(),
+                                                ),
+                                                VideoPostUrl
+                                            )
                                         }
                                     }
 
-                                    val result = ExtractorManager.getVideo(requireContext(), anyJson)
-                                    if (result != null){
-                                        Log.d("RESULT_TAG", "scriptData: $result , title is ${result.title}")
+                                    val result =
+                                        ExtractorManager.getVideo(requireContext(), anyJson)
+                                    if (result != null) {
+                                        Log.d(
+                                            "RESULT_TAG",
+                                            "scriptData: $result , title is ${result.title}"
+                                        )
                                     }
                                 }
                             } else {
@@ -468,16 +603,26 @@ class ReelsFragment : Fragment() {
                                     val url = "https://www.facebook.com/watch/?v=$videoid"
                                     //  downloadFBData(url, pathVideo, name)
                                     withContext(Dispatchers.Main) {
-                                        activity.let{
-                                            if(it is MainActivity){
-                                                var video = Video( 200,"d",1,VideoPostUrl,200,"null")
-                                                it.downloadOptionSheet(ExtractedData(listOf(video)),VideoPostUrl)
+                                        activity.let {
+                                            if (it is MainActivity) {
+                                                var video =
+                                                    Video(200, "d", 1, VideoPostUrl, 200, "null")
+                                                it.downloadOptionSheet(
+                                                    ExtractedData(listOf(video),
+                                                        title="Video_" + (1..1000000).random().toString(),
+                                                    ),
+                                                    VideoPostUrl
+                                                )
                                             }
                                         }
-                                       // downloadVideo(url)
-                                        val result = ExtractorManager.getVideo(requireContext(), url)
-                                        if (result != null){
-                                            Log.d("RESULT_TAG", "scriptData: $result , title is ${result.title}")
+                                        // downloadVideo(url)
+                                        val result =
+                                            ExtractorManager.getVideo(requireContext(), url)
+                                        if (result != null) {
+                                            Log.d(
+                                                "RESULT_TAG",
+                                                "scriptData: $result , title is ${result.title}"
+                                            )
                                         }
                                     }
                                 }
@@ -495,9 +640,7 @@ class ReelsFragment : Fragment() {
                             ).show()*/
                     }
                 }
-            }
-
-            else if (Platform.contains("instagram", true)) {
+            } else if (Platform.contains("instagram", true)) {
                 var name = if (videoTitle.equals("Instagram", true)) {
                     if (pathVideo.contains(".jpg", true)) {
                         "Instagram_image_${System.currentTimeMillis()}"
@@ -529,10 +672,15 @@ class ReelsFragment : Fragment() {
                     withContext(Dispatchers.Main) {
                         Log.i("zsdfilbsfilc", "getData: $pathVideo ---- $VideoPostUrl")
 
-                        activity.let{
-                            if(it is MainActivity){
-                                var video = Video( 200,"d",1,VideoPostUrl,200,"null")
-                                it.downloadOptionSheet(ExtractedData(listOf(video)),VideoPostUrl)
+                        activity.let {
+                            if (it is MainActivity) {
+                                var video = Video(200, "d", 1, VideoPostUrl, 200, "null")
+                                it.downloadOptionSheet(
+                                    ExtractedData(
+                                         listOf(video),
+                                        title="Video_" + (1..1000000).random().toString(),
+                                        ), VideoPostUrl
+                                )
                             }
                         }
                         //LinkFetcherLoading.hideLoadingDialog()
@@ -567,9 +715,7 @@ class ReelsFragment : Fragment() {
                         ).show()*/
                     }
                 }
-            }
-
-            else {
+            } else {
                 withContext(Dispatchers.Main) {
                     /*   LinkFetcherLoading.hideLoadingDialog()
                        Toast.makeText(
@@ -593,10 +739,13 @@ class ReelsFragment : Fragment() {
         binding.webView.clearHistory()
         binding.webView.clearFormData()
         binding.webView.removeAllViews()
+        backPressedCallback?.remove()
+        backPressedCallback = null
     }
 
+
     @SuppressLint("JavascriptInterface", "SetJavaScriptEnabled")
-    private fun initializeWebView(){
+    private fun initializeWebView() {
         binding.webView.settings.javaScriptEnabled = true
         binding.webView.settings.allowContentAccess = true
         binding.webView.settings.domStorageEnabled = true
@@ -611,22 +760,12 @@ class ReelsFragment : Fragment() {
         binding.webView.settings.javaScriptCanOpenWindowsAutomatically = true
     }
 
-    private fun initListeners(){
+    private fun initListeners() {
         binding.backButton.setOnClickListener {
-            if (binding.webView.canGoBack()){
+            if (binding.webView.canGoBack()) {
                 binding.webView.goBack()
             } else {
                 findNavController().popBackStack()
-            }
-        }
-
-        activity?.let {
-            it.onBackPressedDispatcher.addCallback(viewLifecycleOwner){
-                if (binding.webView.canGoBack()){
-                    binding.webView.goBack()
-                } else {
-                    findNavController().popBackStack()
-                }
             }
         }
     }

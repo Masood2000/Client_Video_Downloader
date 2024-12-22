@@ -83,7 +83,7 @@
         android:shadowDx="2"
         android:shadowDy="2"
         android:shadowRadius="4"
-        android:text="@string/one_tap_downloader"
+        android:text="X Video Downloader"
         android:textColor="@color/icons"
         android:textSize="@dimen/_24ssp"
         android:textStyle="bold"
