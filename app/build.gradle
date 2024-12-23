@@ -12,7 +12,7 @@ android {
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.client.downloader.apps.world"
+        applicationId "Hd.Videodownloader.downloadvideos.fourkplayer"
         minSdk 26
         targetSdk 34
         versionCode 3
@@ -22,12 +22,14 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    //D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\client.jks
+
     signingConfigs {
         release {
-            storeFile file('/Users/wasayrizwani/Downloads/RedVideoDownloader-dev_masood/appsworld.jks')
-            storePassword 'appsworld'
-            keyAlias 'appsworld'
-            keyPassword 'appsworld'
+            storeFile file('D:\\AndriodStudtio\\Projects\\Client_Downloader\\RedVideoDownloader-release1.0.3\\RedVideoDownloader-release1.0.3\\client.jks')
+            storePassword 'client'
+            keyAlias 'key0'
+            keyPassword 'client'
         }
     }
     buildTypes {
