@@ -83,6 +83,8 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
     val binding by lazy {
         ActivityMainBinding.inflate(layoutInflater)
     }
+
+
     var downloadLink = ""
     var lastAutoLink = "none"
     fun loadJSONFromRaw(context: Context, resourceId: Int): String? {
