@@ -1,4 +1,4 @@
-package com.example.apiproject.data.api.gag
+package com.example.apiproject.data.gag
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

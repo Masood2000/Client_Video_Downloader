@@ -719,7 +719,7 @@ ADDED from [androidx.core:core:1.13.1] D:\AndriodStudtio\Projects\humantic\cache
 		ADDED from [androidx.core:core:1.13.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\0000390a125b0b1ec25905869b5eef29\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
 	android:name
 		ADDED from [androidx.core:core:1.13.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\0000390a125b0b1ec25905869b5eef29\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
-permission#Hd.Videodownloader.downloadvideos.fourkplayer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+permission#Hd.Videodownloader.downloadvideos.clientdownloader.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.13.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\0000390a125b0b1ec25905869b5eef29\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
 		ADDED from [androidx.core:core:1.13.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\0000390a125b0b1ec25905869b5eef29\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
@@ -729,7 +729,7 @@ uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.13.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\0000390a125b0b1ec25905869b5eef29\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.13.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\0000390a125b0b1ec25905869b5eef29\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
-uses-permission#Hd.Videodownloader.downloadvideos.fourkplayer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+uses-permission#Hd.Videodownloader.downloadvideos.clientdownloader.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.13.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\0000390a125b0b1ec25905869b5eef29\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.13.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\0000390a125b0b1ec25905869b5eef29\transformed\core-1.13.1\AndroidManifest.xml:26:22-94

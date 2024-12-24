@@ -1,4 +1,4 @@
-package com.example.apiproject.data.api.gag
+package com.example.apiproject.data.gag
 
 import com.example.apiproject.data.models.gag.VideoShorts
 import retrofit2.http.GET

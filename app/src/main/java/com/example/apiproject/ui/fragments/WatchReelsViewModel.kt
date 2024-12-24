@@ -1,5 +1,6 @@
 package com.example.apiproject.ui.fragments
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.apiproject.data.PostRepository
@@ -31,6 +32,7 @@ class WatchReelsViewModel : ViewModel() {
                 _postsState.value = response
             }.onFailure { exception ->
                 _loadingState.value = false
+                Log.i("WatchReelsFragment","error")
                 _errorState.value = exception.message ?: "Unknown Error"
             }
         }

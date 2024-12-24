@@ -52,13 +52,13 @@ class WatchReelsFragment : Fragment() {
 
                 launch {
                     viewModel.postsState.collect {
-                        Log.d(TAG, "onCreate: posts state is $it")
+                        Log.i(TAG, "onCreate: posts state is $it")
                         when (it) {
                             null -> {}
                             else -> {
                                 // show data
 
-                                Log.d(TAG, "onCreate: ${it.data.posts.size}")
+                                Log.i(TAG, "onCreate: ${it.data.posts.size}")
                                 shortReelsAdapter.setNewData(
                                     if (it.data.posts.isEmpty()) {
                                         dummyDataList.toMutableList()
@@ -80,7 +80,7 @@ class WatchReelsFragment : Fragment() {
 
                 launch {
                     viewModel.loadingState.collect { isLoading ->
-                        Log.d(TAG, "onCreate: loading state is $isLoading")
+                        Log.i(TAG, "onCreate: loading state is $isLoading")
                         // show loading
                         binding.shortsPlayerProgress.isVisible = isLoading
                     }
@@ -88,6 +88,7 @@ class WatchReelsFragment : Fragment() {
 
                 launch {
                     viewModel.errorState.collect {
+                        Log.i(TAG,"error")
                         shortReelsAdapter.setNewData(dummyDataList.toMutableList())
                     }
                 }
@@ -122,7 +123,7 @@ class WatchReelsFragment : Fragment() {
             override fun downloadShort(item: PostUrl) {
                 Toast.makeText(requireContext(), "Downloading Started", Toast.LENGTH_LONG).show()
 
-                Log.d(TAG, "downloadShort: ${item.url}")
+                Log.i(TAG, "downloadShort: ${item.url}")
 
                 activity.let {
                     if (it is MainActivity) {

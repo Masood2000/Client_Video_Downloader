@@ -1,9 +1,7 @@
 package com.example.apiproject.data
 
 import android.util.Log
-import com.example.apiproject.data.api.gag.RetrofitClient
-import com.example.apiproject.data.models.ApiResponse
-import com.example.apiproject.data.models.gag.Post
+import com.example.apiproject.data.gag.RetrofitClient
 import com.example.apiproject.data.models.gag.VideoShorts
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -14,10 +12,11 @@ class PostRepository {
     suspend fun fetchFreshPosts(nextApiHit: String): Result<VideoShorts> {
         return try {
             val (after, count) = parseApiParams(nextApiHit)
-            Log.d("WatchReelsFragment", "fetchFreshPosts: after is $after and count is $count")
+            Log.i("WatchReelsFragment", "fetchFreshPosts: after is $after and count is $count")
             val response = withContext(Dispatchers.IO) {
                 apiService.getFreshPosts(after, count)
             }
+            Log.i("WatchReelsFragment", "fetchFreshPosts: response is $response")
             Result.success(response)
         } catch (e: Exception) {
             Result.failure(e)
