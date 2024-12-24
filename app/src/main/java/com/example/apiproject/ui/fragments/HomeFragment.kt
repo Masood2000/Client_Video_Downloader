@@ -49,6 +49,7 @@ class HomeFragment : BaseFragment() {
 
     override fun initView() {
 
+
         activity.let{
             if(it is MainActivity){
                 it.showTopAndBottomBar()
@@ -142,16 +143,13 @@ class HomeFragment : BaseFragment() {
 
             })
 
-            btnBrowser.setOnClickListener {
+/*            btnBrowser.setOnClickListener {
                 //startActivity(Intent(requireContext(), BrowserCastingActivity::class.java))
                 findNavController().navigate(R.id.action_homeFragment_to_watchReelsFragment)
 
 
             }
-            btnReels.setOnClickListener {
-                findNavController().navigate(R.id.action_homeFragment_to_reelsFragment)
-            }
-
+           */
 
 
 

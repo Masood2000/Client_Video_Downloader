@@ -22,6 +22,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.FileProvider
+import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
@@ -60,23 +61,20 @@ import javax.inject.Inject
 class MainActivity @Inject constructor() : AppCompatActivity() {
 
 
-
     var reelsData = mutableListOf<ReelVideo>()
 
-    var onSplashLinkDetected=false
+    var onSplashLinkDetected = false
 
 
     val viewModel: MainActivityViewModel by viewModels()
     private var permissionStateListener: ClickHandler? = null
 
 
-
-
     private lateinit var navController: NavController
     var clipboardManager: ClipboardManager? = null
 
 
-    val preferences:SharedPreference by lazy {
+    val preferences: SharedPreference by lazy {
         SharedPreference(this)
     }
 
@@ -114,7 +112,7 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        lastAutoLink=preferences.getLastAutoFetchLink()?:""
+        lastAutoLink = preferences.getLastAutoFetchLink() ?: ""
         updateData = object : UpdateData {
             override fun update() {
                 viewModel.getDownloadedVideos()
@@ -129,46 +127,42 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
     private fun retrieveCopiedLink() {
 
 
+        clipboardManager =
+            this@MainActivity.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager?
 
+        Log.d(TAG, "retrieveCopiedLink: this one Called")
 
-                clipboardManager = this@MainActivity.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager?
+        if (clipboardManager == null) {
+            Log.d(TAG, "retrieveCopiedLink: clipboard is empty")
+        }
 
-                Log.d(TAG, "retrieveCopiedLink: this one Called")
+        if (clipboardManager?.hasPrimaryClip() == true) {
+            Log.d(TAG, "retrieveCopiedLink: it has primary clip ")
+        } else {
+            Log.d(TAG, "retrieveCopiedLink: no primary clip founded")
+        }
 
-                if(clipboardManager == null){
-                    Log.d(TAG, "retrieveCopiedLink: clipboard is empty")
-                }
+        if (clipboardManager?.hasPrimaryClip() == true && clipboardManager?.primaryClipDescription?.hasMimeType(
+                "text/*"
+            ) == true
+        ) {
+            var detectedText = clipboardManager?.primaryClip?.getItemAt(0)?.text.toString()
+            Log.d("ACTIVITYState", "retrieveCopiedLink: $detectedText")
 
-                if(clipboardManager?.hasPrimaryClip() == true ){
-                    Log.d(TAG, "retrieveCopiedLink: it has primary clip ")
-                }
-                else{
-                    Log.d(TAG, "retrieveCopiedLink: no primary clip founded")
-                }
-
-                if (clipboardManager?.hasPrimaryClip() == true && clipboardManager?.primaryClipDescription?.hasMimeType(
-                        "text/*"
-                    ) == true
+            if (detectedText != downloadLink && detectedText.isNotEmpty()) {
+                if (detectedText.contains("http") || detectedText.contains("https") || detectedText.contains(
+                        "www"
+                    )
                 ) {
-                    var detectedText = clipboardManager?.primaryClip?.getItemAt(0)?.text.toString()
-                    Log.d("ACTIVITYState", "retrieveCopiedLink: $detectedText")
-
-                    if (detectedText != downloadLink && detectedText.isNotEmpty()) {
-                        if (detectedText.contains("http") || detectedText.contains("https")|| detectedText.contains("www")) {
-                            downloadLink = detectedText
-                            Log.d(TAG, "retrieveCopiedLink: $downloadLink")
-                        }
-
-                    }
-
-                }
-                else{
-                    Log.d(TAG, "retrieveCopiedLink: its empty")
+                    downloadLink = detectedText
+                    Log.d(TAG, "retrieveCopiedLink: $downloadLink")
                 }
 
+            }
 
-
-
+        } else {
+            Log.d(TAG, "retrieveCopiedLink: its empty")
+        }
 
 
     }
@@ -178,7 +172,7 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
 
 
         Log.d(TAG, "getDownloadMetaData: ${link.toString()}")
-        
+
         if (link.contains("youtube", ignoreCase = true) ||
             link.contains("youtu.be", ignoreCase = true) ||
             link.contains("encrypted-vtbn0.gstatic", ignoreCase = true)
@@ -210,10 +204,10 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
                                 extractedData.video = newExtractedData?.video
                                 extractedData.cookie = newExtractedData?.cookie
                             }
-                        }
-                        else if(link.contains("dailymotion.com")  || link.contains("dai.ly")){
+                        } else if (link.contains("dailymotion.com") || link.contains("dai.ly")) {
                             Log.d(TAG, "getDownloadMetaData: Dailymotion linked")
-                           var newExtractedData =  ExtractorManager.getVideo(this@MainActivity, link)
+                            var newExtractedData =
+                                ExtractorManager.getVideo(this@MainActivity, link)
                             if (newExtractedData != null) {
                                 extractedData.video = newExtractedData?.video
                                 extractedData.cookie = newExtractedData?.cookie
@@ -224,8 +218,7 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
                             dialog.dismiss()
 
                         }
-                    }
-                    else {
+                    } else {
 
                         Log.d("ApiResponse", "getDownloadMetaData: ${link}")
                         var secondExtractedData = ExtractorManager.getVideo(this@MainActivity, link)
@@ -236,21 +229,24 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
                             }
                         } else {
                             withContext(Dispatchers.Main) {
-                                Toast.makeText(this@MainActivity, "No Video Found", Toast.LENGTH_SHORT)
+                                Toast.makeText(
+                                    this@MainActivity,
+                                    "No Video Found",
+                                    Toast.LENGTH_SHORT
+                                )
                                     .show()
                                 dialog.dismiss()
                             }
                         }
 
 
-                    Log.d("ApiResponse", "Data is Null")
+                        Log.d("ApiResponse", "Data is Null")
 
                     }
 
                     Log.d(TAG, "getDownloadMetaData: ${extractedData?.video.toString()}")
 
-                }
-                else {
+                } else {
                     Log.d("ApiResponse", "getDownloadMetaData: ${link}")
                     var secondExtractedData = ExtractorManager.getVideo(this@MainActivity, link)
                     if (secondExtractedData != null) {
@@ -401,7 +397,7 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
         return progress.coerceIn(0, 100)
     }
 
-     fun downloadOptionSheet(extractedData: ExtractedData, url: String) {
+    fun downloadOptionSheet(extractedData: ExtractedData, url: String) {
         val dialogBinding = DownloadOptionSheetBinding.inflate(layoutInflater)
         dialogBinding.heading.text = extractedData.title
         val maxStorage = getTotalPhoneStorage()
@@ -496,15 +492,18 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
                     binding.topBar.visibility = View.VISIBLE
                     binding.mainBottomNav.visibility = View.VISIBLE
                     binding.tvTitle.setText(getString(R.string.video_downloader))
+                    binding.settings.isVisible = true
                 }
 
                 R.id.videoDownloadingFragment -> {
 
                     binding.tvTitle.setText(getString(R.string.downloading))
+                    binding.settings.isVisible = false
                 }
 
                 R.id.videoCompletedFragment -> {
                     binding.tvTitle.setText(getString(R.string.completed))
+                    binding.settings.isVisible = false
                 }
 
                 R.id.settingsFragment -> {
@@ -518,20 +517,11 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
                     }
                 }
 
-                R.id.feedbackFragment -> {
-                    binding.tvTitle.setText(getString(R.string.feedback))
-                    binding.mainBottomNav.visibility = View.GONE
-                    binding.back.visibility = View.VISIBLE
-                    // binding.help.visibility = View.GONE
-                    binding.settings.visibility = View.GONE
-                    binding.back.setOnOneClickListener {
-                        navController.navigateUp()
-                    }
-                }
 
-/*                R.id.videoReelFragment -> {
-                    binding.tvTitle.setText(getString(R.string.reels))
-                }*/
+
+                /*                R.id.videoReelFragment -> {
+                                    binding.tvTitle.setText(getString(R.string.reels))
+                                }*/
 
                 R.id.playerFragment -> {
                     binding.mainBottomNav.visibility = View.GONE
@@ -564,11 +554,11 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
             }
 
         }
-      //  retrieveCopiedLink()
+        //  retrieveCopiedLink()
 
     }
 
-    fun moveToFirstItem(){
+    fun moveToFirstItem() {
         val view: View = binding.mainBottomNav.findViewById(R.id.homeFragment)
         view.performClick()
     }
@@ -663,7 +653,8 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
             }
         } else {
             val videoPermissionGranted = permissions[Manifest.permission.READ_MEDIA_VIDEO] == true
-            val notificationPermissionGranted = permissions[Manifest.permission.POST_NOTIFICATIONS] == true
+            val notificationPermissionGranted =
+                permissions[Manifest.permission.POST_NOTIFICATIONS] == true
 
             if (videoPermissionGranted && notificationPermissionGranted) {
                 permissionStateListener?.onClickPressed()
@@ -679,19 +670,22 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
         Log.d("ACTIVITYState", "onPause:  ")
     }
 
-    fun handleResume(){
+    fun handleResume() {
 
         lifecycleScope.launch(Dispatchers.IO) {
             delay(1000)
 
             withContext(Dispatchers.Main) {
                 Log.d("ACTIVITYState", "onResume:  ")
-                Log.d("ACTIVITYState", "onResume: ${downloadLink.isNotEmpty()}  Download Link ${downloadLink} ")
+                Log.d(
+                    "ACTIVITYState",
+                    "onResume: ${downloadLink.isNotEmpty()}  Download Link ${downloadLink} "
+                )
 
                 Log.d("ACTIVITYState", "onResume: ${downloadLink != lastAutoLink} ")
 
                 retrieveCopiedLink()
-                lastAutoLink=preferences.getLastAutoFetchLink()?:""
+                lastAutoLink = preferences.getLastAutoFetchLink() ?: ""
                 if (downloadLink.isNotEmpty() && downloadLink != lastAutoLink) {
                     lastAutoLink = downloadLink
                     preferences.setLastAutoFetchLink(downloadLink)
@@ -701,61 +695,29 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
         }
 
 
-
     }
 
     override fun onResume() {
         super.onResume()
         Log.d(TAG, "onResume: ActivityOnResumeCalled")
-        if(navController.currentDestination?.id != R.id.splashFragment){
+        if (navController.currentDestination?.id != R.id.splashFragment) {
             handleResume()
-        }
-        else{
-            onSplashLinkDetected=true
+        } else {
+            onSplashLinkDetected = true
         }
     }
 
 
-    fun shareFiles(filePaths: List<String>) {
-        val fileUris = ArrayList<Uri>()
-        val packageName = packageName
-
-        for (filePath in filePaths) {
-            val tempFile = File(filePath)
-            val fileURI = FileProvider.getUriForFile(
-                this,
-                "$packageName.provider",
-                tempFile
-            )
-            fileUris.add(fileURI)
-        }
 
 
-        val shareIntent = Intent(Intent.ACTION_SEND_MULTIPLE).apply {
-            type = "*/*"
-            flags = Intent.FLAG_GRANT_READ_URI_PERMISSION or
-                    Intent.FLAG_ACTIVITY_CLEAR_TOP or
-                    Intent.FLAG_ACTIVITY_NEW_TASK
-            putExtra(Intent.EXTRA_SUBJECT, "Video Downloader")
-            putExtra(
-                Intent.EXTRA_TEXT,
-                "Download any video you want using: https://play.google.com/store/apps/details?id=$packageName"
-            )
-            putParcelableArrayListExtra(Intent.EXTRA_STREAM, fileUris)
-        }
-
-        startActivity(Intent.createChooser(shareIntent, "Share Files"))
-    }
-
-
-    fun showTopAndBottomBar(){
+    fun showTopAndBottomBar() {
         binding.topBar.visibility = View.VISIBLE
         binding.mainBottomNav.visibility = View.VISIBLE
     }
 
-    fun hideTopAndBottomBar(){
+    fun hideTopAndBottomBar() {
         binding.topBar.visibility = View.GONE
-        binding.mainBottomNav.visibility = View.GONE
+        //binding.mainBottomNav.visibility = View.GONE
     }
 
 

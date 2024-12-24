@@ -4,7 +4,6 @@ package com.example.apiproject.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -27,10 +26,34 @@ public final class FragmentHomeBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button btnBrowser;
+  public final ConstraintLayout clDailymotion;
 
   @NonNull
-  public final Button btnReels;
+  public final ConstraintLayout clFb;
+
+  @NonNull
+  public final ConstraintLayout clGoogle;
+
+  @NonNull
+  public final ConstraintLayout clInsta;
+
+  @NonNull
+  public final ConstraintLayout clPin;
+
+  @NonNull
+  public final ConstraintLayout clReddit;
+
+  @NonNull
+  public final ConstraintLayout clSuggestedApps;
+
+  @NonNull
+  public final ConstraintLayout clTwitch;
+
+  @NonNull
+  public final ConstraintLayout clVimeo;
+
+  @NonNull
+  public final ConstraintLayout clYoutube;
 
   @NonNull
   public final ImageView clear;
@@ -40,6 +63,33 @@ public final class FragmentHomeBinding implements ViewBinding {
 
   @NonNull
   public final MaterialButton downloadbutton;
+
+  @NonNull
+  public final ImageView icDailymotion;
+
+  @NonNull
+  public final ImageView icFb;
+
+  @NonNull
+  public final ImageView icGoogle;
+
+  @NonNull
+  public final ImageView icInsta;
+
+  @NonNull
+  public final ImageView icPin;
+
+  @NonNull
+  public final ImageView icReddit;
+
+  @NonNull
+  public final ImageView icTwitch;
+
+  @NonNull
+  public final ImageView icVimeo;
+
+  @NonNull
+  public final ImageView icYoutube;
 
   @NonNull
   public final EditText linkfield;
@@ -65,19 +115,43 @@ public final class FragmentHomeBinding implements ViewBinding {
   @NonNull
   public final MaterialCardView whatsappCard;
 
-  private FragmentHomeBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnBrowser,
-      @NonNull Button btnReels, @NonNull ImageView clear,
-      @NonNull ConstraintLayout constraintLayout2, @NonNull MaterialButton downloadbutton,
-      @NonNull EditText linkfield, @NonNull NestedScrollView nsvHome,
-      @NonNull MaterialButton pasteText, @NonNull MaterialCardView section1,
-      @NonNull TextView textView3, @NonNull TextView textView6,
+  private FragmentHomeBinding(@NonNull ConstraintLayout rootView,
+      @NonNull ConstraintLayout clDailymotion, @NonNull ConstraintLayout clFb,
+      @NonNull ConstraintLayout clGoogle, @NonNull ConstraintLayout clInsta,
+      @NonNull ConstraintLayout clPin, @NonNull ConstraintLayout clReddit,
+      @NonNull ConstraintLayout clSuggestedApps, @NonNull ConstraintLayout clTwitch,
+      @NonNull ConstraintLayout clVimeo, @NonNull ConstraintLayout clYoutube,
+      @NonNull ImageView clear, @NonNull ConstraintLayout constraintLayout2,
+      @NonNull MaterialButton downloadbutton, @NonNull ImageView icDailymotion,
+      @NonNull ImageView icFb, @NonNull ImageView icGoogle, @NonNull ImageView icInsta,
+      @NonNull ImageView icPin, @NonNull ImageView icReddit, @NonNull ImageView icTwitch,
+      @NonNull ImageView icVimeo, @NonNull ImageView icYoutube, @NonNull EditText linkfield,
+      @NonNull NestedScrollView nsvHome, @NonNull MaterialButton pasteText,
+      @NonNull MaterialCardView section1, @NonNull TextView textView3, @NonNull TextView textView6,
       @NonNull LottieAnimationView whatsappAnim, @NonNull MaterialCardView whatsappCard) {
     this.rootView = rootView;
-    this.btnBrowser = btnBrowser;
-    this.btnReels = btnReels;
+    this.clDailymotion = clDailymotion;
+    this.clFb = clFb;
+    this.clGoogle = clGoogle;
+    this.clInsta = clInsta;
+    this.clPin = clPin;
+    this.clReddit = clReddit;
+    this.clSuggestedApps = clSuggestedApps;
+    this.clTwitch = clTwitch;
+    this.clVimeo = clVimeo;
+    this.clYoutube = clYoutube;
     this.clear = clear;
     this.constraintLayout2 = constraintLayout2;
     this.downloadbutton = downloadbutton;
+    this.icDailymotion = icDailymotion;
+    this.icFb = icFb;
+    this.icGoogle = icGoogle;
+    this.icInsta = icInsta;
+    this.icPin = icPin;
+    this.icReddit = icReddit;
+    this.icTwitch = icTwitch;
+    this.icVimeo = icVimeo;
+    this.icYoutube = icYoutube;
     this.linkfield = linkfield;
     this.nsvHome = nsvHome;
     this.pasteText = pasteText;
@@ -115,15 +189,63 @@ public final class FragmentHomeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btn_browser;
-      Button btnBrowser = ViewBindings.findChildViewById(rootView, id);
-      if (btnBrowser == null) {
+      id = R.id.cl_dailymotion;
+      ConstraintLayout clDailymotion = ViewBindings.findChildViewById(rootView, id);
+      if (clDailymotion == null) {
         break missingId;
       }
 
-      id = R.id.btn_reels;
-      Button btnReels = ViewBindings.findChildViewById(rootView, id);
-      if (btnReels == null) {
+      id = R.id.cl_fb;
+      ConstraintLayout clFb = ViewBindings.findChildViewById(rootView, id);
+      if (clFb == null) {
+        break missingId;
+      }
+
+      id = R.id.cl_google;
+      ConstraintLayout clGoogle = ViewBindings.findChildViewById(rootView, id);
+      if (clGoogle == null) {
+        break missingId;
+      }
+
+      id = R.id.cl_insta;
+      ConstraintLayout clInsta = ViewBindings.findChildViewById(rootView, id);
+      if (clInsta == null) {
+        break missingId;
+      }
+
+      id = R.id.cl_pin;
+      ConstraintLayout clPin = ViewBindings.findChildViewById(rootView, id);
+      if (clPin == null) {
+        break missingId;
+      }
+
+      id = R.id.cl_reddit;
+      ConstraintLayout clReddit = ViewBindings.findChildViewById(rootView, id);
+      if (clReddit == null) {
+        break missingId;
+      }
+
+      id = R.id.cl_suggested_apps;
+      ConstraintLayout clSuggestedApps = ViewBindings.findChildViewById(rootView, id);
+      if (clSuggestedApps == null) {
+        break missingId;
+      }
+
+      id = R.id.cl_twitch;
+      ConstraintLayout clTwitch = ViewBindings.findChildViewById(rootView, id);
+      if (clTwitch == null) {
+        break missingId;
+      }
+
+      id = R.id.cl_vimeo;
+      ConstraintLayout clVimeo = ViewBindings.findChildViewById(rootView, id);
+      if (clVimeo == null) {
+        break missingId;
+      }
+
+      id = R.id.cl_youtube;
+      ConstraintLayout clYoutube = ViewBindings.findChildViewById(rootView, id);
+      if (clYoutube == null) {
         break missingId;
       }
 
@@ -142,6 +264,60 @@ public final class FragmentHomeBinding implements ViewBinding {
       id = R.id.downloadbutton;
       MaterialButton downloadbutton = ViewBindings.findChildViewById(rootView, id);
       if (downloadbutton == null) {
+        break missingId;
+      }
+
+      id = R.id.ic_dailymotion;
+      ImageView icDailymotion = ViewBindings.findChildViewById(rootView, id);
+      if (icDailymotion == null) {
+        break missingId;
+      }
+
+      id = R.id.ic_fb;
+      ImageView icFb = ViewBindings.findChildViewById(rootView, id);
+      if (icFb == null) {
+        break missingId;
+      }
+
+      id = R.id.ic_google;
+      ImageView icGoogle = ViewBindings.findChildViewById(rootView, id);
+      if (icGoogle == null) {
+        break missingId;
+      }
+
+      id = R.id.ic_insta;
+      ImageView icInsta = ViewBindings.findChildViewById(rootView, id);
+      if (icInsta == null) {
+        break missingId;
+      }
+
+      id = R.id.ic_pin;
+      ImageView icPin = ViewBindings.findChildViewById(rootView, id);
+      if (icPin == null) {
+        break missingId;
+      }
+
+      id = R.id.ic_reddit;
+      ImageView icReddit = ViewBindings.findChildViewById(rootView, id);
+      if (icReddit == null) {
+        break missingId;
+      }
+
+      id = R.id.ic_twitch;
+      ImageView icTwitch = ViewBindings.findChildViewById(rootView, id);
+      if (icTwitch == null) {
+        break missingId;
+      }
+
+      id = R.id.ic_vimeo;
+      ImageView icVimeo = ViewBindings.findChildViewById(rootView, id);
+      if (icVimeo == null) {
+        break missingId;
+      }
+
+      id = R.id.ic_youtube;
+      ImageView icYoutube = ViewBindings.findChildViewById(rootView, id);
+      if (icYoutube == null) {
         break missingId;
       }
 
@@ -193,9 +369,11 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentHomeBinding((ConstraintLayout) rootView, btnBrowser, btnReels, clear,
-          constraintLayout2, downloadbutton, linkfield, nsvHome, pasteText, section1, textView3,
-          textView6, whatsappAnim, whatsappCard);
+      return new FragmentHomeBinding((ConstraintLayout) rootView, clDailymotion, clFb, clGoogle,
+          clInsta, clPin, clReddit, clSuggestedApps, clTwitch, clVimeo, clYoutube, clear,
+          constraintLayout2, downloadbutton, icDailymotion, icFb, icGoogle, icInsta, icPin,
+          icReddit, icTwitch, icVimeo, icYoutube, linkfield, nsvHome, pasteText, section1,
+          textView3, textView6, whatsappAnim, whatsappCard);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

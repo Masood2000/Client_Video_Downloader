@@ -30,6 +30,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="whiteBlack">#FFFFFFFF</color>
     <color name="whiteBlackNight">#FF000000</color>
+    <string name="Reels">Reels </string>
     <string name="app_name">X Video Downloader</string>
     <string name="audio">Audio</string>
     <string name="audio_deleted">Audio deleted successfully.</string>

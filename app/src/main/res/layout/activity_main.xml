@@ -81,8 +81,9 @@
                 android:layout_marginHorizontal="@dimen/_12sdp"
                 android:background="?selectableItemBackgroundBorderless"
                 android:scaleType="centerCrop"
-                android:visibility="gone"
-                android:src="@drawable/settings_svgrepo_com__1_"
+                android:visibility="visible"
+                android:src="@drawable/settings_alert_24dp_e8eaed_fill0_wght400_grad0_opsz24"
+                app:tint="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />

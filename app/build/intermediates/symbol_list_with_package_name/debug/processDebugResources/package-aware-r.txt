@@ -4095,6 +4095,8 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_pin
+drawable ic_reddit
+drawable ic_reels
 drawable ic_rename
 drawable ic_search
 drawable ic_search_black_24
@@ -4106,6 +4108,8 @@ drawable ic_youtube
 drawable indeterminate_static
 drawable info_circle_svgrepo_com__1_
 drawable light_grad
+drawable logo_tiktok
+drawable logo_twitter
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
 drawable m3_bottom_sheet_drag_handle
@@ -4188,6 +4192,8 @@ drawable pastelink_bg
 drawable pause_outline_24
 drawable play_arrow_24px
 drawable policy_term_and_condition_term_svgrepo_com
+drawable pornhub
+drawable privacy_tip_24dp_e8eaed_fill0_wght400_grad0_opsz24
 drawable rate_us_selected
 drawable rate_us_unselected
 drawable rounded_background
@@ -4197,6 +4203,7 @@ drawable search_bg
 drawable search_view_bg
 drawable selected_item_text_colour
 drawable selection_bg
+drawable settings_alert_24dp_e8eaed_fill0_wght400_grad0_opsz24
 drawable settings_svgrepo_com__1_
 drawable sheet_background
 drawable shorts_download
@@ -4349,9 +4356,7 @@ id browserAppSelectionFragment
 id browser_casting_nav_graph
 id bt_maybe_later
 id bt_submit
-id btn_browser
 id btn_download
-id btn_reels
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -4610,6 +4615,7 @@ id inward
 id is_pooling_container_tag
 id italic
 id item_touch_helper_previous_elevation
+id iv_back
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -5256,6 +5262,7 @@ raw splash_animation
 raw videosfinal
 raw vimeo_white
 raw whatsapp_anim
+string Reels
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

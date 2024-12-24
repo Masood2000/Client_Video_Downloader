@@ -12,6 +12,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import androidx.navigation.fragment.findNavController
 import com.example.apiproject.R
 import com.example.apiproject.data.api.ExtractedData
 import com.example.apiproject.data.api.Video
@@ -110,6 +111,9 @@ class WatchReelsFragment : Fragment() {
             if(it is MainActivity){
                 it.hideTopAndBottomBar()
             }
+        }
+        binding.ivBack.setOnClickListener {
+            findNavController().popBackStack()
         }
 
         binding.vpShorts.adapter = shortReelsAdapter

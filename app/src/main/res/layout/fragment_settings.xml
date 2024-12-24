@@ -19,6 +19,7 @@
             android:layout_marginVertical="@dimen/_4sdp"
             app:cardBackgroundColor="#0FEAA69A"
 
+            android:visibility="gone"
             app:cardCornerRadius="0dp"
             app:strokeWidth="0dp">
 
@@ -66,6 +67,7 @@
             android:layout_height="@dimen/_45sdp"
             app:cardBackgroundColor="#0FEAA69A"
             android:layout_marginVertical="@dimen/_4sdp"
+            android:visibility="gone"
             app:cardCornerRadius="0dp"
             app:strokeWidth="0dp">
 
@@ -126,7 +128,8 @@
                     android:layout_height="@dimen/_30sdp"
                     android:layout_marginStart="16dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/policy_term_and_condition_term_svgrepo_com"
+                    app:tint="@color/black"
+                    android:src="@drawable/privacy_tip_24dp_e8eaed_fill0_wght400_grad0_opsz24"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"

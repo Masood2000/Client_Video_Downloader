@@ -17,4 +17,9 @@
         android:icon="@drawable/film_reel_cinema_svgrepo_com"
         android:title="@string/reels"/>-->
 
+    <item
+        android:id="@+id/watchReelsFragment"
+        android:icon="@drawable/ic_reels"
+        android:title="@string/reels"/>
+
 </menu>
