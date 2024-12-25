@@ -12,7 +12,7 @@ android {
     compileSdk 34
 
     defaultConfig {
-        applicationId "Hd.Videodownloader.downloadvideos.clientdownloader"
+        applicationId "Hd.Videodownloader.downloadvideos.fourkplayer"
         minSdk 26
         targetSdk 34
         versionCode 3
@@ -34,7 +34,7 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled true
+           // minifyEnabled true
             manifestPlaceholders = [crashlyticsCollectionEnabled:"true"]
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.release

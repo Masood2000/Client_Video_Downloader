@@ -307,7 +307,7 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
                             Log.i(TAG,"from deep link ->  "+link.toString())
 
                             lifecycleScope.launch(Dispatchers.IO) {
-                                delay(5000)
+                                delay(10000)
                                 withContext(Dispatchers.Main){
                                     getDownloadMetaData(link)
 
