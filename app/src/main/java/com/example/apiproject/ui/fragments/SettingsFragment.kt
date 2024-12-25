@@ -65,8 +65,8 @@ class SettingsFragment : BaseFragment() {
     override fun initView() {
 
 
-        binding.feedback.setOnClickListener(){
-
+        binding.rateUs.setOnClickListener(){
+            showRateUsDialog()
         }
 
         binding.privacyPolicy.setOnClickListener {
@@ -96,6 +96,119 @@ class SettingsFragment : BaseFragment() {
     }
 
 
+    private fun showRateUsDialog() {
+        activity?.let { context ->
+            var currentRating = 4
+            if (dialogRateUs == null)
+                dialogRateUs = Dialog(context)
+            val dialogConfirmationBinding = DialogRateUsBinding.inflate(layoutInflater)
+
+            dialogRateUs?.let { dialog ->
+                dialog.setContentView(dialogConfirmationBinding.root)
+                dialog.window?.setLayout(
+                    RecyclerView.LayoutParams.MATCH_PARENT,
+                    RecyclerView.LayoutParams.WRAP_CONTENT
+                )
+
+                with(dialogConfirmationBinding) {
+
+                    fun unselectAll() {
+                        start1.isSelected = false
+                        start2.isSelected = false
+                        start4.isSelected = false
+                        start3.isSelected = false
+                        start5.isSelected = false
+                    }
+
+                    start1.isSelected = true
+                    start2.isSelected = true
+                    start4.isSelected = true
+                    start3.isSelected = true
+//                    start5.isSelected = true
+
+                    start1.setOnClickListener {
+                        unselectAll()
+                        start1.isSelected = true
+                        currentRating = 1
+                    }
+
+                    start2.setOnClickListener {
+                        unselectAll()
+                        start1.isSelected = true
+                        start2.isSelected = true
+                        currentRating = 2
+                    }
+
+                    start3.setOnClickListener {
+                        unselectAll()
+                        start1.isSelected = true
+                        start2.isSelected = true
+                        start3.isSelected = true
+                        currentRating = 3
+                    }
+
+                    start4.setOnClickListener {
+                        unselectAll()
+                        start1.isSelected = true
+                        start2.isSelected = true
+                        start3.isSelected = true
+                        start4.isSelected = true
+                        currentRating = 4
+                    }
+
+
+
+                    start5.setOnClickListener {
+                        unselectAll()
+                        start1.isSelected = true
+                        start2.isSelected = true
+                        start3.isSelected = true
+                        start4.isSelected = true
+                        start5.isSelected = true
+                        currentRating = 5
+                    }
+
+                    btMaybeLater.setOnClickListener {
+                        dialog.dismiss()
+                    }
+
+                    close.setOnClickListener {
+                        dialog.dismiss()
+                    }
+
+                    btSubmit.setOnClickListener {
+                        rateUs(context)
+                    }
+
+                    dialog.setOnDismissListener {
+                        dialogRateUs = null
+                    }
+                }
+
+                dialog.show()
+            }
+        }
+    }
+
+    private fun rateUs(context: Context) {
+        val configString = BuildConfig.APPLICATION_ID
+        val uri = Uri.parse("market://details?id=$configString")
+        val goToMarket = Intent(Intent.ACTION_VIEW, uri)
+        goToMarket.addFlags(
+            Intent.FLAG_ACTIVITY_NO_HISTORY or
+                    Intent.FLAG_ACTIVITY_MULTIPLE_TASK
+        )
+        try {
+            context.startActivity(goToMarket)
+        } catch (e: ActivityNotFoundException) {
+            context.startActivity(
+                Intent(
+                    Intent.ACTION_VIEW,
+                    Uri.parse("http://play.google.com/store/apps/details?id=$configString")
+                )
+            )
+        }
+    }
 
 
     companion object {

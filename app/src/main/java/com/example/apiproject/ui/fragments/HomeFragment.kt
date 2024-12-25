@@ -47,6 +47,8 @@ class HomeFragment : BaseFragment() {
         return binding.root
     }
 
+
+
     override fun initView() {
 
 

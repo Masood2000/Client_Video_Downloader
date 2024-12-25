@@ -60,7 +60,7 @@
 30-->[androidx.core:core:1.13.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\0000390a125b0b1ec25905869b5eef29\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
 31
 32    <application
-32-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:18:5-58:19
+32-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:18:5-64:19
 33        android:name="com.example.apiproject.DownloadApplication"
 33-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:19:9-44
 34        android:allowBackup="true"
@@ -81,341 +81,356 @@
 42-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:25:9-54
 43        android:supportsRtl="true"
 43-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:26:9-35
-44        android:theme="@style/Theme.ApiProject"
-44-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:27:9-48
-45        android:usesCleartextTraffic="true" >
-45-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:28:9-44
-46        <activity
-46-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:30:9-32:40
-47            android:name="com.example.apiproject.ui.activity.BrowserCastingActivity"
-47-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:31:13-63
-48            android:exported="false" />
-48-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:32:13-37
-49
-50        <service
-50-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:34:9-36:56
-51            android:name="com.liulishuo.filedownloader.services.FileDownloadService$SharedMainProcessService"
-51-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:35:13-110
-52            android:foregroundServiceType="dataSync" />
-52-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:36:13-53
-53        <service
-53-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:37:9-40:49
-54            android:name="com.liulishuo.filedownloader.services.FileDownloadService$SeparateProcessService"
-54-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:38:13-108
-55            android:foregroundServiceType="dataSync"
-55-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:39:13-53
-56            android:process=":filedownloader" />
-56-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:40:13-46
-57        <service
-57-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:41:9-46:34
-58            android:name="androidx.work.impl.foreground.SystemForegroundService"
-58-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:42:13-81
-59            android:directBootAware="false"
-59-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:43:13-44
-60            android:enabled="@bool/enable_system_foreground_service_default"
-60-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:57:13-77
-61            android:exported="false"
-61-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:44:13-37
-62            android:foregroundServiceType="dataSync" />
-62-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:45:13-53
-63
-64        <activity
-64-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:48:9-57:20
-65            android:name="com.example.apiproject.ui.activity.MainActivity"
-65-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:49:13-53
-66            android:exported="true"
-66-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:50:13-36
-67            android:launchMode="singleTop" >
-67-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:51:13-43
-68            <intent-filter>
-68-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:52:13-56:29
-69                <action android:name="android.intent.action.MAIN" />
-69-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:53:17-69
-69-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:53:25-66
-70
-71                <category android:name="android.intent.category.LAUNCHER" />
-71-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:55:17-77
-71-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:55:27-74
-72            </intent-filter>
-73        </activity>
-74
-75        <service
-75-->[androidx.work:work-multiprocess:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\566a2e146f1b9165f97597ffaa8470e6\transformed\work-multiprocess-2.7.1\AndroidManifest.xml:25:9-27:40
-76            android:name="androidx.work.multiprocess.RemoteWorkManagerService"
-76-->[androidx.work:work-multiprocess:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\566a2e146f1b9165f97597ffaa8470e6\transformed\work-multiprocess-2.7.1\AndroidManifest.xml:26:13-79
-77            android:exported="false" />
-77-->[androidx.work:work-multiprocess:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\566a2e146f1b9165f97597ffaa8470e6\transformed\work-multiprocess-2.7.1\AndroidManifest.xml:27:13-37
+44        android:testOnly="true"
+45        android:theme="@style/Theme.ApiProject"
+45-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:27:9-48
+46        android:usesCleartextTraffic="true" >
+46-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:28:9-44
+47        <activity
+47-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:30:9-32:40
+48            android:name="com.example.apiproject.ui.activity.BrowserCastingActivity"
+48-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:31:13-63
+49            android:exported="false" />
+49-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:32:13-37
+50
+51        <service
+51-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:34:9-36:56
+52            android:name="com.liulishuo.filedownloader.services.FileDownloadService$SharedMainProcessService"
+52-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:35:13-110
+53            android:foregroundServiceType="dataSync" />
+53-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:36:13-53
+54        <service
+54-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:37:9-40:49
+55            android:name="com.liulishuo.filedownloader.services.FileDownloadService$SeparateProcessService"
+55-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:38:13-108
+56            android:foregroundServiceType="dataSync"
+56-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:39:13-53
+57            android:process=":filedownloader" />
+57-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:40:13-46
+58        <service
+58-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:41:9-46:34
+59            android:name="androidx.work.impl.foreground.SystemForegroundService"
+59-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:42:13-81
+60            android:directBootAware="false"
+60-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:43:13-44
+61            android:enabled="@bool/enable_system_foreground_service_default"
+61-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:57:13-77
+62            android:exported="false"
+62-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:44:13-37
+63            android:foregroundServiceType="dataSync" />
+63-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:45:13-53
+64
+65        <activity
+65-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:48:9-63:20
+66            android:name="com.example.apiproject.ui.activity.MainActivity"
+66-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:49:13-53
+67            android:exported="true"
+67-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:50:13-36
+68            android:launchMode="singleTask" >
+68-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:51:13-44
+69            <intent-filter>
+69-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:52:13-56:29
+70                <action android:name="android.intent.action.MAIN" />
+70-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:53:17-69
+70-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:53:25-66
+71
+72                <category android:name="android.intent.category.LAUNCHER" />
+72-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:55:17-77
+72-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:55:27-74
+73            </intent-filter>
+74            <intent-filter>
+74-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:57:13-61:29
+75                <action android:name="android.intent.action.SEND" />
+75-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:58:17-69
+75-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:58:25-66
+76
+77                <category android:name="android.intent.category.DEFAULT" />
+77-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:59:17-76
+77-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:59:27-73
 78
-79        <provider
-79-->[androidx.emoji2:emoji2:1.3.0] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\6e4ccb8c3a3ed7b09f74caaad09eddfc\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-80            android:name="androidx.startup.InitializationProvider"
-80-->[androidx.emoji2:emoji2:1.3.0] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\6e4ccb8c3a3ed7b09f74caaad09eddfc\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
-81            android:authorities="Hd.Videodownloader.downloadvideos.clientdownloader.androidx-startup"
-81-->[androidx.emoji2:emoji2:1.3.0] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\6e4ccb8c3a3ed7b09f74caaad09eddfc\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
-82            android:exported="false" >
-82-->[androidx.emoji2:emoji2:1.3.0] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\6e4ccb8c3a3ed7b09f74caaad09eddfc\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
-83            <meta-data
-83-->[androidx.emoji2:emoji2:1.3.0] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\6e4ccb8c3a3ed7b09f74caaad09eddfc\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-84                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-84-->[androidx.emoji2:emoji2:1.3.0] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\6e4ccb8c3a3ed7b09f74caaad09eddfc\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
-85                android:value="androidx.startup" />
-85-->[androidx.emoji2:emoji2:1.3.0] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\6e4ccb8c3a3ed7b09f74caaad09eddfc\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
-86            <meta-data
-86-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:36:13-38:52
-87                android:name="androidx.work.WorkManagerInitializer"
-87-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:37:17-68
-88                android:value="androidx.startup" />
-88-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:38:17-49
-89            <meta-data
-89-->[androidx.lifecycle:lifecycle-process:2.6.2] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\c6d3774e6f41b10a2831be7cef771357\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
-90                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-90-->[androidx.lifecycle:lifecycle-process:2.6.2] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\c6d3774e6f41b10a2831be7cef771357\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
-91                android:value="androidx.startup" />
-91-->[androidx.lifecycle:lifecycle-process:2.6.2] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\c6d3774e6f41b10a2831be7cef771357\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
-92            <meta-data
-92-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
-93                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-93-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
-94                android:value="androidx.startup" />
-94-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
-95        </provider>
-96
-97        <service
-97-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:41:9-46:35
-98            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
-98-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:42:13-88
-99            android:directBootAware="false"
-99-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:43:13-44
-100            android:enabled="@bool/enable_system_alarm_service_default"
-100-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:44:13-72
-101            android:exported="false" />
-101-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:45:13-37
-102        <service
-102-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:47:9-53:35
-103            android:name="androidx.work.impl.background.systemjob.SystemJobService"
-103-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:48:13-84
-104            android:directBootAware="false"
-104-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:49:13-44
-105            android:enabled="@bool/enable_system_job_service_default"
-105-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:50:13-70
-106            android:exported="true"
-106-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:51:13-36
-107            android:permission="android.permission.BIND_JOB_SERVICE" />
-107-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:52:13-69
-108
-109        <receiver
-109-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:61:9-66:35
-110            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
-110-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:62:13-88
-111            android:directBootAware="false"
-111-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:63:13-44
-112            android:enabled="true"
-112-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:64:13-35
-113            android:exported="false" />
-113-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:65:13-37
-114        <receiver
-114-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:67:9-77:20
-115            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
-115-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:68:13-106
-116            android:directBootAware="false"
-116-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:69:13-44
-117            android:enabled="false"
-117-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:70:13-36
-118            android:exported="false" >
-118-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:71:13-37
-119            <intent-filter>
-119-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:73:13-76:29
-120                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
-120-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:74:17-87
-120-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:74:25-84
-121                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
-121-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:75:17-90
-121-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:75:25-87
-122            </intent-filter>
-123        </receiver>
-124        <receiver
-124-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:78:9-88:20
-125            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
-125-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:79:13-104
-126            android:directBootAware="false"
-126-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:80:13-44
-127            android:enabled="false"
-127-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:81:13-36
-128            android:exported="false" >
-128-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:82:13-37
-129            <intent-filter>
-129-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:84:13-87:29
-130                <action android:name="android.intent.action.BATTERY_OKAY" />
-130-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:85:17-77
-130-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:85:25-74
-131                <action android:name="android.intent.action.BATTERY_LOW" />
-131-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:86:17-76
-131-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:86:25-73
-132            </intent-filter>
-133        </receiver>
-134        <receiver
-134-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:89:9-99:20
-135            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
-135-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:90:13-104
-136            android:directBootAware="false"
-136-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:91:13-44
-137            android:enabled="false"
-137-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:92:13-36
-138            android:exported="false" >
-138-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:93:13-37
-139            <intent-filter>
-139-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:95:13-98:29
-140                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
-140-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:96:17-83
-140-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:96:25-80
-141                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
-141-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:97:17-82
-141-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:97:25-79
-142            </intent-filter>
-143        </receiver>
-144        <receiver
-144-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:100:9-109:20
-145            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
-145-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:101:13-103
-146            android:directBootAware="false"
-146-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:102:13-44
-147            android:enabled="false"
-147-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:103:13-36
-148            android:exported="false" >
-148-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:104:13-37
-149            <intent-filter>
-149-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:106:13-108:29
-150                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-150-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:107:17-79
-150-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:107:25-76
-151            </intent-filter>
-152        </receiver>
-153        <receiver
-153-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:110:9-121:20
-154            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
-154-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:111:13-88
-155            android:directBootAware="false"
-155-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:112:13-44
-156            android:enabled="false"
-156-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:113:13-36
-157            android:exported="false" >
-157-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:114:13-37
-158            <intent-filter>
-158-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:116:13-120:29
-159                <action android:name="android.intent.action.BOOT_COMPLETED" />
-159-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:117:17-79
-159-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:117:25-76
-160                <action android:name="android.intent.action.TIME_SET" />
-160-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:118:17-73
-160-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:118:25-70
-161                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
-161-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:119:17-81
-161-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:119:25-78
-162            </intent-filter>
-163        </receiver>
-164        <receiver
-164-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:122:9-131:20
-165            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
-165-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:123:13-99
-166            android:directBootAware="false"
-166-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:124:13-44
-167            android:enabled="@bool/enable_system_alarm_service_default"
-167-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:125:13-72
-168            android:exported="false" >
-168-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:126:13-37
-169            <intent-filter>
-169-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:128:13-130:29
-170                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
-170-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:129:17-98
-170-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:129:25-95
-171            </intent-filter>
-172        </receiver>
-173        <receiver
-173-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:132:9-142:20
-174            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
-174-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:133:13-78
-175            android:directBootAware="false"
-175-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:134:13-44
-176            android:enabled="true"
-176-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:135:13-35
-177            android:exported="true"
-177-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:136:13-36
-178            android:permission="android.permission.DUMP" >
-178-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:137:13-57
-179            <intent-filter>
-179-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:139:13-141:29
-180                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
-180-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:140:17-88
-180-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:140:25-85
-181            </intent-filter>
-182        </receiver>
-183
-184        <uses-library
-184-->[androidx.window:window:1.0.0] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\59ec8735a26e1e7cfbc2c0c7d6277752\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-185            android:name="androidx.window.extensions"
-185-->[androidx.window:window:1.0.0] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\59ec8735a26e1e7cfbc2c0c7d6277752\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-186            android:required="false" />
-186-->[androidx.window:window:1.0.0] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\59ec8735a26e1e7cfbc2c0c7d6277752\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-187        <uses-library
-187-->[androidx.window:window:1.0.0] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\59ec8735a26e1e7cfbc2c0c7d6277752\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-188            android:name="androidx.window.sidecar"
-188-->[androidx.window:window:1.0.0] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\59ec8735a26e1e7cfbc2c0c7d6277752\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-189            android:required="false" />
-189-->[androidx.window:window:1.0.0] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\59ec8735a26e1e7cfbc2c0c7d6277752\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-190
-191        <service
-191-->[androidx.room:room-runtime:2.4.2] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\097207cfdcaa61f27dd5ad1109457998\transformed\room-runtime-2.4.2\AndroidManifest.xml:25:9-28:40
-192            android:name="androidx.room.MultiInstanceInvalidationService"
-192-->[androidx.room:room-runtime:2.4.2] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\097207cfdcaa61f27dd5ad1109457998\transformed\room-runtime-2.4.2\AndroidManifest.xml:26:13-74
-193            android:directBootAware="true"
-193-->[androidx.room:room-runtime:2.4.2] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\097207cfdcaa61f27dd5ad1109457998\transformed\room-runtime-2.4.2\AndroidManifest.xml:27:13-43
-194            android:exported="false" />
-194-->[androidx.room:room-runtime:2.4.2] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\097207cfdcaa61f27dd5ad1109457998\transformed\room-runtime-2.4.2\AndroidManifest.xml:28:13-37
-195
-196        <receiver
-196-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
-197            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-197-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
-198            android:directBootAware="false"
-198-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
-199            android:enabled="true"
-199-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
-200            android:exported="true"
-200-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
-201            android:permission="android.permission.DUMP" >
-201-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
-202            <intent-filter>
-202-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
-203                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-203-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
-203-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
-204            </intent-filter>
-205            <intent-filter>
-205-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
-206                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-206-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
-206-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
-207            </intent-filter>
-208            <intent-filter>
-208-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
-209                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-209-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
-209-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
-210            </intent-filter>
-211            <intent-filter>
-211-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
-212                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-212-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
-212-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
-213            </intent-filter>
-214        </receiver>
-215
-216        <meta-data
-216-->[com.github.bumptech.glide:okhttp3-integration:4.12.0] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\786700999f0ba78a0bf4395284f4fb6e\transformed\okhttp3-integration-4.12.0\AndroidManifest.xml:11:9-13:43
-217            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
-217-->[com.github.bumptech.glide:okhttp3-integration:4.12.0] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\786700999f0ba78a0bf4395284f4fb6e\transformed\okhttp3-integration-4.12.0\AndroidManifest.xml:12:13-84
-218            android:value="GlideModule" />
-218-->[com.github.bumptech.glide:okhttp3-integration:4.12.0] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\786700999f0ba78a0bf4395284f4fb6e\transformed\okhttp3-integration-4.12.0\AndroidManifest.xml:13:13-40
-219    </application>
-220
-221</manifest>
+79                <data android:mimeType="text/plain" />
+79-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:60:17-55
+79-->D:\AndriodStudtio\Projects\Client_Downloader\RedVideoDownloader-release1.0.3\RedVideoDownloader-release1.0.3\app\src\main\AndroidManifest.xml:60:23-52
+80            </intent-filter>
+81        </activity>
+82
+83        <service
+83-->[androidx.work:work-multiprocess:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\566a2e146f1b9165f97597ffaa8470e6\transformed\work-multiprocess-2.7.1\AndroidManifest.xml:25:9-27:40
+84            android:name="androidx.work.multiprocess.RemoteWorkManagerService"
+84-->[androidx.work:work-multiprocess:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\566a2e146f1b9165f97597ffaa8470e6\transformed\work-multiprocess-2.7.1\AndroidManifest.xml:26:13-79
+85            android:exported="false" />
+85-->[androidx.work:work-multiprocess:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\566a2e146f1b9165f97597ffaa8470e6\transformed\work-multiprocess-2.7.1\AndroidManifest.xml:27:13-37
+86
+87        <provider
+87-->[androidx.emoji2:emoji2:1.3.0] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\6e4ccb8c3a3ed7b09f74caaad09eddfc\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+88            android:name="androidx.startup.InitializationProvider"
+88-->[androidx.emoji2:emoji2:1.3.0] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\6e4ccb8c3a3ed7b09f74caaad09eddfc\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+89            android:authorities="Hd.Videodownloader.downloadvideos.clientdownloader.androidx-startup"
+89-->[androidx.emoji2:emoji2:1.3.0] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\6e4ccb8c3a3ed7b09f74caaad09eddfc\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+90            android:exported="false" >
+90-->[androidx.emoji2:emoji2:1.3.0] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\6e4ccb8c3a3ed7b09f74caaad09eddfc\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+91            <meta-data
+91-->[androidx.emoji2:emoji2:1.3.0] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\6e4ccb8c3a3ed7b09f74caaad09eddfc\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+92                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+92-->[androidx.emoji2:emoji2:1.3.0] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\6e4ccb8c3a3ed7b09f74caaad09eddfc\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+93                android:value="androidx.startup" />
+93-->[androidx.emoji2:emoji2:1.3.0] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\6e4ccb8c3a3ed7b09f74caaad09eddfc\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+94            <meta-data
+94-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:36:13-38:52
+95                android:name="androidx.work.WorkManagerInitializer"
+95-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:37:17-68
+96                android:value="androidx.startup" />
+96-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:38:17-49
+97            <meta-data
+97-->[androidx.lifecycle:lifecycle-process:2.6.2] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\c6d3774e6f41b10a2831be7cef771357\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+98                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+98-->[androidx.lifecycle:lifecycle-process:2.6.2] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\c6d3774e6f41b10a2831be7cef771357\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+99                android:value="androidx.startup" />
+99-->[androidx.lifecycle:lifecycle-process:2.6.2] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\c6d3774e6f41b10a2831be7cef771357\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+100            <meta-data
+100-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+101                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+101-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+102                android:value="androidx.startup" />
+102-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+103        </provider>
+104
+105        <service
+105-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:41:9-46:35
+106            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+106-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:42:13-88
+107            android:directBootAware="false"
+107-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:43:13-44
+108            android:enabled="@bool/enable_system_alarm_service_default"
+108-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:44:13-72
+109            android:exported="false" />
+109-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:45:13-37
+110        <service
+110-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:47:9-53:35
+111            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+111-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:48:13-84
+112            android:directBootAware="false"
+112-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:49:13-44
+113            android:enabled="@bool/enable_system_job_service_default"
+113-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:50:13-70
+114            android:exported="true"
+114-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:51:13-36
+115            android:permission="android.permission.BIND_JOB_SERVICE" />
+115-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:52:13-69
+116
+117        <receiver
+117-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:61:9-66:35
+118            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+118-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:62:13-88
+119            android:directBootAware="false"
+119-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:63:13-44
+120            android:enabled="true"
+120-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:64:13-35
+121            android:exported="false" />
+121-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:65:13-37
+122        <receiver
+122-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:67:9-77:20
+123            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+123-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:68:13-106
+124            android:directBootAware="false"
+124-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:69:13-44
+125            android:enabled="false"
+125-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:70:13-36
+126            android:exported="false" >
+126-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:71:13-37
+127            <intent-filter>
+127-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:73:13-76:29
+128                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+128-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:74:17-87
+128-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:74:25-84
+129                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+129-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:75:17-90
+129-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:75:25-87
+130            </intent-filter>
+131        </receiver>
+132        <receiver
+132-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:78:9-88:20
+133            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+133-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:79:13-104
+134            android:directBootAware="false"
+134-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:80:13-44
+135            android:enabled="false"
+135-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:81:13-36
+136            android:exported="false" >
+136-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:82:13-37
+137            <intent-filter>
+137-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:84:13-87:29
+138                <action android:name="android.intent.action.BATTERY_OKAY" />
+138-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:85:17-77
+138-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:85:25-74
+139                <action android:name="android.intent.action.BATTERY_LOW" />
+139-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:86:17-76
+139-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:86:25-73
+140            </intent-filter>
+141        </receiver>
+142        <receiver
+142-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:89:9-99:20
+143            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+143-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:90:13-104
+144            android:directBootAware="false"
+144-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:91:13-44
+145            android:enabled="false"
+145-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:92:13-36
+146            android:exported="false" >
+146-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:93:13-37
+147            <intent-filter>
+147-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:95:13-98:29
+148                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+148-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:96:17-83
+148-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:96:25-80
+149                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+149-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:97:17-82
+149-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:97:25-79
+150            </intent-filter>
+151        </receiver>
+152        <receiver
+152-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:100:9-109:20
+153            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+153-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:101:13-103
+154            android:directBootAware="false"
+154-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:102:13-44
+155            android:enabled="false"
+155-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:103:13-36
+156            android:exported="false" >
+156-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:104:13-37
+157            <intent-filter>
+157-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:106:13-108:29
+158                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+158-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:107:17-79
+158-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:107:25-76
+159            </intent-filter>
+160        </receiver>
+161        <receiver
+161-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:110:9-121:20
+162            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+162-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:111:13-88
+163            android:directBootAware="false"
+163-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:112:13-44
+164            android:enabled="false"
+164-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:113:13-36
+165            android:exported="false" >
+165-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:114:13-37
+166            <intent-filter>
+166-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:116:13-120:29
+167                <action android:name="android.intent.action.BOOT_COMPLETED" />
+167-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:117:17-79
+167-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:117:25-76
+168                <action android:name="android.intent.action.TIME_SET" />
+168-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:118:17-73
+168-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:118:25-70
+169                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+169-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:119:17-81
+169-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:119:25-78
+170            </intent-filter>
+171        </receiver>
+172        <receiver
+172-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:122:9-131:20
+173            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+173-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:123:13-99
+174            android:directBootAware="false"
+174-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:124:13-44
+175            android:enabled="@bool/enable_system_alarm_service_default"
+175-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:125:13-72
+176            android:exported="false" >
+176-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:126:13-37
+177            <intent-filter>
+177-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:128:13-130:29
+178                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+178-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:129:17-98
+178-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:129:25-95
+179            </intent-filter>
+180        </receiver>
+181        <receiver
+181-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:132:9-142:20
+182            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+182-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:133:13-78
+183            android:directBootAware="false"
+183-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:134:13-44
+184            android:enabled="true"
+184-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:135:13-35
+185            android:exported="true"
+185-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:136:13-36
+186            android:permission="android.permission.DUMP" >
+186-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:137:13-57
+187            <intent-filter>
+187-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:139:13-141:29
+188                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+188-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:140:17-88
+188-->[androidx.work:work-runtime:2.7.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\da15f88792f7ccb1b8d05707b349ce04\transformed\work-runtime-2.7.1\AndroidManifest.xml:140:25-85
+189            </intent-filter>
+190        </receiver>
+191
+192        <uses-library
+192-->[androidx.window:window:1.0.0] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\59ec8735a26e1e7cfbc2c0c7d6277752\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+193            android:name="androidx.window.extensions"
+193-->[androidx.window:window:1.0.0] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\59ec8735a26e1e7cfbc2c0c7d6277752\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+194            android:required="false" />
+194-->[androidx.window:window:1.0.0] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\59ec8735a26e1e7cfbc2c0c7d6277752\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+195        <uses-library
+195-->[androidx.window:window:1.0.0] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\59ec8735a26e1e7cfbc2c0c7d6277752\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+196            android:name="androidx.window.sidecar"
+196-->[androidx.window:window:1.0.0] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\59ec8735a26e1e7cfbc2c0c7d6277752\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+197            android:required="false" />
+197-->[androidx.window:window:1.0.0] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\59ec8735a26e1e7cfbc2c0c7d6277752\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+198
+199        <service
+199-->[androidx.room:room-runtime:2.4.2] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\097207cfdcaa61f27dd5ad1109457998\transformed\room-runtime-2.4.2\AndroidManifest.xml:25:9-28:40
+200            android:name="androidx.room.MultiInstanceInvalidationService"
+200-->[androidx.room:room-runtime:2.4.2] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\097207cfdcaa61f27dd5ad1109457998\transformed\room-runtime-2.4.2\AndroidManifest.xml:26:13-74
+201            android:directBootAware="true"
+201-->[androidx.room:room-runtime:2.4.2] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\097207cfdcaa61f27dd5ad1109457998\transformed\room-runtime-2.4.2\AndroidManifest.xml:27:13-43
+202            android:exported="false" />
+202-->[androidx.room:room-runtime:2.4.2] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\097207cfdcaa61f27dd5ad1109457998\transformed\room-runtime-2.4.2\AndroidManifest.xml:28:13-37
+203
+204        <receiver
+204-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+205            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+205-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+206            android:directBootAware="false"
+206-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+207            android:enabled="true"
+207-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+208            android:exported="true"
+208-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+209            android:permission="android.permission.DUMP" >
+209-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+210            <intent-filter>
+210-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+211                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+211-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+211-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+212            </intent-filter>
+213            <intent-filter>
+213-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+214                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+214-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+214-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+215            </intent-filter>
+216            <intent-filter>
+216-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+217                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+217-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+217-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+218            </intent-filter>
+219            <intent-filter>
+219-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+220                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+220-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+220-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\68283f0676af5f65ef01f7fdb704cf7a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+221            </intent-filter>
+222        </receiver>
+223
+224        <meta-data
+224-->[com.github.bumptech.glide:okhttp3-integration:4.12.0] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\786700999f0ba78a0bf4395284f4fb6e\transformed\okhttp3-integration-4.12.0\AndroidManifest.xml:11:9-13:43
+225            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+225-->[com.github.bumptech.glide:okhttp3-integration:4.12.0] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\786700999f0ba78a0bf4395284f4fb6e\transformed\okhttp3-integration-4.12.0\AndroidManifest.xml:12:13-84
+226            android:value="GlideModule" />
+226-->[com.github.bumptech.glide:okhttp3-integration:4.12.0] D:\AndriodStudtio\Projects\humantic\caches\transforms-4\786700999f0ba78a0bf4395284f4fb6e\transformed\okhttp3-integration-4.12.0\AndroidManifest.xml:13:13-40
+227    </application>
+228
+229</manifest>

@@ -276,6 +276,55 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
 
 
         }
+
+
+
+
+
+
+    }
+
+
+    override fun onPostCreate(savedInstanceState: Bundle?) {
+        super.onPostCreate(savedInstanceState)
+        // Get Link From External source
+        Log.i("url", "onPostCreate: called")
+        Log.i(TAG, "onPostCreate: called")
+        Log.i("url", "onPostCreate: called")
+        try {
+            val receivedIntent = intent
+            val receivedAction = receivedIntent?.action
+            val receivedType = receivedIntent?.type
+            if (receivedAction.equals(Intent.ACTION_SEND)) {
+                Log.i("url", "onPostCreate: Action send")
+                if (receivedType!!.startsWith("text/")) {
+
+                    val receivedText = receivedIntent.getStringExtra(Intent.EXTRA_TEXT)
+
+                    if (receivedText != null) {
+                        if (receivedText != "") {
+                            var  link = receivedText
+                            Log.i(TAG,"from deep link ->  "+link.toString())
+
+                            lifecycleScope.launch(Dispatchers.IO) {
+                                delay(5000)
+                                withContext(Dispatchers.Main){
+                                    getDownloadMetaData(link)
+
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }else{
+                // link = ""
+            }
+        }
+        catch (e: Exception) {
+            //link = ""
+            Log.i("url", "${e.printStackTrace()}")
+        }
     }
 
     fun getDownloadReel(link: String, videoId: String) {
@@ -719,6 +768,45 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
         binding.topBar.visibility = View.GONE
         //binding.mainBottomNav.visibility = View.GONE
     }
+
+
+    override fun onNewIntent(intent: Intent) {
+        super.onNewIntent(intent)
+
+        // Get Link From External source
+        Log.i("url", "onPostCreate: called")
+        Log.i(TAG, "onPostCreate: called")
+        Log.i("url", "onPostCreate: called")
+        try {
+            val receivedIntent = intent
+            val receivedAction = receivedIntent?.action
+            val receivedType = receivedIntent?.type
+            if (receivedAction.equals(Intent.ACTION_SEND)) {
+                Log.i("url", "onPostCreate: Action send")
+                if (receivedType!!.startsWith("text/")) {
+
+                    val receivedText = receivedIntent.getStringExtra(Intent.EXTRA_TEXT)
+
+                    if (receivedText != null) {
+                        if (receivedText != "") {
+                           var  link = receivedText
+                            Log.i(TAG,"from deep link ->  "+link.toString())
+                            getDownloadMetaData(link)
+
+                        }
+                    }
+                }
+            }else{
+               // link = ""
+            }
+        }
+        catch (e: Exception) {
+            //link = ""
+            Log.i("url", "${e.printStackTrace()}")
+        }
+
+    }
+
 
 
     companion object {

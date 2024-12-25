@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "Hd.Videodownloader.downloadvideos.fourkplayer",
+  "applicationId": "Hd.Videodownloader.downloadvideos.clientdownloader",
   "variantName": "debug",
   "elements": [
     {

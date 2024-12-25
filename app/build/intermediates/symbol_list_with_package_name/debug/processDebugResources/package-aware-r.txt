@@ -4209,6 +4209,7 @@ drawable sheet_background
 drawable shorts_download
 drawable sp_bg
 drawable splash_icon
+drawable star_rate_half_24dp_e8eaed_fill0_wght400_grad0_opsz24
 drawable star_selector
 drawable stars_star_svgrepo_com__1_
 drawable suggested_websites_bg
