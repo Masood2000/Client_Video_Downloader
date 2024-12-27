@@ -149,6 +149,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
+                android:visibility="gone"
                 android:layout_marginTop="@dimen/_12sdp"
                 android:layout_marginHorizontal="@dimen/_16sdp"
                 android:background="@drawable/suggested_websites_bg"
@@ -807,84 +808,53 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/whatsapp_card"
-                android:layout_width="0dp"
-                android:layout_height="@dimen/_55sdp"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="8dp"
-                app:cardBackgroundColor="#12F3BCBC"
-                android:visibility="gone"
-                app:cardCornerRadius="@dimen/_6sdp"
-                app:layout_constraintBottom_toBottomOf="parent"
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#F5F5F5"
+                 android:layout_marginTop="@dimen/_16sdp"
+                app:layout_constraintTop_toBottomOf="@id/section_1">
 
-                app:strokeWidth="0dp">
+                <!-- Heading -->
+                <TextView
+                    android:id="@+id/heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="How to Use"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/primary"
+                    android:layout_gravity="center"
+                    android:paddingBottom="16dp" />
 
-                <androidx.constraintlayout.widget.ConstraintLayout
+                <!-- Instruction Text -->
+                <TextView
+                    android:id="@+id/instructions"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. Copy the link of the video.\n\n2. Paste the video link on the home text bar or click paste.\n\n3. Select the personalized video format category.\n\n4. Download the video and play or share it."
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="8dp"
+                    android:padding="12dp"
+                    android:background="#FFFFFF"
 
-                    >
+                    android:shadowColor="#B0BEC5"
+                    android:shadowDx="0"
+                    android:shadowDy="4"
+                    android:shadowRadius="4"
+                    android:elevation="2dp"
+                    android:textColor="#424242"
+                    android:layout_margin="8dp"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="12dp" />
 
-                    <com.airbnb.lottie.LottieAnimationView
-                        android:id="@+id/whatsappAnim"
-                        android:layout_width="@dimen/_60sdp"
-                        android:layout_height="@dimen/_60sdp"
-                        android:layout_marginStart="8dp"
-
-                        android:background="@drawable/rounded_bg"
-                        android:paddingVertical="@dimen/_1sdp"
-                        android:scaleType="fitXY"
-                        android:scaleX="1"
-
-                        android:scaleY="1"
-                        android:visibility="visible"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.52"
-                        app:lottie_autoPlay="true"
-                        app:lottie_loop="true"
-                        app:lottie_rawRes="@raw/whatsapp_anim"
-                        app:lottie_repeatMode="reverse"
-                        app:lottie_speed="1" />
-
-                    <TextView
-                        android:id="@+id/textView3"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
-
-                        android:includeFontPadding="false"
-                        android:text="Whatsapp Status Saver"
-                        android:textColor="@color/textDescription"
-                        android:textSize="@dimen/_14sdp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toTopOf="@+id/textView6"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/whatsappAnim"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_chainStyle="packed" />
-
-                    <TextView
-                        android:id="@+id/textView6"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="8dp"
-                        android:includeFontPadding="false"
-                        android:text="Click to save whatsapp status"
-                        android:textColor="@color/textDescription"
-                        android:textSize="@dimen/_9sdp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="@+id/textView3"
-                        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+            </LinearLayout>
 
 
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-            </com.google.android.material.card.MaterialCardView>
 
 
 

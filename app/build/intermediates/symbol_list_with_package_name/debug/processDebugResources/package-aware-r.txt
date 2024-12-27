@@ -1575,6 +1575,7 @@ color foreground_material_light
 color green
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color ic_launcher_background
 color icons
 color icons_50
 color icons_50_night
@@ -4611,6 +4612,7 @@ id info
 id instaAnim
 id instaGram
 id instaText
+id instructions
 id invisible
 id inward
 id is_pooling_container_tag
@@ -4914,11 +4916,9 @@ id textTop
 id textView
 id textView2
 id textView22
-id textView3
 id textView33
 id textView36
 id textView5
-id textView6
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -4982,8 +4982,6 @@ id webView
 id webViewFragment
 id web_icon
 id west
-id whatsappAnim
-id whatsapp_card
 id when_playing
 id withText
 id with_icon

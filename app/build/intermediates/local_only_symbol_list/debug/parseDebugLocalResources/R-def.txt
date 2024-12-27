@@ -11,6 +11,7 @@ color card_bg_night
 color dialog_bottom_sheet_download_chip_bg_color_selector
 color dialog_bottom_sheet_download_chip_bg_text_color_selector
 color green
+color ic_launcher_background
 color icons
 color icons_50
 color icons_50_night
@@ -205,6 +206,7 @@ id imageView33
 id instaAnim
 id instaGram
 id instaText
+id instructions
 id iv_back
 id linearLayout
 id linkfield
@@ -264,11 +266,9 @@ id tabLayout
 id textView
 id textView2
 id textView22
-id textView3
 id textView33
 id textView36
 id textView5
-id textView6
 id title_heading_tv
 id topBar
 id top_bar
@@ -287,8 +287,6 @@ id watchReelsFragment
 id webView
 id webViewFragment
 id web_icon
-id whatsappAnim
-id whatsapp_card
 layout activity_browser_casting
 layout activity_main
 layout dialog_rate_us

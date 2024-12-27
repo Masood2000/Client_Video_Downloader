@@ -13,7 +13,6 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.widget.NestedScrollView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
-import com.airbnb.lottie.LottieAnimationView;
 import com.example.apiproject.R;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.card.MaterialCardView;
@@ -65,6 +64,9 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final MaterialButton downloadbutton;
 
   @NonNull
+  public final TextView heading;
+
+  @NonNull
   public final ImageView icDailymotion;
 
   @NonNull
@@ -92,6 +94,9 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final ImageView icYoutube;
 
   @NonNull
+  public final TextView instructions;
+
+  @NonNull
   public final EditText linkfield;
 
   @NonNull
@@ -103,18 +108,6 @@ public final class FragmentHomeBinding implements ViewBinding {
   @NonNull
   public final MaterialCardView section1;
 
-  @NonNull
-  public final TextView textView3;
-
-  @NonNull
-  public final TextView textView6;
-
-  @NonNull
-  public final LottieAnimationView whatsappAnim;
-
-  @NonNull
-  public final MaterialCardView whatsappCard;
-
   private FragmentHomeBinding(@NonNull ConstraintLayout rootView,
       @NonNull ConstraintLayout clDailymotion, @NonNull ConstraintLayout clFb,
       @NonNull ConstraintLayout clGoogle, @NonNull ConstraintLayout clInsta,
@@ -122,13 +115,13 @@ public final class FragmentHomeBinding implements ViewBinding {
       @NonNull ConstraintLayout clSuggestedApps, @NonNull ConstraintLayout clTwitch,
       @NonNull ConstraintLayout clVimeo, @NonNull ConstraintLayout clYoutube,
       @NonNull ImageView clear, @NonNull ConstraintLayout constraintLayout2,
-      @NonNull MaterialButton downloadbutton, @NonNull ImageView icDailymotion,
-      @NonNull ImageView icFb, @NonNull ImageView icGoogle, @NonNull ImageView icInsta,
-      @NonNull ImageView icPin, @NonNull ImageView icReddit, @NonNull ImageView icTwitch,
-      @NonNull ImageView icVimeo, @NonNull ImageView icYoutube, @NonNull EditText linkfield,
+      @NonNull MaterialButton downloadbutton, @NonNull TextView heading,
+      @NonNull ImageView icDailymotion, @NonNull ImageView icFb, @NonNull ImageView icGoogle,
+      @NonNull ImageView icInsta, @NonNull ImageView icPin, @NonNull ImageView icReddit,
+      @NonNull ImageView icTwitch, @NonNull ImageView icVimeo, @NonNull ImageView icYoutube,
+      @NonNull TextView instructions, @NonNull EditText linkfield,
       @NonNull NestedScrollView nsvHome, @NonNull MaterialButton pasteText,
-      @NonNull MaterialCardView section1, @NonNull TextView textView3, @NonNull TextView textView6,
-      @NonNull LottieAnimationView whatsappAnim, @NonNull MaterialCardView whatsappCard) {
+      @NonNull MaterialCardView section1) {
     this.rootView = rootView;
     this.clDailymotion = clDailymotion;
     this.clFb = clFb;
@@ -143,6 +136,7 @@ public final class FragmentHomeBinding implements ViewBinding {
     this.clear = clear;
     this.constraintLayout2 = constraintLayout2;
     this.downloadbutton = downloadbutton;
+    this.heading = heading;
     this.icDailymotion = icDailymotion;
     this.icFb = icFb;
     this.icGoogle = icGoogle;
@@ -152,14 +146,11 @@ public final class FragmentHomeBinding implements ViewBinding {
     this.icTwitch = icTwitch;
     this.icVimeo = icVimeo;
     this.icYoutube = icYoutube;
+    this.instructions = instructions;
     this.linkfield = linkfield;
     this.nsvHome = nsvHome;
     this.pasteText = pasteText;
     this.section1 = section1;
-    this.textView3 = textView3;
-    this.textView6 = textView6;
-    this.whatsappAnim = whatsappAnim;
-    this.whatsappCard = whatsappCard;
   }
 
   @Override
@@ -267,6 +258,12 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.heading;
+      TextView heading = ViewBindings.findChildViewById(rootView, id);
+      if (heading == null) {
+        break missingId;
+      }
+
       id = R.id.ic_dailymotion;
       ImageView icDailymotion = ViewBindings.findChildViewById(rootView, id);
       if (icDailymotion == null) {
@@ -321,6 +318,12 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.instructions;
+      TextView instructions = ViewBindings.findChildViewById(rootView, id);
+      if (instructions == null) {
+        break missingId;
+      }
+
       id = R.id.linkfield;
       EditText linkfield = ViewBindings.findChildViewById(rootView, id);
       if (linkfield == null) {
@@ -345,35 +348,11 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView3;
-      TextView textView3 = ViewBindings.findChildViewById(rootView, id);
-      if (textView3 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView6;
-      TextView textView6 = ViewBindings.findChildViewById(rootView, id);
-      if (textView6 == null) {
-        break missingId;
-      }
-
-      id = R.id.whatsappAnim;
-      LottieAnimationView whatsappAnim = ViewBindings.findChildViewById(rootView, id);
-      if (whatsappAnim == null) {
-        break missingId;
-      }
-
-      id = R.id.whatsapp_card;
-      MaterialCardView whatsappCard = ViewBindings.findChildViewById(rootView, id);
-      if (whatsappCard == null) {
-        break missingId;
-      }
-
       return new FragmentHomeBinding((ConstraintLayout) rootView, clDailymotion, clFb, clGoogle,
           clInsta, clPin, clReddit, clSuggestedApps, clTwitch, clVimeo, clYoutube, clear,
-          constraintLayout2, downloadbutton, icDailymotion, icFb, icGoogle, icInsta, icPin,
-          icReddit, icTwitch, icVimeo, icYoutube, linkfield, nsvHome, pasteText, section1,
-          textView3, textView6, whatsappAnim, whatsappCard);
+          constraintLayout2, downloadbutton, heading, icDailymotion, icFb, icGoogle, icInsta, icPin,
+          icReddit, icTwitch, icVimeo, icYoutube, instructions, linkfield, nsvHome, pasteText,
+          section1);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
