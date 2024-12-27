@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "Hd.Videodownloader.downloadvideos.fourkplayer",
+  "applicationId": "com.hd.videodownloader.downloadvideos.fourkplayer",
   "variantName": "release",
   "elements": [
     {
