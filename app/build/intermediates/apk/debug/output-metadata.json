@@ -11,9 +11,9 @@
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 4,
-      "versionName": "1.4",
-      "outputFile": "VideoDownloader (4) - 1.4-debug.apk"
+      "versionCode": 5,
+      "versionName": "1.5",
+      "outputFile": "VideoDownloader (5) - 1.5-debug.apk"
     }
   ],
   "elementType": "File",
