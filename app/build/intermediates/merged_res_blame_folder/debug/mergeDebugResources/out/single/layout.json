@@ -20,6 +20,10 @@
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\fragment_player.xml"
     },
     {
+        "merged": "com.example.apiproject.app-mergeDebugResources-3:/layout/fragment_splash.xml",
+        "source": "com.example.apiproject.app-main-6:/layout/fragment_splash.xml"
+    },
+    {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-mergeDebugResources-3:\\layout\\sheet_video_options.xml",
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\sheet_video_options.xml"
     },
@@ -88,10 +92,6 @@
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\fragment_browser_app_selection.xml"
     },
     {
-        "merged": "com.example.apiproject.app-mergeDebugResources-3:/layout/fragment_home.xml",
-        "source": "com.example.apiproject.app-main-6:/layout/fragment_home.xml"
-    },
-    {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-mergeDebugResources-3:\\layout\\fragment_settings.xml",
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\fragment_settings.xml"
     },
@@ -112,11 +112,11 @@
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\fragment_video_downloading.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-mergeDebugResources-3:\\layout\\item_reels_player.xml",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\item_reels_player.xml"
-    },
-    {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-mergeDebugResources-3:\\layout\\fragment_home.xml",
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-mergeDebugResources-3:\\layout\\item_reels_player.xml",
+        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\item_reels_player.xml"
     }
 ]

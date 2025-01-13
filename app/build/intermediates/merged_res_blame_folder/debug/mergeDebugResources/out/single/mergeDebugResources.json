@@ -8,16 +8,12 @@
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\feedback_bg_card.xml"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\font_poppins_bold.ttf.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\font\\poppins_bold.ttf"
-    },
-    {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_download_svgrepo_com.xml.flat",
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\download_svgrepo_com.xml"
     },
     {
-        "merged": "com.example.apiproject.app-debug-4:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.example.apiproject.app-main-6:/mipmap-mdpi/ic_launcher_foreground.webp"
+        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\font_poppins_bold.ttf.flat",
+        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\font\\poppins_bold.ttf"
     },
     {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\layout_download_option_sheet.xml.flat",
@@ -30,10 +26,6 @@
     {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\mipmap-mdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "com.example.apiproject.app-debug-4:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.example.apiproject.app-main-6:/mipmap-mdpi/ic_launcher.webp"
     },
     {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_rounded_background.xml.flat",
@@ -60,10 +52,6 @@
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\ic_youtube.xml"
     },
     {
-        "merged": "com.example.apiproject.app-debug-4:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.example.apiproject.app-main-6:/mipmap-xhdpi/ic_launcher_foreground.webp"
-    },
-    {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
@@ -86,10 +74,6 @@
     {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\layout_item_shorts_player.xml.flat",
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\item_shorts_player.xml"
-    },
-    {
-        "merged": "com.example.apiproject.app-debug-4:/layout_fragment_home.xml.flat",
-        "source": "com.example.apiproject.app-main-6:/layout/fragment_home.xml"
     },
     {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_search_bg.xml.flat",
@@ -168,6 +152,10 @@
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\shorts_download.xml"
     },
     {
+        "merged": "com.example.apiproject.app-debug-4:/layout_fragment_splash.xml.flat",
+        "source": "com.example.apiproject.app-main-6:/layout/fragment_splash.xml"
+    },
+    {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_privacy_tip_24dp_e8eaed_fill0_wght400_grad0_opsz24.xml.flat",
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\privacy_tip_24dp_e8eaed_fill0_wght400_grad0_opsz24.xml"
     },
@@ -182,10 +170,6 @@
     {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\raw_novid.json.flat",
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\raw\\novid.json"
-    },
-    {
-        "merged": "com.example.apiproject.app-debug-4:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.apiproject.app-main-6:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_audio_svgrepo_com.xml.flat",
@@ -214,10 +198,6 @@
     {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\font_popins.ttf.flat",
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\font\\popins.ttf"
-    },
-    {
-        "merged": "com.example.apiproject.app-debug-4:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.example.apiproject.app-main-6:/mipmap-hdpi/ic_launcher.webp"
     },
     {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_star_rate_half_24dp_e8eaed_fill0_wght400_grad0_opsz24.xml.flat",
@@ -272,20 +252,12 @@
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\ic_vimeo.xml"
     },
     {
-        "merged": "com.example.apiproject.app-debug-4:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.apiproject.app-main-6:/mipmap-mdpi/ic_launcher_round.webp"
-    },
-    {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_ic_twitch.xml.flat",
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\ic_twitch.xml"
-    },
-    {
-        "merged": "com.example.apiproject.app-debug-4:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.example.apiproject.app-main-6:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_stars_star_svgrepo_com__1_.xml.flat",
@@ -320,10 +292,6 @@
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\ic_download.xml"
     },
     {
-        "merged": "com.example.apiproject.app-debug-4:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.apiproject.app-main-6:/mipmap-xxxhdpi/ic_launcher.webp"
-    },
-    {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\layout_layout_permissions_dialog.xml.flat",
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\layout_permissions_dialog.xml"
     },
@@ -338,10 +306,6 @@
     {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_ic_dailymotion.xml.flat",
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\ic_dailymotion.xml"
-    },
-    {
-        "merged": "com.example.apiproject.app-debug-4:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.example.apiproject.app-main-6:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\color_dialog_bottom_sheet_download_chip_bg_text_color_selector.xml.flat",
@@ -392,14 +356,6 @@
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\fragment_reels.xml"
     },
     {
-        "merged": "com.example.apiproject.app-debug-4:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.apiproject.app-main-6:/mipmap-xhdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.example.apiproject.app-debug-4:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.apiproject.app-main-6:/mipmap-hdpi/ic_launcher_round.webp"
-    },
-    {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\raw_whatsapp_anim.json.flat",
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\raw\\whatsapp_anim.json"
     },
@@ -448,10 +404,6 @@
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\raw\\loading_final.json"
     },
     {
-        "merged": "com.example.apiproject.app-debug-4:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.example.apiproject.app-main-6:/mipmap-hdpi/ic_launcher_foreground.webp"
-    },
-    {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\xml_backup_rules.xml.flat",
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\xml\\backup_rules.xml"
     },
@@ -462,10 +414,6 @@
     {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\raw_videosfinal.json.flat",
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\raw\\videosfinal.json"
-    },
-    {
-        "merged": "com.example.apiproject.app-debug-4:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.example.apiproject.app-main-6:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_play_arrow_24px.xml.flat",
@@ -492,10 +440,6 @@
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "com.example.apiproject.app-debug-4:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.example.apiproject.app-main-6:/mipmap-xxhdpi/ic_launcher_foreground.webp"
-    },
-    {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_vimeo_bg.xml.flat",
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\vimeo_bg.xml"
     },
@@ -516,20 +460,16 @@
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\settings_svgrepo_com__1_.xml"
     },
     {
-        "merged": "com.example.apiproject.app-debug-4:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.example.apiproject.app-main-6:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
-    },
-    {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\raw_download_now.json.flat",
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\raw\\download_now.json"
     },
     {
-        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\anim_fade_in.xml.flat",
-        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\anim\\fade_in.xml"
-    },
-    {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\anim_fade_in.xml.flat",
+        "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\anim\\fade_in.xml"
     },
     {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\layout_fragment_video_downloading.xml.flat",
@@ -596,10 +536,6 @@
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\layout\\item_reels_player.xml"
     },
     {
-        "merged": "com.example.apiproject.app-debug-4:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.apiproject.app-main-6:/mipmap-xxhdpi/ic_launcher.webp"
-    },
-    {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\drawable_settings_alert_24dp_e8eaed_fill0_wght400_grad0_opsz24.xml.flat",
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\drawable\\settings_alert_24dp_e8eaed_fill0_wght400_grad0_opsz24.xml"
     },
@@ -654,9 +590,5 @@
     {
         "merged": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-debug-4:\\raw_reels.json.flat",
         "source": "D:\\AndriodStudtio\\Projects\\humantic\\daemon\\8.6\\com.example.apiproject.app-main-6:\\raw\\reels.json"
-    },
-    {
-        "merged": "com.example.apiproject.app-debug-4:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.apiproject.app-main-6:/mipmap-xxxhdpi/ic_launcher_round.webp"
     }
 ]
