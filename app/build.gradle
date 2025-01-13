@@ -12,7 +12,7 @@ android {
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.hd.videodownloader.downloadvideos.fourkplayer"
+        applicationId "com.videodownloader.downloadhd.videos.fourkdownloader"
         minSdk 26
         targetSdk 34
         versionCode 4

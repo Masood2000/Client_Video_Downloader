@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="Hd.Videodownloader.downloadvideos.fourkplayer"
-    android:versionCode="3"
-    android:versionName="1.3" >
+    package="com.videodownloader.downloadhd.videos.fourkdownloader"
+    android:versionCode="4"
+    android:versionName="1.4" >
 
     <uses-sdk
         android:minSdkVersion="26"
@@ -24,10 +24,10 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <permission
-        android:name="Hd.Videodownloader.downloadvideos.fourkplayer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:name="com.videodownloader.downloadhd.videos.fourkdownloader.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="Hd.Videodownloader.downloadvideos.fourkplayer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="com.videodownloader.downloadhd.videos.fourkdownloader.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
         android:name="com.example.apiproject.DownloadApplication"
@@ -41,6 +41,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/Theme.ApiProject"
         android:usesCleartextTraffic="true" >
         <activity
@@ -85,7 +86,7 @@
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="Hd.Videodownloader.downloadvideos.fourkplayer.androidx-startup"
+            android:authorities="com.videodownloader.downloadhd.videos.fourkdownloader.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"

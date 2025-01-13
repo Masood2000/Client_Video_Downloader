@@ -4,7 +4,7 @@
     "type": "COMPATIBLE_SCREEN_MANIFEST",
     "kind": "Directory"
   },
-  "applicationId": "Hd.Videodownloader.downloadvideos.fourkplayer",
+  "applicationId": "com.videodownloader.downloadhd.videos.fourkdownloader",
   "variantName": "debug",
   "elements": []
 }
