@@ -21,7 +21,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import kotlin.system.exitProcess
 
-
+// heelo world
 class SplashFragment : BaseFragment() {
     private val binding by lazy {
         FragmentSplashBinding.inflate(layoutInflater)
