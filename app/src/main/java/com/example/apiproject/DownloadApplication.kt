@@ -11,6 +11,7 @@ import com.liulishuo.filedownloader.connection.FileDownloadUrlConnection
 import dagger.hilt.android.HiltAndroidApp
 
 
+
 @HiltAndroidApp
 class DownloadApplication: Application() {
     private val channelId = "DOWNLOAD_CHANNEL"
