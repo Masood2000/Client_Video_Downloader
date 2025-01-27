@@ -6,6 +6,7 @@ import android.app.NotificationManager
 import android.content.Context
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.work.Configuration
+import com.google.android.gms.ads.MobileAds
 import com.liulishuo.filedownloader.FileDownloader
 import com.liulishuo.filedownloader.connection.FileDownloadUrlConnection
 import dagger.hilt.android.HiltAndroidApp
@@ -34,6 +35,10 @@ class DownloadApplication: Application() {
             .build()
 
         createNotificationChannel()
+
+
+        //admob
+        MobileAds.initialize(this)
     }
 
 

@@ -14,6 +14,8 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
 import com.example.apiproject.R
+import com.example.apiproject.core.ads.admob.InterstitialHelper
+import com.example.apiproject.core.remoteconfig.RemoteConfig
 import com.example.apiproject.data.api.ExtractedData
 import com.example.apiproject.data.api.Video
 import com.example.apiproject.data.models.gag.Comment
@@ -107,6 +109,36 @@ class WatchReelsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        //interstitial ads
+
+        activity.let{
+            if(it is MainActivity){
+                if(RemoteConfig.show_reels_Interstitial_ad){
+                    InterstitialHelper.showAndLoadInterstitial(
+                        it,
+                        it.getString(R.string.interstitial_inner),
+                        true,
+                        useCapping = RemoteConfig.admob_reels_interstitial_capping,
+                        "reels",
+                        object : InterstitialHelper.InterstitialAdShowListener {
+                            override fun onInterstitialAdImpression() {
+                                super.onInterstitialAdImpression()
+
+                            }
+
+                            override fun onInterstitialAdNull() {
+                                //postAnalytic("exit_interstitial_null")
+
+                            }
+                        }
+                    )
+
+                }
+            }
+
+        }
+
 
         activity.let{
             if(it is MainActivity){

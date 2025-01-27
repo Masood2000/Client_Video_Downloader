@@ -7,6 +7,9 @@ import androidx.activity.addCallback
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import com.example.apiproject.R
+import com.example.apiproject.core.ads.admob.InterstitialHelper
+import com.example.apiproject.core.remoteconfig.RemoteConfig
 import com.example.apiproject.data.interfaces.DeleteClickInterface
 import com.example.apiproject.ui.activity.MainActivity
 import com.example.apiproject.databinding.FragmentVideoDownloadingBinding
@@ -102,6 +105,38 @@ class VideoDownloadingFragment : BaseFragment() {
     }
 
     override fun lazyLoad() {
+
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        activity.let{
+            if(it is MainActivity){
+                if(RemoteConfig.show_downloading_Interstitial_ad){
+                    InterstitialHelper.showAndLoadInterstitial(
+                        it,
+                        it.getString(R.string.interstitial_inner),
+                        true,
+                        useCapping = RemoteConfig.admob_downloading_interstitial_capping,
+                        "downloading",
+                        object : InterstitialHelper.InterstitialAdShowListener {
+                            override fun onInterstitialAdImpression() {
+                                super.onInterstitialAdImpression()
+
+                            }
+
+                            override fun onInterstitialAdNull() {
+                                //postAnalytic("exit_interstitial_null")
+
+                            }
+                        }
+                    )
+
+                }
+            }
+
+        }
 
     }
 

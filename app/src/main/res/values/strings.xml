@@ -36,5 +36,8 @@
     <string name="google">Google</string>
     <string name="pin">Pinterest</string>
     <string name="twitch">Twitch</string>
+    <string name="loading_ads">Loading Ads.</string>
+    <string name="loading_ad">Loading Ad</string>
+    <string name="do_you_want_to_exit">Do you want to Exit?</string>
 
 </resources>

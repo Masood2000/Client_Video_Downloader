@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/_20sdp"
         android:backgroundTint="#D3CFCF"
-        android:max="90"
+        android:max="100"
         android:progress="0"
         android:indeterminate="false"
         android:layoutDirection="ltr"

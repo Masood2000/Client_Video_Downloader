@@ -1,8 +1,11 @@
 package com.example.apiproject.ui.fragments
 
+import android.app.Dialog
 import android.content.ClipboardManager
 import android.content.Context
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -14,7 +17,13 @@ import androidx.activity.addCallback
 import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.RecyclerView
 import com.example.apiproject.R
+import com.example.apiproject.core.ads.admob.AdLoadListener
+import com.example.apiproject.core.ads.admob.InterstitialHelper
+import com.example.apiproject.core.ads.admob.NativePreLoadAdManager
+import com.example.apiproject.core.remoteconfig.RemoteConfig
+import com.example.apiproject.databinding.ExitSheetBinding
 import com.example.apiproject.ui.activity.MainActivity
 import com.example.apiproject.databinding.FragmentHomeBinding
 import com.example.apiproject.ui.activity.BrowserCastingActivity
@@ -24,6 +33,8 @@ import com.example.apiproject.ui.base.BaseFragment
 import com.example.apiproject.util.Helper.setOnOneClickListener
 import com.example.apiproject.util.NetworkHelper
 import com.example.apiproject.util.SocialMediaType
+import com.example.videodownloader.core.ads.NativeLayout
+import com.google.android.gms.ads.nativead.NativeAd
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
@@ -41,6 +52,39 @@ class HomeFragment : BaseFragment() {
 
     private val binding by lazy {
         FragmentHomeBinding.inflate(layoutInflater)
+    }
+
+    private var dialogExit: Dialog? = null
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        activity?.let {
+            if (it is MainActivity) {
+                it.loadAndShowBannerAd()
+            }
+        }
+
+        //loading exit native ad
+        if(RemoteConfig.show_exit_native_ad){
+            activity?.let {
+                NativePreLoadAdManager.loadExitAd(
+                    it,
+                    RemoteConfig.admob_exit_native_id,
+                    "Exit"
+                )
+            }
+        }
+
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        loadAndShowHomeNativeAd()
+
+
+        initListeners()
+
     }
 
     override fun setViewBinding(): View {
@@ -157,10 +201,41 @@ class HomeFragment : BaseFragment() {
 
         }
 
+
+    }
+
+    fun initListeners(){
+
         activity?.let {
-            it.onBackPressedDispatcher.addCallback(viewLifecycleOwner){
-                it.finish()
-                exitProcess(0)
+            it.onBackPressedDispatcher.addCallback(viewLifecycleOwner) {
+
+                if(RemoteConfig.show_exit_Interstitial_ad){
+                    InterstitialHelper.showAndLoadInterstitial(
+                        it,
+                        it.getString(R.string.interstitial_inner),
+                        true,
+                        useCapping = RemoteConfig.admob_exit_interstitial_capping,
+                        "exit",
+                        object : InterstitialHelper.InterstitialAdShowListener {
+                            override fun onInterstitialAdImpression() {
+                                super.onInterstitialAdImpression()
+                                showExitDialog()
+                            }
+
+                            override fun onInterstitialAdNull() {
+                                //postAnalytic("exit_interstitial_null")
+                                showExitDialog()
+                            }
+                        }
+                    )
+
+                }
+                else{
+                    showExitDialog()
+                }
+
+
+
             }
         }
 
@@ -172,6 +247,183 @@ class HomeFragment : BaseFragment() {
     override fun onResume() {
         super.onResume()
 
+    }
+
+    /***
+     * Ads Related Functions
+     */
+    private fun loadAndShowHomeNativeAd() {
+
+        //Remote config need to be fixed
+        if(/*RemoteConfig.show_home_native_ad*/true){
+            Log.d(TAG, "loadAndShowHomeNativeAd: ")
+            activity?.let {
+                if (it is MainActivity) {
+
+                    val myAdLoadListener = object : AdLoadListener {
+
+                        override fun onHomeAdLoaded(nativeAd: NativeAd?) {
+                            super.onHomeAdLoaded(nativeAd)
+
+                            NativePreLoadAdManager.populateUnifiedNativeAdView(
+                                NativePreLoadAdManager.getHomeAd(),
+                                it,
+                                binding.admobParentContainer,
+                                binding.admobNativeContainer,
+                                NativeLayout.NATIVE_7B,
+                                "Home",
+                                RemoteConfig.admob_native_home_cta_round,
+                                RemoteConfig.admob_native_home_cta_color,
+                                RemoteConfig.admob_native_home_cta_text_color,
+                            )
+
+                        }
+
+                        override fun onHomeAdFailedToLoad(error: String) {
+                            super.onHomeAdFailedToLoad(error)
+
+                            binding.admobParentContainer.visibility = View.GONE
+
+                        }
+                    }
+
+                    if (NativePreLoadAdManager.getHomeAd() != null) {
+                        NativePreLoadAdManager.populateUnifiedNativeAdView(
+                            NativePreLoadAdManager.nativeHomeAd,
+                            it,
+                            binding.admobParentContainer,
+                            binding.admobNativeContainer,
+                            NativeLayout.NATIVE_7B,
+                            "Home",
+                            RemoteConfig.admob_native_home_cta_round,
+                            RemoteConfig.admob_native_home_cta_color,
+                            RemoteConfig.admob_native_home_cta_text_color,
+                        )
+                    } else if (NativePreLoadAdManager.isHomeAdLoading()) {
+                        NativePreLoadAdManager.adLoadListener = myAdLoadListener
+                    } else {
+                        binding.admobParentContainer.visibility = View.GONE
+                    }
+                }
+            }
+        }
+        else{
+            binding.admobParentContainer.isVisible = false
+        }
+
+
+
+    }
+
+
+    private fun showExitDialog() {
+        activity?.let {
+            if (dialogExit == null)
+                dialogExit = Dialog(it)
+            val dialogConfirmationBinding = ExitSheetBinding.inflate(layoutInflater)
+
+            dialogExit?.let { dialog ->
+                dialog.window?.setLayout(
+                    RecyclerView.LayoutParams.WRAP_CONTENT,
+                    RecyclerView.LayoutParams.WRAP_CONTENT
+                )
+                dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+                dialog.setContentView(dialogConfirmationBinding.root)
+
+                with(dialogConfirmationBinding) {
+                    cardExit.setOnOneClickListener {
+                        dialogExit?.dismiss()
+                        //postAnalytic("tap_to_exit_clicked")
+                        it.finish()
+                        exitProcess(0)
+                    }
+                    cardCancel.setOnOneClickListener {
+                        dialogExit?.dismiss()
+                       // postAnalytic("exit_dlg_cncld")
+                    }
+                    dialog.show()
+
+
+                    if(RemoteConfig.show_exit_native_ad){
+                        if (NativePreLoadAdManager.getExitAd() != null) {
+                            NativePreLoadAdManager.populateUnifiedNativeAdView(
+                                NativePreLoadAdManager.getExitAd(),
+                                it,
+                                layoutNativeContainer.parentNativeContainer,
+                                layoutNativeContainer.admobNativeContainer,
+                                NativeLayout.NATIVE_6A,
+                                "Exit",
+                                RemoteConfig.admob_native_exit_cta_round,
+                                RemoteConfig.admob_native_exit_cta_color,
+                                RemoteConfig.admob_native_exit_cta_text_color,
+                            )
+                        }
+                        else if (NativePreLoadAdManager.isExitAdLoading()) {
+                            NativePreLoadAdManager.adLoadListener = object : AdLoadListener {
+                                override fun onExitAdFailedToLoad(error: String) {
+                                    super.onExitAdFailedToLoad(error)
+                                    layoutNativeContainer.root.isVisible = false
+                                }
+
+                                override fun onExitAdLoaded(nativeAd: NativeAd?) {
+                                    super.onExitAdLoaded(nativeAd)
+                                    NativePreLoadAdManager.populateUnifiedNativeAdView(
+                                        NativePreLoadAdManager.getExitAd(),
+                                        it,
+                                        layoutNativeContainer.parentNativeContainer,
+                                        layoutNativeContainer.admobNativeContainer,
+                                        NativeLayout.NATIVE_6A,
+                                        "Exit",
+                                        RemoteConfig.admob_native_exit_cta_round,
+                                        RemoteConfig.admob_native_exit_cta_color,
+                                        RemoteConfig.admob_native_exit_cta_text_color,
+                                    )
+                                }
+                            }
+                        }
+                        else {
+                            NativePreLoadAdManager.adLoadListener = object : AdLoadListener {
+                                override fun onExitAdFailedToLoad(error: String) {
+                                    super.onExitAdFailedToLoad(error)
+                                    layoutNativeContainer.root.isVisible = false
+                                }
+
+                                override fun onExitAdLoaded(nativeAd: NativeAd?) {
+                                    super.onExitAdLoaded(nativeAd)
+                                    NativePreLoadAdManager.populateUnifiedNativeAdView(
+                                        NativePreLoadAdManager.getExitAd(),
+                                        it,
+                                        layoutNativeContainer.parentNativeContainer,
+                                        layoutNativeContainer.admobNativeContainer,
+                                        NativeLayout.NATIVE_6A,
+                                        "Exit",
+                                        RemoteConfig.admob_native_exit_cta_round,
+                                        RemoteConfig.admob_native_exit_cta_color,
+                                        RemoteConfig.admob_native_exit_cta_text_color,
+                                    )
+                                }
+                            }
+                            NativePreLoadAdManager.loadExitAd(
+                                it,
+                                RemoteConfig.admob_exit_native_id,
+                                "Exit"
+                            )
+                        }
+                    }
+                    else{
+                        layoutNativeContainer.parentNativeContainer.isVisible = false
+                    }
+
+
+
+                }
+
+            }
+        }
+    }
+
+    companion object {
+        private const val TAG = "HOME_FRAGMENT"
     }
 
 }

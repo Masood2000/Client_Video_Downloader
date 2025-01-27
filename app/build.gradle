@@ -34,16 +34,42 @@ android {
             keyPassword 'client'
         }
     }
+
     buildTypes {
         release {
            // minifyEnabled true
             manifestPlaceholders = [crashlyticsCollectionEnabled:"true"]
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.release
+           // shrinkResources true
+
+            //app id
+            resValue "string", "google_admob_app_id", "ca-app-pub-3940256099942544~3347511713"
+
+            //interstitial
+            resValue "string", "interstitial_splash", "ca-app-pub-3940256099942544/1033173712"
+            resValue "string", "interstitial_inner", "ca-app-pub-3940256099942544/1033173712"
+            resValue "string", "interstitial_exit", "ca-app-pub-3940256099942544/1033173712"
+
+
+
+
         }
         debug {
             manifestPlaceholders = [crashlyticsCollectionEnabled:"false"]
             minifyEnabled false
+
+
+            //app id
+            resValue "string", "google_admob_app_id", "ca-app-pub-3940256099942544~3347511713"
+
+            //interstitial
+            resValue "string", "interstitial_splash", "ca-app-pub-3940256099942544/1033173712"
+            resValue "string", "interstitial_inner", "ca-app-pub-3940256099942544/1033173712"
+            resValue "string", "interstitial_exit", "ca-app-pub-3940256099942544/1033173712"
+
+
+
         }
     }
 
@@ -119,7 +145,17 @@ dependencies {
     // optional - Multiprocess support
     implementation "androidx.work:work-multiprocess:$work_version"
     implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.1'
+
     // Ripple Animation
     implementation 'com.skyfishjy.ripplebackground:library:1.0.1'
+
+
+    //google ads...
+    implementation 'com.google.android.gms:play-services-ads:23.6.0'
+    implementation("com.google.android.ump:user-messaging-platform:3.1.0")
+
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+
 
 }

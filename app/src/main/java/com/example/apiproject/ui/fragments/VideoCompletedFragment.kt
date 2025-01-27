@@ -22,6 +22,8 @@ import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.apiproject.R
+import com.example.apiproject.core.ads.admob.InterstitialHelper
+import com.example.apiproject.core.remoteconfig.RemoteConfig
 import com.example.apiproject.data.database.entity.DownloadedVideo
 import com.example.apiproject.data.interfaces.ClickBundleHandler
 import com.example.apiproject.data.interfaces.ClickHandler
@@ -152,6 +154,38 @@ class VideoCompletedFragment constructor() : BaseFragment() {
     }
 
     override fun lazyLoad() {
+
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        activity.let{
+            if(it is MainActivity){
+                if(RemoteConfig.show_downloaded_Interstitial_ad){
+                    InterstitialHelper.showAndLoadInterstitial(
+                        it,
+                        it.getString(R.string.interstitial_inner),
+                        true,
+                        useCapping = RemoteConfig.admob_downloaded_interstitial_capping,
+                        "downloaded",
+                        object : InterstitialHelper.InterstitialAdShowListener {
+                            override fun onInterstitialAdImpression() {
+                                super.onInterstitialAdImpression()
+
+                            }
+
+                            override fun onInterstitialAdNull() {
+                                //postAnalytic("exit_interstitial_null")
+
+                            }
+                        }
+                    )
+
+                }
+            }
+
+        }
 
     }
 

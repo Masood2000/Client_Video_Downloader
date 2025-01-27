@@ -47,4 +47,18 @@
     <color name="search_text_color_night">#141E26</color>
     <color name="selection">#EBEDEE</color>
     <color name="newselection">#FFFFFF</color>
+
+    <color name="textColor">#111111</color>
+
+    <!-- Ad Colors -->
+    <color name="ad_background">#3E303C</color>
+    <color name="ad_background2">#3F2038</color>
+    <color name="ad_background1">#20283F</color>
+
+    <color name="native_ad_bg">#00FFFFFF</color>
+    <color name="white_changeAble">#FFFFFFFF</color>
+    <color name="shimerrColor">#BEBEBE</color>
+    <color name="wificol">#C758E0</color>
+    <color name="cta_color_native">#087dcf</color>
+
 </resources>

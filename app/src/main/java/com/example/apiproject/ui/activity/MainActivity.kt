@@ -29,6 +29,9 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI.setupWithNavController
 import com.bumptech.glide.Glide
 import com.example.apiproject.R
+import com.example.apiproject.core.ads.admob.BannerAdManager
+import com.example.apiproject.core.ads.admob.InterstitialHelper
+import com.example.apiproject.core.remoteconfig.RemoteConfig
 import com.example.apiproject.data.Preferences.SharedPreference
 import com.example.apiproject.data.api.ExtractedData
 import com.example.apiproject.data.interfaces.ClickHandler
@@ -470,39 +473,96 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
             .into(dialogBinding.imageFilterView)
 
         dialogBinding.download.setOnClickListener {
-            var selectedCell = adapter.selectedCell
+
+            if(RemoteConfig.show_download_option_sheet_Interstitial_ad){
+                InterstitialHelper.showAndLoadInterstitial(
+                    this,
+                    getString(R.string.interstitial_inner),
+                    true,
+                    useCapping = RemoteConfig.admob_download_option_sheet_interstitial_capping,
+                    "download_option_sheet",
+                    object : InterstitialHelper.InterstitialAdShowListener {
+                        override fun onInterstitialAdImpression() {
+                            super.onInterstitialAdImpression()
+                            var selectedCell = adapter.selectedCell
 
 
-            permissionStateListener = object : ClickHandler {
-                override fun onClickPressed() {
-                    CoroutineScope(Dispatchers.IO).launch {
-                        if (selectedCell < extractedData?.video!!.size) {
-                            var video = extractedData?.video!![selectedCell]
-                            viewModel.downloadVideo(
-                                this@MainActivity,
-                                extractedData.title,
-                                video.url,
-                                Helper.getNewDownloadPath(),
-                                extractedData.cookie,
-                                false,
-                                extractedData.imageUrl,
-                                extractedData.title
-                            )
-                        } else {
-                            viewModel.downloadAudio(
-                                this@MainActivity, extractedData.title, url,
-                                extractedData.cookie, false,
-                                extractedData.imageUrl, extractedData.title,
-                                extractedData.audio ?: "",
-                                Helper.getNewAudioDownloadPath()
-                            )
+                            permissionStateListener = object : ClickHandler {
+                                override fun onClickPressed() {
+                                    CoroutineScope(Dispatchers.IO).launch {
+                                        if (selectedCell < extractedData?.video!!.size) {
+                                            var video = extractedData?.video!![selectedCell]
+                                            viewModel.downloadVideo(
+                                                this@MainActivity,
+                                                extractedData.title,
+                                                video.url,
+                                                Helper.getNewDownloadPath(),
+                                                extractedData.cookie,
+                                                false,
+                                                extractedData.imageUrl,
+                                                extractedData.title
+                                            )
+                                        } else {
+                                            viewModel.downloadAudio(
+                                                this@MainActivity, extractedData.title, url,
+                                                extractedData.cookie, false,
+                                                extractedData.imageUrl, extractedData.title,
+                                                extractedData.audio ?: "",
+                                                Helper.getNewAudioDownloadPath()
+                                            )
+                                        }
+                                    }
+                                }
+                            }
+
+                            bottomSheetDialog.dismiss()
+                            requestVideoAccessPermission()
+                        }
+
+                        override fun onInterstitialAdNull() {
+                            //postAnalytic("exit_interstitial_null")
+                            var selectedCell = adapter.selectedCell
+
+
+                            permissionStateListener = object : ClickHandler {
+                                override fun onClickPressed() {
+                                    CoroutineScope(Dispatchers.IO).launch {
+                                        if (selectedCell < extractedData?.video!!.size) {
+                                            var video = extractedData?.video!![selectedCell]
+                                            viewModel.downloadVideo(
+                                                this@MainActivity,
+                                                extractedData.title,
+                                                video.url,
+                                                Helper.getNewDownloadPath(),
+                                                extractedData.cookie,
+                                                false,
+                                                extractedData.imageUrl,
+                                                extractedData.title
+                                            )
+                                        } else {
+                                            viewModel.downloadAudio(
+                                                this@MainActivity, extractedData.title, url,
+                                                extractedData.cookie, false,
+                                                extractedData.imageUrl, extractedData.title,
+                                                extractedData.audio ?: "",
+                                                Helper.getNewAudioDownloadPath()
+                                            )
+                                        }
+                                    }
+                                }
+                            }
+
+                            bottomSheetDialog.dismiss()
+                            requestVideoAccessPermission()
+
                         }
                     }
-                }
+                )
+
             }
 
-            bottomSheetDialog.dismiss()
-            requestVideoAccessPermission()
+
+
         }
         dialogBinding.cancel.setOnClickListener {
             bottomSheetDialog.dismiss()
@@ -535,6 +595,8 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
                 R.id.splashFragment -> {
                     binding.topBar.visibility = View.GONE
                     binding.mainBottomNav.visibility = View.GONE
+
+                    binding.bannerParentLayout.visibility = View.GONE
                 }
 
                 R.id.homeFragment -> {
@@ -542,12 +604,20 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
                     binding.mainBottomNav.visibility = View.VISIBLE
                     binding.tvTitle.setText(getString(R.string.video_downloader))
                     binding.settings.isVisible = true
+
+                    if (InterstitialHelper.isNetworkAvailable(this)) {
+                        binding.bannerParentLayout.visibility = View.VISIBLE
+                    }
+
                 }
 
                 R.id.videoDownloadingFragment -> {
 
                     binding.tvTitle.setText(getString(R.string.downloading))
                     binding.settings.isVisible = false
+
+
+
                 }
 
                 R.id.videoCompletedFragment -> {
@@ -807,6 +877,31 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
 
     }
 
+
+    //ads related functions
+
+    fun loadAndShowBannerAd() {
+        Log.d("BannerLoad", "loadAndShowBannerAd: ")
+
+        //for remote config false must be replaced with show_banner_ad from remote config
+        if(false){
+            binding.bannerParentLayout.isVisible = false
+            return
+        }
+
+        val adSize = BannerAdManager(this).getAnchoredAdSize(
+            this,
+            binding.bannerContainer,
+        )
+        BannerAdManager(this).loadInlineBannerAd(
+            binding.bannerParentLayout,
+            binding.bannerContainer,
+            adSize.width,
+            adSize.height,
+            RemoteConfig.admob_banner_id
+        )
+
+    }
 
 
     companion object {

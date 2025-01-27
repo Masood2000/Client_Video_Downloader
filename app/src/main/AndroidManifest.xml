@@ -60,7 +60,22 @@
                 <data android:mimeType="text/plain" />
             </intent-filter>
 
+
         </activity>
+
+
+
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/google_admob_app_id"/>
+
+
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:theme="@style/myAdTheme"
+            tools:replace="android:theme" />
+
     </application>
 
 </manifest>
