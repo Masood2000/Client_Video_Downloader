@@ -44,7 +44,6 @@ import java.io.File
 
 
 @AndroidEntryPoint
-
 class VideoCompletedFragment  : BaseFragment() {
 
 
@@ -193,10 +192,13 @@ class VideoCompletedFragment  : BaseFragment() {
         }
 
 
-        loadAndShowNativeAd()
+        if(adapter.downloadedData.size >=2)
+            loadAndShowNativeAd()
+        else{
+            binding.admobParentContainer.isVisible = false
+        }
 
     }
-
 
     private fun showOptions(download: DownloadedVideo, position: Int) {
         activity?.let { context ->
