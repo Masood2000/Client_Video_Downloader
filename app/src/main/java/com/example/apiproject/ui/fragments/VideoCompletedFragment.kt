@@ -87,6 +87,15 @@ class VideoCompletedFragment  : BaseFragment() {
                                         binding.noVid.visibility = View.GONE
 
                                         adapter.setData(state.data)
+
+
+                                        if(adapter.downloadedData.size >=2)
+                                            loadAndShowNativeAd()
+                                        else{
+                                            binding.admobParentContainer.isVisible = false
+                                        }
+
+
                                     }
                                 }
 
@@ -191,12 +200,6 @@ class VideoCompletedFragment  : BaseFragment() {
 
         }
 
-
-        if(adapter.downloadedData.size >=2)
-            loadAndShowNativeAd()
-        else{
-            binding.admobParentContainer.isVisible = false
-        }
 
     }
 

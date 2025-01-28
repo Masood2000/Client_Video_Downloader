@@ -31,6 +31,7 @@ import com.example.apiproject.ui.activity.BrowserCastingActivity
 
 import com.example.apiproject.ui.activity.MainActivity.Companion
 import com.example.apiproject.ui.base.BaseFragment
+import com.example.apiproject.util.ApplicationConstants.isSplash
 import com.example.apiproject.util.Helper.setOnOneClickListener
 import com.example.apiproject.util.NetworkHelper
 import com.example.apiproject.util.SocialMediaType
@@ -86,6 +87,8 @@ class HomeFragment : BaseFragment() {
         super.onViewCreated(view, savedInstanceState)
 
         preferences.setIsNewUser(false)
+
+        isSplash = false
 
         Log.d(TAG, "onViewCreated: ${preferences.isNewUser()}")
 

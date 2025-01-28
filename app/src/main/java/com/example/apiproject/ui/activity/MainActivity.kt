@@ -181,6 +181,7 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
 
         var dialogBinding = FetchingDownloadDialogBinding.inflate(layoutInflater)
         var dialog = createAndShowDialog(dialogBinding.root)
+
         lifecycleScope.launch(Dispatchers.IO) {
 
 
@@ -244,7 +245,8 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
 
                     Log.d(TAG, "getDownloadMetaData: ${extractedData?.video.toString()}")
 
-                } else {
+                }
+                else {
                     Log.d("ApiResponse", "getDownloadMetaData: ${link}")
                     var secondExtractedData = ExtractorManager.getVideo(this@MainActivity, link)
                     if (secondExtractedData != null) {
@@ -263,7 +265,8 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
                     Log.d("ApiResponse", "Data is Null22")
                 }
 //                }
-            } catch (e: Exception) {
+            }
+            catch (e: Exception) {
                 withContext(Dispatchers.Main) {
                     Toast.makeText(this@MainActivity, "Error Occured", Toast.LENGTH_SHORT).show()
                     Log.d("ApiResponse", "Error Occured ${e.message}")
@@ -477,8 +480,8 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
                     useCapping = RemoteConfig.admob_download_option_sheet_interstitial_capping,
                     "download_option_sheet",
                     object : InterstitialHelper.InterstitialAdShowListener {
-                        override fun onInterstitialAdImpression() {
-                            super.onInterstitialAdImpression()
+                        override fun onInterstitialAdDismissed() {
+                            super.onInterstitialAdDismissed()
                             var selectedCell = adapter.selectedCell
 
 
@@ -512,6 +515,7 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
 
                             bottomSheetDialog.dismiss()
                             requestVideoAccessPermission()
+
                         }
 
                         override fun onInterstitialAdNull() {

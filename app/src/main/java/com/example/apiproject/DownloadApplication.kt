@@ -4,8 +4,10 @@ import android.app.Application
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.content.Context
+import android.util.Log
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.work.Configuration
+import com.example.apiproject.core.ads.admob.AppOpenManager
 import com.google.android.gms.ads.MobileAds
 import com.liulishuo.filedownloader.FileDownloader
 import com.liulishuo.filedownloader.connection.FileDownloadUrlConnection
@@ -15,6 +17,9 @@ import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
 class DownloadApplication: Application() {
+
+    private var appOpenManager: AppOpenManager? = null
+
     private val channelId = "DOWNLOAD_CHANNEL"
 
     override fun onCreate() {
@@ -39,6 +44,12 @@ class DownloadApplication: Application() {
 
         //admob
         MobileAds.initialize(this)
+
+
+        appOpenManager = AppOpenManager(this@DownloadApplication)
+
+        appOpenManager?.fetchAd()
+
     }
 
 
