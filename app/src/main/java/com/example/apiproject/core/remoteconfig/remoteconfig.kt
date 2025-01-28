@@ -105,14 +105,14 @@ class RemoteConfig {
 
 
         /***
-         * Sim Details native ad....
+         * downloaded videos native ad....
          */
 
-        var show_sim_details_native_ad = true
-        var admob_native_sim_details_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-3940256099942544/2247696110"}
-        var admob_native_sim_details_cta_round = 0.5f
-        var admob_native_sim_details_cta_color = "#0085FF"
-        var admob_native_sim_details_cta_text_color = "#FFFFFF"
+        var show_downloaded_videos_native_ad = true
+        var admob_native_downloaded_videos_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-3940256099942544/2247696110"}
+        var admob_native_downloaded_videos_cta_round = 0.5f
+        var admob_native_downloaded_videos_cta_color = "#0085FF"
+        var admob_native_downloaded_videos_cta_text_color = "#FFFFFF"
 
 
 

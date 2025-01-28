@@ -16,6 +16,7 @@ import com.example.apiproject.R
 import com.example.apiproject.core.ads.admob.InterstitialHelper
 import com.example.apiproject.core.ads.admob.NativePreLoadAdManager
 import com.example.apiproject.core.remoteconfig.RemoteConfig
+import com.example.apiproject.data.preferences.SharedPreference
 import com.example.apiproject.databinding.FragmentSplashBinding
 import com.example.apiproject.ui.activity.MainActivity
 import com.example.apiproject.ui.base.BaseFragment
@@ -24,6 +25,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import javax.inject.Inject
 import kotlin.system.exitProcess
 
 // heelo world
@@ -36,18 +38,17 @@ class SplashFragment : BaseFragment() {
     private var boolNewUser = false
 
 
-    override fun lazyLoad()
-    {
+    lateinit var preferences: SharedPreference
+
+    override fun lazyLoad() {
 
     }
 
-    override fun setViewBinding(): View
-    {
+    override fun setViewBinding(): View {
         return binding.root
     }
 
-    override fun initView()
-    {
+    override fun initView() {
 
         activity?.let {
             it.onBackPressedDispatcher.addCallback(viewLifecycleOwner) {
@@ -62,6 +63,10 @@ class SplashFragment : BaseFragment() {
         super.onCreate(savedInstanceState)
 
         ApplicationConstants.isSplash = true
+
+        preferences = SharedPreference(requireContext())
+
+        boolNewUser = preferences.isNewUser()
 
         Log.d(TAG, "$TAG onCreate: Called")
     }
@@ -89,7 +94,8 @@ class SplashFragment : BaseFragment() {
 
         Log.d(TAG, "$TAG startFragment: Called")
 
-        binding.splashTitle.animation = android.view.animation.AnimationUtils.loadAnimation(requireContext(), R.anim.fade_in)
+        binding.splashTitle.animation =
+            android.view.animation.AnimationUtils.loadAnimation(requireContext(), R.anim.fade_in)
 
         //ads related functionality
         activity.let {
@@ -120,14 +126,13 @@ class SplashFragment : BaseFragment() {
                     binding.progress.progress += 1
 
 
-                    
+
                     Log.d("progress", "startFragment: ${binding.progress.progress}")
-                    
-                    if (InterstitialHelper.mInterstitialAd != null)
-                    {
+
+                    if (InterstitialHelper.mInterstitialAd != null) {
                         // ad has been loaded, break the loop
 
-                        Log.d(TAG,"ad loaded inter")
+                        Log.d(TAG, "ad loaded inter")
                         binding.progress.setProgress(100, true)
 
                     }
@@ -147,7 +152,6 @@ class SplashFragment : BaseFragment() {
                 }
 
             }
-
 
 
         }
@@ -172,36 +176,96 @@ class SplashFragment : BaseFragment() {
                     object : InterstitialHelper.InterstitialAdShowListener {
                         override fun onInterstitialAdImpression() {
                             super.onInterstitialAdImpression()
-                            if (findNavController().currentDestination?.id == R.id.splashFragment) {
 
-                                activity?.let {
-                                    if (it is MainActivity) {
-                                        if (it.onSplashLinkDetected) {
-                                            findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
-                                            it.handleResume()
 
-                                        } else {
-                                            findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
+                            if (boolNewUser) {
+                                if (findNavController().currentDestination?.id == R.id.splashFragment) {
+
+                                    activity?.let {
+                                        if (it is MainActivity) {
+                                            findNavController().navigate(R.id.action_splashFragment_to_obInterestFragment)
+
+                                        }
+                                    }
+
+                                }
+                            }
+                            else {
+
+                                if(RemoteConfig.show_on_boarding_always){
+                                    if (findNavController().currentDestination?.id == R.id.splashFragment) {
+
+                                        activity?.let {
+                                            if (it is MainActivity) {
+                                                findNavController().navigate(R.id.action_splashFragment_to_onboardingFragment)
+
+                                            }
+                                        }
+
+                                    }
+                                }
+                                else{
+                                    activity?.let {
+                                        if (it is MainActivity) {
+                                            if (it.onSplashLinkDetected) {
+                                                findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
+                                                it.handleResume()
+
+                                            } else {
+                                                findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
+                                            }
                                         }
                                     }
                                 }
 
                             }
+
+
                         }
 
                         override fun onInterstitialAdNull() {
                             if (findNavController().currentDestination?.id == R.id.splashFragment) {
 
-                                activity?.let {
-                                    if (it is MainActivity) {
-                                        if (it.onSplashLinkDetected) {
-                                            findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
-                                            it.handleResume()
+                                if (boolNewUser) {
+                                    if (findNavController().currentDestination?.id == R.id.splashFragment) {
 
-                                        } else {
-                                            findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
+                                        activity?.let {
+                                            if (it is MainActivity) {
+                                                findNavController().navigate(R.id.action_splashFragment_to_obInterestFragment)
+
+                                            }
+                                        }
+
+                                    }
+                                }
+                                else {
+
+                                    if(RemoteConfig.show_on_boarding_always){
+                                        if (findNavController().currentDestination?.id == R.id.splashFragment) {
+
+                                            activity?.let {
+                                                if (it is MainActivity) {
+                                                    findNavController().navigate(R.id.action_splashFragment_to_onboardingFragment)
+
+                                                }
+                                            }
+
                                         }
                                     }
+                                    else{
+                                        activity?.let {
+                                            if (it is MainActivity) {
+                                                if (it.onSplashLinkDetected) {
+                                                    findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
+                                                    it.handleResume()
+
+                                                } else {
+                                                    findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
+                                                }
+                                            }
+                                        }
+                                    }
+
                                 }
 
                             }
@@ -221,15 +285,18 @@ class SplashFragment : BaseFragment() {
          * PreLoading ADs if new user
          */
 
-        if (boolNewUser) {
-            // loadObNativeAd()
-        } else {
+        Log.d(TAG, "preLoadNativeAds: ${boolNewUser}")
 
-            // if (RemoteConfig.show_on_boarding_always) {
-            //  preLoadOnBoardingAds()
-            // } else {
-            loadHomeNativeAd()
-            // }
+        if (boolNewUser) {
+            loadObNativeAd()
+        }
+        else {
+
+            if (RemoteConfig.show_on_boarding_always) {
+                preLoadOnBoardingAds()
+            } else {
+                loadHomeNativeAd()
+            }
 
         }
 
@@ -255,6 +322,97 @@ class SplashFragment : BaseFragment() {
             }
         }
 
+
+    }
+
+
+    private fun loadObNativeAd() {
+
+        if (RemoteConfig.show_on_boarding_native_ad) {
+
+            Log.d("dddd", "loadObNativeAd: called")
+            activity.let {
+                if (it is MainActivity) {
+
+                    NativePreLoadAdManager.loadOnBoardingAd(
+                        it,
+                        RemoteConfig.admob_native_on_boarding_id,
+                        "splash"
+                    )
+
+
+                }
+            }
+
+        }
+
+
+    }
+
+    fun preLoadOnBoardingAds() {
+
+        loadFeatureOneNativeAd()
+        loadFeatureTwoNativeAd()
+        loadFullScreenNativeAd()
+
+
+    }
+
+    private fun loadFeatureOneNativeAd() {
+
+        if (RemoteConfig.show_feature_one_native_ad) {
+            activity.let {
+                if (it is MainActivity) {
+
+                    NativePreLoadAdManager.loadFeatureOneAd(
+                        it,
+                        RemoteConfig.admob_native_feature_one_id,
+                        "splash"
+                    )
+
+                }
+            }
+        }
+
+
+    }
+
+    private fun loadFeatureTwoNativeAd() {
+
+        if (RemoteConfig.show_feature_two_native_ad) {
+            activity.let {
+                if (it is MainActivity) {
+
+                    NativePreLoadAdManager.loadFeatureTwoAd(
+                        it,
+                        RemoteConfig.admob_native_feature_two_id,
+                        "splash"
+                    )
+
+                }
+            }
+        }
+
+
+    }
+
+    private fun loadFullScreenNativeAd() {
+
+        if (RemoteConfig.show_full_screen_native_ad) {
+
+            activity.let {
+                if (it is MainActivity) {
+
+                    NativePreLoadAdManager.loadFullScreenAd(
+                        it,
+                        RemoteConfig.admob_native_full_screen_id,
+                        "splash"
+                    )
+
+                }
+            }
+
+        }
 
     }
 

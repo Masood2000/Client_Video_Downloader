@@ -7,15 +7,28 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.apiproject.R
+import com.example.apiproject.data.preferences.SharedPreference
 import com.example.apiproject.ui.activity.MainActivity
 
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.snackbar.Snackbar
 
+import javax.inject.Inject
+
+
 abstract class BaseFragment : Fragment() {
     private var isViewPrepare = false
     private var hasLoadData = false
 
+
+
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+
+
+    }
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

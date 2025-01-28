@@ -23,6 +23,7 @@ import com.example.apiproject.core.ads.admob.AdLoadListener
 import com.example.apiproject.core.ads.admob.InterstitialHelper
 import com.example.apiproject.core.ads.admob.NativePreLoadAdManager
 import com.example.apiproject.core.remoteconfig.RemoteConfig
+import com.example.apiproject.data.preferences.SharedPreference
 import com.example.apiproject.databinding.ExitSheetBinding
 import com.example.apiproject.ui.activity.MainActivity
 import com.example.apiproject.databinding.FragmentHomeBinding
@@ -56,6 +57,8 @@ class HomeFragment : BaseFragment() {
 
     private var dialogExit: Dialog? = null
 
+    lateinit var preferences: SharedPreference
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         activity?.let {
@@ -75,10 +78,16 @@ class HomeFragment : BaseFragment() {
             }
         }
 
+        preferences = SharedPreference(requireContext())
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        preferences.setIsNewUser(false)
+
+        Log.d(TAG, "onViewCreated: ${preferences.isNewUser()}")
 
         loadAndShowHomeNativeAd()
 

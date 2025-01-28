@@ -39,5 +39,19 @@
     <string name="loading_ads">Loading Ads.</string>
     <string name="loading_ad">Loading Ad</string>
     <string name="do_you_want_to_exit">Do you want to Exit?</string>
+    <string name="pick_your_interest">Pick Your Interests</string>
+    <string name="done">Done</string>
+
+
+    <string name="onboarding_title">Download Videos with Ease</string>
+    <string name="onboarding_title_2">Fast and Secure Video Downloads</string>
+    <string name="onboarding_title_3">Manage Your Downloads Efficiently</string>
+    <string name="onboarding_description">Easily download your favorite videos in high quality and enjoy offline viewing anytime, anywhere.</string>
+    <string name="onboarding_description_2">Download videos quickly and securely from various platforms with just a few taps.</string>
+    <string name="onboarding_description_3">Organize and track your downloaded videos with detailed progress and management tools.</string>
+
+    <string name="next">Next</string>
+    <string name="finish">Finish</string>
+
 
 </resources>

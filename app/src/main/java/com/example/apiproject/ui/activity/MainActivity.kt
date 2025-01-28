@@ -1,7 +1,6 @@
 package com.example.apiproject.ui.activity
 
 import android.Manifest
-import android.app.Activity
 import android.app.Dialog
 import android.content.ClipboardManager
 import android.content.Context
@@ -11,7 +10,6 @@ import android.os.Build
 import android.os.Bundle
 import android.os.Environment
 import android.os.StatFs
-import android.preference.Preference
 import android.provider.Settings
 import android.util.Log
 import android.view.LayoutInflater
@@ -21,7 +19,6 @@ import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.FileProvider
 import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavController
@@ -32,7 +29,7 @@ import com.example.apiproject.R
 import com.example.apiproject.core.ads.admob.BannerAdManager
 import com.example.apiproject.core.ads.admob.InterstitialHelper
 import com.example.apiproject.core.remoteconfig.RemoteConfig
-import com.example.apiproject.data.Preferences.SharedPreference
+import com.example.apiproject.data.preferences.SharedPreference
 import com.example.apiproject.data.api.ExtractedData
 import com.example.apiproject.data.interfaces.ClickHandler
 import com.example.apiproject.data.interfaces.UpdateData
@@ -56,8 +53,6 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import kotlinx.serialization.json.Json
-import java.io.File
-import java.util.prefs.Preferences
 import javax.inject.Inject
 
 @AndroidEntryPoint
@@ -592,10 +587,9 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
 
             when (destination.id) {
 
-                R.id.splashFragment -> {
+                R.id.splashFragment ,R.id.obInterestFragment , R.id.onboardingFragment -> {
                     binding.topBar.visibility = View.GONE
                     binding.mainBottomNav.visibility = View.GONE
-
                     binding.bannerParentLayout.visibility = View.GONE
                 }
 

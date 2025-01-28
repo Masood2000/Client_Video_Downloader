@@ -16,6 +16,7 @@ import android.provider.MediaStore
 import android.util.Log
 import android.view.View
 import androidx.activity.addCallback
+import androidx.core.view.isVisible
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
@@ -23,6 +24,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.apiproject.R
 import com.example.apiproject.core.ads.admob.InterstitialHelper
+import com.example.apiproject.core.ads.admob.NativeAdManager
 import com.example.apiproject.core.remoteconfig.RemoteConfig
 import com.example.apiproject.data.database.entity.DownloadedVideo
 import com.example.apiproject.data.interfaces.ClickBundleHandler
@@ -33,6 +35,7 @@ import com.example.apiproject.databinding.SheetVideoOptionsBinding
 import com.example.apiproject.domain.events.VideoLoaded
 import com.example.apiproject.ui.adapters.DownloadedAdapter
 import com.example.apiproject.ui.base.BaseFragment
+import com.example.videodownloader.core.ads.NativeLayout
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import dagger.hilt.android.AndroidEntryPoint
@@ -42,12 +45,14 @@ import java.io.File
 
 @AndroidEntryPoint
 
-class VideoCompletedFragment constructor() : BaseFragment() {
+class VideoCompletedFragment  : BaseFragment() {
 
 
     private val binding by lazy { FragmentVideoCompletedBinding.inflate(layoutInflater) }
 
     private val adapter by lazy { DownloadedAdapter() }
+
+    var nativeAdManager: NativeAdManager? = null
 
     private var optionsBottomSheetDialog: BottomSheetDialog? = null
 
@@ -186,6 +191,9 @@ class VideoCompletedFragment constructor() : BaseFragment() {
             }
 
         }
+
+
+        loadAndShowNativeAd()
 
     }
 
@@ -413,6 +421,39 @@ class VideoCompletedFragment constructor() : BaseFragment() {
      * <--------------- /Share Video Functions  ------------------->
      */
 
+
+    //ads
+
+    fun loadAndShowNativeAd() {
+
+        if(RemoteConfig.show_downloaded_videos_native_ad){
+            activity?.let {
+                if (nativeAdManager == null) {
+                    nativeAdManager = NativeAdManager(it)
+                }
+                nativeAdManager.let {
+                    it?.loadAdsWithConfiguration(
+                        binding.admobParentContainer,
+                        binding.admobNativeContainer,
+                        NativeLayout.NATIVE_7B,
+                        RemoteConfig.admob_native_downloaded_videos_id,
+                        1,
+                        "Downloaded Videos Fragment",
+                        false,
+                        RemoteConfig.admob_native_downloaded_videos_cta_round,
+                        RemoteConfig.admob_native_downloaded_videos_cta_color,
+                        RemoteConfig.admob_native_downloaded_videos_cta_text_color,
+                    )
+                }
+
+            }
+        }
+        else{
+            binding.admobParentContainer.isVisible = false
+        }
+
+
+    }
 
     companion object {
         private const val TAG = "VideoCompletedFragment"
