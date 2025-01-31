@@ -2,6 +2,10 @@ package com.example.apiproject.core.remoteconfig
 
 import android.util.Log
 import com.example.apiproject.BuildConfig
+import com.example.apiproject.R
+import com.example.apiproject.util.ApplicationConstants
+import com.google.firebase.remoteconfig.FirebaseRemoteConfig
+import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings
 
 
 class RemoteConfig {
@@ -21,7 +25,7 @@ class RemoteConfig {
          */
 
         var show_on_boarding_native_ad = true
-        var admob_native_on_boarding_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-3940256099942544/2247696110"}
+        var admob_native_on_boarding_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-1396902447261798/2467278056"}
         var admob_native_on_boarding_cta_round = 0.5f
         var admob_native_on_boarding_cta_color = "#0085FF"
         var admob_native_on_boarding_cta_text_color = "#FFFFFF"
@@ -33,7 +37,7 @@ class RemoteConfig {
          */
 
         var show_full_screen_native_ad = true
-        var admob_native_full_screen_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-3940256099942544/2247696110"}
+        var admob_native_full_screen_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-1396902447261798/7730648370"}
         var admob_native_full_screen_cta_round = 0.5f
         var admob_native_full_screen_cta_color = "#0085FF"
         var admob_native_full_screen_cta_text_color = "#FFFFFF"
@@ -45,7 +49,7 @@ class RemoteConfig {
          */
 
         var show_feature_one_native_ad = true
-        var admob_native_feature_one_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-3940256099942544/2247696110"}
+        var admob_native_feature_one_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-1396902447261798/1948403305"}
         var admob_native_feature_one_cta_round = 0.5f
         var admob_native_feature_one_cta_color = "#0085FF"
         var admob_native_feature_one_cta_text_color = "#FFFFFF"
@@ -56,7 +60,7 @@ class RemoteConfig {
          */
 
         var show_feature_two_native_ad = true
-        var admob_native_feature_two_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-3940256099942544/2247696110"}
+        var admob_native_feature_two_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-1396902447261798/9635321637"}
         var admob_native_feature_two_cta_round = 0.5f
         var admob_native_feature_two_cta_color = "#0085FF"
         var admob_native_feature_two_cta_text_color = "#FFFFFF"
@@ -66,42 +70,11 @@ class RemoteConfig {
          */
 
         var show_home_native_ad = true
-        var admob_native_home_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-3940256099942544/2247696110"}
+        var admob_native_home_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-1396902447261798/4589479713"}
         var admob_native_home_cta_round = 0.5f
         var admob_native_home_cta_color = "#0085FF"
         var admob_native_home_cta_text_color = "#FFFFFF"
 
-
-        /***
-         * Speed Test native ad....
-         */
-
-        var show_speed_test_native_ad = true
-        var admob_native_speed_test_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-3940256099942544/2247696110"}
-        var admob_native_speed_test_cta_round = 0.5f
-        var admob_native_speed_test_cta_color = "#0085FF"
-        var admob_native_speed_test_cta_text_color = "#FFFFFF"
-
-        /***
-         * lte native ad....
-         */
-
-        var show_lte_native_ad = true
-        var admob_native_lte_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-3940256099942544/2247696110"}
-        var admob_native_lte_cta_round = 0.5f
-        var admob_native_lte_cta_color = "#0085FF"
-        var admob_native_lte_cta_text_color = "#FFFFFF"
-
-
-        /***
-         * Phone Details native ad....
-         */
-
-        var show_phone_details_native_ad = true
-        var admob_native_phone_details_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-3940256099942544/2247696110"}
-        var admob_native_phone_details_cta_round = 0.5f
-        var admob_native_phone_details_cta_color = "#0085FF"
-        var admob_native_phone_details_cta_text_color = "#FFFFFF"
 
 
         /***
@@ -109,43 +82,12 @@ class RemoteConfig {
          */
 
         var show_downloaded_videos_native_ad = true
-        var admob_native_downloaded_videos_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-3940256099942544/2247696110"}
+        var admob_native_downloaded_videos_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-1396902447261798/3592657469"}
         var admob_native_downloaded_videos_cta_round = 0.5f
         var admob_native_downloaded_videos_cta_color = "#0085FF"
         var admob_native_downloaded_videos_cta_text_color = "#FFFFFF"
 
 
-
-        /***
-         * Battery Info native ad....
-         */
-
-        var show_battery_info_native_ad = true
-        var admob_native_battery_info_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-3940256099942544/2247696110"}
-        var admob_native_battery_info_cta_round = 0.5f
-        var admob_native_battery_info_cta_color = "#0085FF"
-        var admob_native_battery_info_cta_text_color = "#FFFFFF"
-
-
-        /***
-         * Data usage native ad....
-         */
-
-        var show_data_usage_native_ad = true
-        var admob_native_data_usage_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-3940256099942544/2247696110"}
-        var admob_native_data_usage_cta_round = 0.5f
-        var admob_native_data_usage_cta_color = "#0085FF"
-        var admob_native_data_usage_cta_text_color = "#FFFFFF"
-
-        /***
-         * wifi info ad....
-         */
-
-        var show_wifi_info_native_ad = true
-        var admob_wifi_info_native_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-3940256099942544/2247696110"}
-        var admob_native_wifi_info_cta_round = 0.5f
-        var admob_native_wifi_info_cta_color = "#0085FF"
-        var admob_native_wifi_info_cta_text_color = "#FFFFFF"
 
 
         /***
@@ -153,7 +95,7 @@ class RemoteConfig {
          */
 
         var show_exit_native_ad = true
-        var admob_exit_native_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-3940256099942544/2247696110"}
+        var admob_exit_native_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-1396902447261798/7340330783"}
         var admob_native_exit_cta_round = 1f
         var admob_native_exit_cta_color = "#0085FF"
         var admob_native_exit_cta_text_color = "#FFFFFF"
@@ -209,7 +151,7 @@ class RemoteConfig {
          * banner ad
          */
 
-        var admob_banner_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2014213617"} else{"ca-app-pub-3940256099942544/2014213617"}
+        var admob_banner_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2014213617"} else{"ca-app-pub-1396902447261798/3784229154"}
 
 
 
@@ -217,7 +159,7 @@ class RemoteConfig {
 
 
 
-   /* fun remoteConfig() {
+    fun remoteConfig() {
 
         Log.i(TAG, "remoteConfig: Called")
 
@@ -289,74 +231,6 @@ class RemoteConfig {
                 admob_native_home_cta_text_color = mFirebaseRemoteConfig.getString("admob_native_home_cta_text_color")
 
 
-                //Speed Test Native
-
-                show_speed_test_native_ad = mFirebaseRemoteConfig.getBoolean("show_speed_test_native_ad")
-                admob_native_speed_test_id = if(!BuildConfig.DEBUG) {mFirebaseRemoteConfig.getString("admob_native_speed_test_id")} else{"ca-app-pub-3940256099942544/2247696110"}
-                admob_native_speed_test_cta_round = mFirebaseRemoteConfig.getDouble("admob_native_speed_test_cta_round").toFloat()
-                admob_native_speed_test_cta_color = mFirebaseRemoteConfig.getString("admob_native_speed_test_cta_color")
-                admob_native_speed_test_cta_text_color = mFirebaseRemoteConfig.getString("admob_native_speed_test_cta_text_color")
-
-
-
-
-                //lte Native
-
-                show_lte_native_ad = mFirebaseRemoteConfig.getBoolean("show_lte_native_ad")
-                admob_native_lte_id = if(!BuildConfig.DEBUG) {mFirebaseRemoteConfig.getString("admob_native_lte_id")} else{"ca-app-pub-3940256099942544/2247696110"}
-                admob_native_lte_cta_round = mFirebaseRemoteConfig.getDouble("admob_native_lte_cta_round").toFloat()
-                admob_native_lte_cta_color = mFirebaseRemoteConfig.getString("admob_native_lte_cta_color")
-                admob_native_lte_cta_text_color = mFirebaseRemoteConfig.getString("admob_native_lte_cta_text_color")
-
-
-
-                //Phone Details Native
-
-                show_phone_details_native_ad = mFirebaseRemoteConfig.getBoolean("show_phone_details_native_ad")
-                admob_native_phone_details_id = if(!BuildConfig.DEBUG) {mFirebaseRemoteConfig.getString("admob_native_phone_details_id")} else{"ca-app-pub-3940256099942544/2247696110"}
-                admob_native_phone_details_cta_round = mFirebaseRemoteConfig.getDouble("admob_native_phone_details_cta_round").toFloat()
-                admob_native_phone_details_cta_color = mFirebaseRemoteConfig.getString("admob_native_phone_details_cta_color")
-                admob_native_phone_details_cta_text_color = mFirebaseRemoteConfig.getString("admob_native_phone_details_cta_text_color")
-
-
-
-                //Sim Details Native
-
-                show_sim_details_native_ad = mFirebaseRemoteConfig.getBoolean("show_sim_details_native_ad")
-                admob_native_sim_details_id = if(!BuildConfig.DEBUG) {mFirebaseRemoteConfig.getString("admob_native_sim_details_id")} else{"ca-app-pub-3940256099942544/2247696110"}
-                admob_native_sim_details_cta_round = mFirebaseRemoteConfig.getDouble("admob_native_sim_details_cta_round").toFloat()
-                admob_native_sim_details_cta_color = mFirebaseRemoteConfig.getString("admob_native_sim_details_cta_color")
-                admob_native_sim_details_cta_text_color = mFirebaseRemoteConfig.getString("admob_native_sim_details_cta_text_color")
-
-
-
-                //Battery Info Native
-
-                show_battery_info_native_ad = mFirebaseRemoteConfig.getBoolean("show_battery_info_native_ad")
-                admob_native_battery_info_id = if(!BuildConfig.DEBUG) {mFirebaseRemoteConfig.getString("admob_native_battery_info_id")} else{"ca-app-pub-3940256099942544/2247696110"}
-                admob_native_battery_info_cta_round = mFirebaseRemoteConfig.getDouble("admob_native_battery_info_cta_round").toFloat()
-                admob_native_battery_info_cta_color = mFirebaseRemoteConfig.getString("admob_native_battery_info_cta_color")
-                admob_native_battery_info_cta_text_color = mFirebaseRemoteConfig.getString("admob_native_battery_info_cta_text_color")
-
-
-
-                //Data usage Native
-
-                show_data_usage_native_ad = mFirebaseRemoteConfig.getBoolean("show_data_usage_native_ad")
-                admob_native_data_usage_id = if(!BuildConfig.DEBUG) {mFirebaseRemoteConfig.getString("admob_native_data_usage_id")} else{"ca-app-pub-3940256099942544/2247696110"}
-                admob_native_data_usage_cta_round = mFirebaseRemoteConfig.getDouble("admob_native_data_usage_cta_round").toFloat()
-                admob_native_data_usage_cta_color = mFirebaseRemoteConfig.getString("admob_native_data_usage_cta_color")
-                admob_native_data_usage_cta_text_color = mFirebaseRemoteConfig.getString("admob_native_data_usage_cta_text_color")
-
-
-
-                //wifi Native
-
-                show_wifi_info_native_ad = mFirebaseRemoteConfig.getBoolean("show_exit_native_ad")
-                admob_wifi_info_native_id = if(!BuildConfig.DEBUG) {mFirebaseRemoteConfig.getString("admob_exit_native_id")} else{"ca-app-pub-3940256099942544/2247696110"}
-                admob_native_wifi_info_cta_round = mFirebaseRemoteConfig.getDouble("admob_native_exit_cta_round").toFloat()
-                admob_native_wifi_info_cta_color = mFirebaseRemoteConfig.getString("admob_native_exit_cta_color")
-                admob_native_wifi_info_cta_text_color = mFirebaseRemoteConfig.getString("admob_native_exit_cta_text_color")
 
 
                 //exit Native
@@ -377,14 +251,12 @@ class RemoteConfig {
                 show_on_boarding_always = mFirebaseRemoteConfig.getBoolean("show_on_boarding_always")
 
 
+                //banner ad
 
-                *//***
-                 * banner ad
-                 *//*
 
                 admob_banner_id = if(!BuildConfig.DEBUG) {mFirebaseRemoteConfig.getString("admob_banner_id")} else{"ca-app-pub-3940256099942544/2014213617"}
 
-
+                admob_native_downloaded_videos_id = if(!BuildConfig.DEBUG) {mFirebaseRemoteConfig.getString("admob_native_downloaded_videos_id")} else{"ca-app-pub-3940256099942544/2247696110"}
                 onRemoteFetched?.invoke(true)
 
             }
@@ -398,7 +270,7 @@ class RemoteConfig {
             .addOnCanceledListener { Log.i(TAG, "remoteConfig: Cancel ") }
             .addOnCompleteListener { Log.i(TAG, "remoteConfig: Complete ") }
 
-    }*/
+    }
 
 }
 

@@ -19,13 +19,13 @@ object NetworkHelper {
     var cookie: String? = null
 
     val retrofit = Retrofit.Builder()
-        .baseUrl("http://51.20.124.156:8000")
+        .baseUrl("http://13.61.3.232:8000/")
         .addConverterFactory(GsonConverterFactory.create())
         .build()
     val apiService = retrofit.create(DataAPI::class.java)
     suspend fun getData(encodedUrl: String): JsonObject? {
         return try {
-            val response = apiService.getData(encodedUrl).awaitResponse()
+            val response = apiService.getData(encodedUrl)
             if (response.isSuccessful) {
                 Log.d("ApiResponse", "getData: ${response.body()    }")
                 response.body() // Return the data if successfulFF

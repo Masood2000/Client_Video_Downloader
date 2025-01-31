@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>test</key>
+        <value>not configured</value>
+    </entry>
+
+
+    <!-- adds related config settings -->
+    <entry>
+        <key>capping_time</key>
+        <value>30</value>
+    </entry>
+
+
+
+    <!-- On Boarding Native Ad -->
+
+    <entry>
+        <key>show_on_boarding_native_ad</key>
+        <value>true</value>
+    </entry>
+
+
+    <entry>
+        <key>admob_native_on_boarding_id</key>
+        <value>ca-app-pub-1396902447261798/2467278056</value>
+    </entry>
+
+    <entry>
+        <key>admob_native_on_boarding_cta_round</key>
+        <value>0.5</value>
+    </entry>
+
+    <entry>
+        <key>admob_native_on_boarding_cta_color</key>
+        <value>#0085FF</value>
+    </entry>
+
+    <entry>
+        <key>admob_native_on_boarding_cta_text_color</key>
+        <value>#FFFFFF</value>
+    </entry>
+
+
+
+    <!-- Full Screen Native Ad -->
+
+    <entry>
+        <key>show_full_screen_native_ad</key>
+        <value>true</value>
+    </entry>
+
+
+    <entry>
+        <key>admob_native_full_screen_id</key>
+        <value>ca-app-pub-1396902447261798/7730648370</value>
+    </entry>
+
+    <entry>
+        <key>admob_banner_id</key>
+        <value>ca-app-pub-1396902447261798/3784229154</value>
+    </entry>
+
+    <entry>
+        <key>admob_native_downloaded_videos_id</key>
+        <value>ca-app-pub-1396902447261798/3592657469</value>
+    </entry>
+
+    <entry>
+        <key>admob_native_full_screen_cta_round</key>
+        <value>0.5</value>
+    </entry>
+
+    <entry>
+        <key>admob_native_full_screen_cta_color</key>
+        <value>#0085FF</value>
+    </entry>
+
+    <entry>
+        <key>admob_native_full_screen_cta_text_color</key>
+        <value>#FFFFFF</value>
+    </entry>
+
+
+
+    <!-- Feature One Native Ad -->
+
+    <entry>
+        <key>show_feature_one_native_ad</key>
+        <value>true</value>
+    </entry>
+
+
+    <entry>
+        <key>admob_native_feature_one_id</key>
+        <value>ca-app-pub-1396902447261798/1948403305</value>
+    </entry>
+
+    <entry>
+        <key>admob_native_feature_one_cta_round</key>
+        <value>0.5</value>
+    </entry>
+
+    <entry>
+        <key>admob_native_feature_one_cta_color</key>
+        <value>#0085FF</value>
+    </entry>
+
+    <entry>
+        <key>admob_native_feature_one_cta_text_color</key>
+        <value>#FFFFFF</value>
+    </entry>
+
+
+    <!-- Feature Two Native Ad -->
+
+    <entry>
+        <key>show_feature_two_native_ad</key>
+        <value>true</value>
+    </entry>
+
+
+    <entry>
+        <key>admob_native_feature_two_id</key>
+        <value>ca-app-pub-1396902447261798/9635321637</value>
+    </entry>
+
+    <entry>
+        <key>admob_native_feature_two_cta_round</key>
+        <value>0.5</value>
+    </entry>
+
+    <entry>
+        <key>admob_native_feature_two_cta_color</key>
+        <value>#0085FF</value>
+    </entry>
+
+    <entry>
+        <key>admob_native_feature_two_cta_text_color</key>
+        <value>#FFFFFF</value>
+    </entry>
+
+
+
+
+    <!-- Home Native Ad -->
+
+    <entry>
+        <key>show_home_native_ad</key>
+        <value>true</value>
+    </entry>
+
+
+    <entry>
+        <key>admob_native_home_id</key>
+        <value>ca-app-pub-1396902447261798/4589479713</value>
+    </entry>
+
+    <entry>
+        <key>admob_native_home_cta_round</key>
+        <value>0.5</value>
+    </entry>
+
+    <entry>
+        <key>admob_native_home_cta_color</key>
+        <value>#0085FF</value>
+    </entry>
+
+    <entry>
+        <key>admob_native_home_cta_text_color</key>
+        <value>#FFFFFF</value>
+    </entry>
+
+
+
+
+
+    <!-- Exit Native Ad -->
+
+    <entry>
+        <key>show_exit_native_ad</key>
+        <value>true</value>
+    </entry>
+
+
+    <entry>
+        <key>admob_exit_native_id</key>
+        <value>ca-app-pub-1396902447261798/7340330783</value>
+    </entry>
+
+    <entry>
+        <key>admob_native_exit_cta_round</key>
+        <value>0.5</value>
+    </entry>
+
+    <entry>
+        <key>admob_native_exit_cta_color</key>
+        <value>#0085FF</value>
+    </entry>
+
+    <entry>
+        <key>admob_native_exit_cta_text_color</key>
+        <value>#FFFFFF</value>
+    </entry>
+
+
+    <!-- Exit Interstitial Ad -->
+
+    <entry>
+        <key>show_exit_interstitial_ad</key>
+        <value>true</value>
+    </entry>
+
+
+
+    <!-- banner Ad -->
+
+
+
+    <!-- onboarding use cases -->
+    <entry>
+        <key>show_on_boarding_always</key>
+        <value>true</value>
+    </entry>
+
+
+</defaultsMap>

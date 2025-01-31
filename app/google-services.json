@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "588661639404",
+    "project_id": "downloader-46a00",
+    "storage_bucket": "downloader-46a00.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588661639404:android:b8a521986414b0ed277dc9",
+        "android_client_info": {
+          "package_name": "com.videodownloader.downloadhd.videos.fourkdownloader"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAD4sMc_NH3L0vCsOKZRiwSrHbeB_TfVaY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -75,7 +75,11 @@ class SplashFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        startFragment()
+        RemoteConfig().remoteConfig()
+        RemoteConfig.onRemoteFetched = {
+            startFragment()
+        }
+
 
     }
 

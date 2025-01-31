@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.work.Configuration
 import com.example.apiproject.core.ads.admob.AppOpenManager
 import com.google.android.gms.ads.MobileAds
+import com.google.firebase.FirebaseApp
 import com.liulishuo.filedownloader.FileDownloader
 import com.liulishuo.filedownloader.connection.FileDownloadUrlConnection
 import dagger.hilt.android.HiltAndroidApp
@@ -23,7 +24,14 @@ class DownloadApplication: Application() {
     private val channelId = "DOWNLOAD_CHANNEL"
 
     override fun onCreate() {
+        FirebaseApp.initializeApp(this)
         super.onCreate()
+
+        //admob
+        MobileAds.initialize(this)
+
+        Log.d("F_TAG", "onCreate: ${FirebaseApp.getInstance()}")
+
         FileDownloader.setupOnApplicationOnCreate(this)
             .connectionCreator(
                 FileDownloadUrlConnection.Creator(
@@ -42,8 +50,7 @@ class DownloadApplication: Application() {
         createNotificationChannel()
 
 
-        //admob
-        MobileAds.initialize(this)
+
 
 
         appOpenManager = AppOpenManager(this@DownloadApplication)

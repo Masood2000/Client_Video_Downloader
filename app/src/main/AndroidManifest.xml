@@ -27,6 +27,8 @@
         android:theme="@style/Theme.ApiProject"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+
+
         <activity
             android:name=".ui.activity.BrowserCastingActivity"
             android:exported="false" />

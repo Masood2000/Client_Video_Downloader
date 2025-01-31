@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.activity.addCallback
 import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
@@ -146,7 +147,11 @@ class WatchReelsFragment : Fragment() {
             }
         }
         binding.ivBack.setOnClickListener {
-            findNavController().popBackStack()
+            activity?.let {
+                if(it is MainActivity){
+                    it.moveToFirstItem()
+                }
+            }
         }
 
         binding.vpShorts.adapter = shortReelsAdapter
@@ -181,7 +186,13 @@ class WatchReelsFragment : Fragment() {
 
             }
         }
-
+        activity?.let {
+            if (it is MainActivity){
+                it.onBackPressedDispatcher.addCallback (viewLifecycleOwner){
+                    it.moveToFirstItem()
+                }
+            }
+        }
     }
 
     override fun onResume() {
