@@ -9,7 +9,7 @@
     <!-- adds related config settings -->
     <entry>
         <key>capping_time</key>
-        <value>30</value>
+        <value>45</value>
     </entry>
 
 
@@ -221,6 +221,28 @@
     <!-- onboarding use cases -->
     <entry>
         <key>show_on_boarding_always</key>
+        <value>true</value>
+    </entry>
+
+
+    <entry>
+        <key>admob_exit_interstitial_capping</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>admob_downloading_interstitial_capping</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>admob_downloaded_interstitial_capping</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>admob_reels_interstitial_capping</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>admob_download_option_sheet_interstitial_capping</key>
         <value>true</value>
     </entry>
 

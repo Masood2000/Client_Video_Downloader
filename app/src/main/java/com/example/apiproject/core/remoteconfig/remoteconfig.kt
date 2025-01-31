@@ -99,7 +99,7 @@ class RemoteConfig {
         var admob_native_exit_cta_round = 1f
         var admob_native_exit_cta_color = "#0085FF"
         var admob_native_exit_cta_text_color = "#FFFFFF"
-        var admob_exit_interstitial_capping = false
+        var admob_exit_interstitial_capping = true
 
 
         /***
@@ -121,21 +121,21 @@ class RemoteConfig {
          */
 
         var show_downloading_Interstitial_ad = true
-        var admob_downloading_interstitial_capping = false
+        var admob_downloading_interstitial_capping = true
 
         /***
          * downloaded interstitial ad
          */
 
         var show_downloaded_Interstitial_ad = true
-        var admob_downloaded_interstitial_capping = false
+        var admob_downloaded_interstitial_capping = true
 
         /***
          * reels interstitial ad
          */
 
         var show_reels_Interstitial_ad = true
-        var admob_reels_interstitial_capping = false
+        var admob_reels_interstitial_capping = true
 
 
         /***
@@ -143,7 +143,7 @@ class RemoteConfig {
          */
 
         var show_download_option_sheet_Interstitial_ad = true
-        var admob_download_option_sheet_interstitial_capping = false
+        var admob_download_option_sheet_interstitial_capping = true
 
 
 
@@ -255,6 +255,14 @@ class RemoteConfig {
 
 
                 admob_banner_id = if(!BuildConfig.DEBUG) {mFirebaseRemoteConfig.getString("admob_banner_id")} else{"ca-app-pub-3940256099942544/2014213617"}
+
+                //all capping values
+                admob_exit_interstitial_capping = mFirebaseRemoteConfig.getBoolean("admob_exit_interstitial_capping")
+                admob_downloading_interstitial_capping = mFirebaseRemoteConfig.getBoolean("admob_downloading_interstitial_capping")
+                admob_downloaded_interstitial_capping = mFirebaseRemoteConfig.getBoolean("admob_downloaded_interstitial_capping")
+                admob_reels_interstitial_capping = mFirebaseRemoteConfig.getBoolean("admob_reels_interstitial_capping")
+                admob_download_option_sheet_interstitial_capping = mFirebaseRemoteConfig.getBoolean("admob_download_option_sheet_interstitial_capping")
+
 
                 admob_native_downloaded_videos_id = if(!BuildConfig.DEBUG) {mFirebaseRemoteConfig.getString("admob_native_downloaded_videos_id")} else{"ca-app-pub-3940256099942544/2247696110"}
                 onRemoteFetched?.invoke(true)
