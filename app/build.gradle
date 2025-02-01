@@ -28,7 +28,7 @@ android {
 
     signingConfigs {
         release {
-            storeFile file('C:\\Users\\ahsan\\AndroidStudioProjects\\Client_Video_Downloader\\client.jks')
+            storeFile file('/Users/wasayrizwani/AndroidStudioProjects/Client_Video_Downloader2/client.jks')
             storePassword 'client'
             keyAlias 'key0'
             keyPassword 'client'
@@ -40,7 +40,7 @@ android {
             minifyEnabled true
             manifestPlaceholders = [crashlyticsCollectionEnabled:"true"]
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.release
+           signingConfig signingConfigs.release
             shrinkResources true
 
             //app id
@@ -59,7 +59,7 @@ android {
         }
         debug {
             manifestPlaceholders = [crashlyticsCollectionEnabled:"false"]
-            minifyEnabled true
+            minifyEnabled false
 
 
             //app id
