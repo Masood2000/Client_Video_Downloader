@@ -14,6 +14,8 @@ class ObLanguageViewModel : ViewModel() {
         MutableStateFlow(mutableListOf())
     val allLanguages = _allLanguages.asStateFlow()
 
+    var selectedLanguages = mutableListOf<InterestModel>()
+
     fun getLanguages() {
         // get languages
         val interestList = mutableListOf<InterestModel>()

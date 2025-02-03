@@ -5,6 +5,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
@@ -109,8 +110,11 @@ class ObInterestFragment : Fragment() {
 
     private fun init() {
         viewModel.getLanguages()
-       // adapter.selectedLocale = preferences.getLanguageCode()
+        // adapter.selectedLocale = preferences.getLanguageCode()
         binding.obRecyclerView.adapter = adapter
+        if (viewModel.selectedLanguages.isEmpty()) {
+            binding.nextIv.isEnabled = false
+        }
     }
 
     private fun inflateUI() {
@@ -125,13 +129,27 @@ class ObInterestFragment : Fragment() {
 
         binding.nextIv.setOnClickListener {
 
-           if(findNavController().currentDestination?.id == R.id.obInterestFragment){
-               findNavController().navigate(R.id.action_obInterestFragment_to_onboardingFragment)
-           }
+            if (viewModel.selectedLanguages.isEmpty()) {
+                Toast.makeText(requireContext(), "Please select any interest", Toast.LENGTH_SHORT)
+                    .show()
+                return@setOnClickListener
+            }
+            if (findNavController().currentDestination?.id == R.id.obInterestFragment) {
+                findNavController().navigate(R.id.action_obInterestFragment_to_onboardingFragment)
+            }
 
         }
 
-
+        adapter.onInterestClickListener = object : ObInterestAdapter.OnInterestClickListener {
+            override fun onInterestClick(interest: InterestModel) {
+                if (viewModel.selectedLanguages.contains(interest)) {
+                    viewModel.selectedLanguages.remove(interest)
+                } else {
+                    viewModel.selectedLanguages.add(interest)
+                }
+                binding.nextIv.isEnabled = viewModel.selectedLanguages.isNotEmpty()
+            }
+        }
     }
 
     private fun setUpRecyclerView(it: MutableList<InterestModel>) {
@@ -149,7 +167,7 @@ class ObInterestFragment : Fragment() {
     fun showPreLoadAd() {
 
 
-        if(RemoteConfig.show_on_boarding_native_ad){
+        if (RemoteConfig.show_on_boarding_native_ad) {
             Log.d(TAG, "loadAndShowHomeNativeAd: pre load ")
             activity?.let {
                 if (it is MainActivity) {
@@ -201,8 +219,7 @@ class ObInterestFragment : Fragment() {
                             RemoteConfig.admob_native_on_boarding_cta_color,
                             RemoteConfig.admob_native_on_boarding_cta_text_color,
                         )
-                    }
-                    else if (NativePreLoadAdManager.isOnBoardingAdLoading()) {
+                    } else if (NativePreLoadAdManager.isOnBoardingAdLoading()) {
                         Log.d(TAG, "onOnBoardingAdLoaded: 5")
                         NativePreLoadAdManager.adLoadListener = myAdLoadListener
                     } else {
@@ -211,11 +228,9 @@ class ObInterestFragment : Fragment() {
                     }
                 }
             }
-        }
-        else{
+        } else {
             binding.admobParentContainer.isVisible = false
         }
-
 
 
     }
@@ -302,6 +317,5 @@ class ObInterestFragment : Fragment() {
 
     companion object {
         private const val TAG = "OB_INTEREST_FRAGMENT"
-
     }
 }
