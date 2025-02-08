@@ -28,7 +28,7 @@ class TikTokExtractor: Extractor {
         if(cookie ==null){
             return null
         }
-        Log.d(TAG, "getVideoLink: COokie "+ cookie)
+        Log.d(TAG, "getVideoLink: Cookie "+ cookie)
 
         var page= responseMap?.get("page") ?: return null
 

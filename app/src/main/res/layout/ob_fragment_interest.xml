@@ -25,6 +25,7 @@
 
 
             android:backgroundTint="@color/primary"
+            android:textColor="@color/white"
             android:text="@string/done"
             android:textSize="@dimen/_10sdp"
             app:cornerRadius="@dimen/_8sdp"

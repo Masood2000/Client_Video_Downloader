@@ -65,6 +65,7 @@ class HomeFragment : BaseFragment() {
         activity?.let {
             if (it is MainActivity) {
                 it.loadAndShowBannerAd()
+                it.handleResume()
             }
         }
 
@@ -80,6 +81,7 @@ class HomeFragment : BaseFragment() {
         }
 
         preferences = SharedPreference(requireContext())
+
 
     }
 

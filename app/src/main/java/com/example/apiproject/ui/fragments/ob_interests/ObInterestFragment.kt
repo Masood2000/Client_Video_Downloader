@@ -113,7 +113,7 @@ class ObInterestFragment : Fragment() {
         // adapter.selectedLocale = preferences.getLanguageCode()
         binding.obRecyclerView.adapter = adapter
         if (viewModel.selectedLanguages.isEmpty()) {
-            binding.nextIv.isEnabled = false
+            //binding.nextIv.isEnabled = false
         }
     }
 
@@ -129,16 +129,20 @@ class ObInterestFragment : Fragment() {
 
         binding.nextIv.setOnClickListener {
 
-            if (viewModel.selectedLanguages.isEmpty()) {
-                Toast.makeText(requireContext(), "Please select any interest", Toast.LENGTH_SHORT)
-                    .show()
-                return@setOnClickListener
+            if(ObInterestAdapter.selected) {
+
+                if (findNavController().currentDestination?.id == R.id.obInterestFragment) {
+                    findNavController().navigate(R.id.action_obInterestFragment_to_onboardingFragment)
+                }
             }
-            if (findNavController().currentDestination?.id == R.id.obInterestFragment) {
-                findNavController().navigate(R.id.action_obInterestFragment_to_onboardingFragment)
+            else{
+                Log.d("adp_tag", "initListeners: not selected")
+                Toast.makeText(requireContext(), "Please select at least one interest", Toast.LENGTH_SHORT).show()
             }
 
         }
+
+        // code pushed......
 
         adapter.onInterestClickListener = object : ObInterestAdapter.OnInterestClickListener {
             override fun onInterestClick(interest: InterestModel) {
@@ -147,7 +151,7 @@ class ObInterestFragment : Fragment() {
                 } else {
                     viewModel.selectedLanguages.add(interest)
                 }
-                binding.nextIv.isEnabled = viewModel.selectedLanguages.isNotEmpty()
+               // binding.nextIv.isEnabled = ObInterestAdapter.selected
             }
         }
     }

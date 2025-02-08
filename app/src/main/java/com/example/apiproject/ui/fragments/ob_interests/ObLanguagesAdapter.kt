@@ -16,6 +16,11 @@ class ObInterestAdapter @Inject constructor() : RecyclerView.Adapter<RecyclerVie
     private val mAllInterests: MutableList<InterestModel> = mutableListOf()
     var onInterestClickListener: OnInterestClickListener? = null
 
+    companion object {
+        var selected=false
+
+    }
+
     class InterestViewHolder(val binding: InterestLayoutBinding) :
         RecyclerView.ViewHolder(binding.root)
 
@@ -54,10 +59,11 @@ class ObInterestAdapter @Inject constructor() : RecyclerView.Adapter<RecyclerVie
 
                     languageCard.setOnClickListener {
 
+                        selected=true
+
                         Log.d("adp_tag", "onBindViewHolder: cliccked")
 
                         mAllInterests[position].isSelected = !mAllInterests[position].isSelected
-                        onInterestClickListener?.onInterestClick(interest)
 
                         // Notify adapter of data change
                         notifyDataSetChanged()

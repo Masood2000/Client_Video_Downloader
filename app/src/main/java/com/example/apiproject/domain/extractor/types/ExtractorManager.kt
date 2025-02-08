@@ -10,6 +10,8 @@ object ExtractorManager {
         Log.d("HOME_FRAGMENT", "getVideo: here")
         if (url.contains("tiktok.com")) {
             println("TikTok link detected")
+
+
             return TikTokExtractor.instance.getVideoLink(context,url)
         }
         else if (url.contains("facebook.com")||url.contains("fb.com")
@@ -23,6 +25,10 @@ object ExtractorManager {
                 return video
             }
         }
+
+
+
+
         else if (url.contains("instagram.com")) {
             Log.d("HOME_FRAGMENT", "getVideo: here")
             println("Instagram link detected")

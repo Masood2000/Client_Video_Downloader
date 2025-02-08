@@ -22,6 +22,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavController
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI.setupWithNavController
 import com.bumptech.glide.Glide
@@ -817,7 +818,7 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         Log.d(TAG, "onResume: ActivityOnResumeCalled")
-        if (navController.currentDestination?.id != R.id.splashFragment) {
+        if (navController.currentDestination?.id != R.id.splashFragment && navController.currentDestination?.id != R.id.onboardingFragment && navController.currentDestination?.id != R.id.obInterestFragment) {
             handleResume()
         } else {
             onSplashLinkDetected = true
