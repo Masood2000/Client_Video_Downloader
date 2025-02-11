@@ -789,6 +789,7 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
 
     fun handleResume() {
 
+
         lifecycleScope.launch(Dispatchers.IO) {
             delay(1000)
 
@@ -817,7 +818,7 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         Log.d(TAG, "onResume: ActivityOnResumeCalled")
-        if (navController.currentDestination?.id != R.id.splashFragment) {
+        if (navController.currentDestination?.id != R.id.splashFragment  || navController.currentDestination?.id != R.id.onboardingFragment || navController.currentDestination?.id != R.id.obInterestFragment) {
             handleResume()
         } else {
             onSplashLinkDetected = true
