@@ -11,9 +11,9 @@
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 6,
-      "versionName": "1.6",
-      "outputFile": "VideoDownloader (6) - 1.6-release.apk"
+      "versionCode": 7,
+      "versionName": "1.7",
+      "outputFile": "VideoDownloader (7) - 1.7-release.apk"
     }
   ],
   "elementType": "File",
@@ -22,14 +22,14 @@
       "minApi": 28,
       "maxApi": 30,
       "baselineProfiles": [
-        "baselineProfiles/1/VideoDownloader (6) - 1.6-release.dm"
+        "baselineProfiles/1/VideoDownloader (7) - 1.7-release.dm"
       ]
     },
     {
       "minApi": 31,
       "maxApi": 2147483647,
       "baselineProfiles": [
-        "baselineProfiles/0/VideoDownloader (6) - 1.6-release.dm"
+        "baselineProfiles/0/VideoDownloader (7) - 1.7-release.dm"
       ]
     }
   ],

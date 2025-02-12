@@ -25,7 +25,7 @@ class RemoteConfig {
          */
 
         var show_on_boarding_native_ad = true
-        var admob_native_on_boarding_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-1396902447261798/2467278056"}
+        var admob_native_on_boarding_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-1396902447261798/6734847627"}
         var admob_native_on_boarding_cta_round = 0.5f
         var admob_native_on_boarding_cta_color = "#0085FF"
         var admob_native_on_boarding_cta_text_color = "#FFFFFF"
@@ -37,7 +37,7 @@ class RemoteConfig {
          */
 
         var show_full_screen_native_ad = true
-        var admob_native_full_screen_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-1396902447261798/7730648370"}
+        var admob_native_full_screen_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-1396902447261798/6941935029"}
         var admob_native_full_screen_cta_round = 0.5f
         var admob_native_full_screen_cta_color = "#0085FF"
         var admob_native_full_screen_cta_text_color = "#FFFFFF"
@@ -49,7 +49,7 @@ class RemoteConfig {
          */
 
         var show_feature_one_native_ad = true
-        var admob_native_feature_one_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-1396902447261798/1948403305"}
+        var admob_native_feature_one_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-1396902447261798/3493644607"}
         var admob_native_feature_one_cta_round = 0.5f
         var admob_native_feature_one_cta_color = "#0085FF"
         var admob_native_feature_one_cta_text_color = "#FFFFFF"
@@ -60,7 +60,7 @@ class RemoteConfig {
          */
 
         var show_feature_two_native_ad = true
-        var admob_native_feature_two_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-1396902447261798/9635321637"}
+        var admob_native_feature_two_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-1396902447261798/5924366824"}
         var admob_native_feature_two_cta_round = 0.5f
         var admob_native_feature_two_cta_color = "#0085FF"
         var admob_native_feature_two_cta_text_color = "#FFFFFF"
@@ -70,7 +70,7 @@ class RemoteConfig {
          */
 
         var show_home_native_ad = true
-        var admob_native_home_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-1396902447261798/4589479713"}
+        var admob_native_home_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-1396902447261798/7237448491"}
         var admob_native_home_cta_round = 0.5f
         var admob_native_home_cta_color = "#0085FF"
         var admob_native_home_cta_text_color = "#FFFFFF"
@@ -82,7 +82,7 @@ class RemoteConfig {
          */
 
         var show_downloaded_videos_native_ad = true
-        var admob_native_downloaded_videos_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-1396902447261798/3592657469"}
+        var admob_native_downloaded_videos_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-1396902447261798/4236676796"}
         var admob_native_downloaded_videos_cta_round = 0.5f
         var admob_native_downloaded_videos_cta_color = "#0085FF"
         var admob_native_downloaded_videos_cta_text_color = "#FFFFFF"
@@ -95,7 +95,7 @@ class RemoteConfig {
          */
 
         var show_exit_native_ad = true
-        var admob_exit_native_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-1396902447261798/7340330783"}
+        var admob_exit_native_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2247696110"} else{"ca-app-pub-1396902447261798/8012270279"}
         var admob_native_exit_cta_round = 1f
         var admob_native_exit_cta_color = "#0085FF"
         var admob_native_exit_cta_text_color = "#FFFFFF"
@@ -151,7 +151,7 @@ class RemoteConfig {
          * banner ad
          */
 
-        var admob_banner_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2014213617"} else{"ca-app-pub-1396902447261798/3784229154"}
+        var admob_banner_id = if(BuildConfig.DEBUG){"ca-app-pub-3940256099942544/2014213617"} else{"ca-app-pub-1396902447261798/6862840137"}
 
 
 
