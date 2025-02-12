@@ -482,7 +482,7 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
                     this,
                     getString(R.string.interstitial_inner),
                     true,
-                    useCapping = RemoteConfig.admob_download_option_sheet_interstitial_capping,
+                    useCapping = false,
                     "download_option_sheet",
                     object : InterstitialHelper.InterstitialAdShowListener {
                         override fun onInterstitialAdDismissed() {

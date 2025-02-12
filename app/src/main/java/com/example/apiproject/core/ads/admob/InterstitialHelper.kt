@@ -112,7 +112,7 @@ object InterstitialHelper {
                 LoadingDialog.hideLoadingDialog(activity)
                 interstitialAdShowListener?.onInterstitialAdNull()
                 Log.i(TAG, "showAndLoadInterstitial: Unable to show Interstitial AD : Ad is null")
-                //loadInterstitialAd(activity, adId, screenName)
+                loadInterstitialAd(activity, adId, screenName)
             }
         }
 
