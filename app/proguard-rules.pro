@@ -64,6 +64,7 @@
 
 -keep class com.example.apiproject.data.api.** { *; }
 -keep interface com.example.apiproject.data.api.** { *; }
+-keep class com.example.apiproject.data.** { *; }
 
 
 
