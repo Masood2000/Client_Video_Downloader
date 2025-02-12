@@ -63,6 +63,8 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
 
     var onSplashLinkDetected = false
 
+    var linkFromDeepLink:String = ""
+
 
     val viewModel: MainActivityViewModel by viewModels()
     private var permissionStateListener: ClickHandler? = null
@@ -310,7 +312,9 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
                             lifecycleScope.launch(Dispatchers.IO) {
                                 delay(10000)
                                 withContext(Dispatchers.Main){
-                                    getDownloadMetaData(link)
+                                    //getDownloadMetaData(link)
+
+                                    linkFromDeepLink = link
 
                                 }
                             }
@@ -318,7 +322,8 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
                         }
                     }
                 }
-            }else{
+            }
+            else{
                 // link = ""
             }
         }

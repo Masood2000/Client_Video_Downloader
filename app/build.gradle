@@ -18,8 +18,8 @@ android {
         applicationId "com.videodownloader.downloadhd.videos.fourkdownloader"
         minSdk 26
         targetSdk 34
-        versionCode 7
-        versionName "1.7" // 11 feb 2025
+        versionCode 8
+        versionName "1.8" // 12 feb 2025
         setProperty("archivesBaseName", "VideoDownloader ($versionCode) - $versionName")
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -38,11 +38,11 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled true
+            minifyEnabled false
             manifestPlaceholders = [crashlyticsCollectionEnabled: "true"]
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.release
-            shrinkResources true
+            shrinkResources false
 
             //app id
             resValue "string", "google_admob_app_id", "ca-app-pub-1396902447261798~8720296411"

@@ -65,7 +65,18 @@ class HomeFragment : BaseFragment() {
         activity?.let {
             if (it is MainActivity) {
                 it.loadAndShowBannerAd()
-                it.handleResume()
+
+                if(it.linkFromDeepLink.isNotEmpty()){
+
+                    it.getDownloadMetaData(it.linkFromDeepLink)
+                    it.linkFromDeepLink = ""
+
+                }
+                else{
+
+                    it.handleResume()
+                }
+
             }
         }
 
