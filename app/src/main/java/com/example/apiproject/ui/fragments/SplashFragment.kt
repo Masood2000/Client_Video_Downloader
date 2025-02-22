@@ -319,7 +319,7 @@ class SplashFragment : BaseFragment() {
                     NativePreLoadAdManager.loadHomeAd(
                         it,
                         RemoteConfig.admob_native_home_id,
-                        "splash"
+                        "home"
                     )
 
                 }
@@ -371,7 +371,7 @@ class SplashFragment : BaseFragment() {
                     NativePreLoadAdManager.loadFeatureOneAd(
                         it,
                         RemoteConfig.admob_native_feature_one_id,
-                        "splash"
+                        "feature_one"
                     )
 
                 }
@@ -390,7 +390,7 @@ class SplashFragment : BaseFragment() {
                     NativePreLoadAdManager.loadFeatureTwoAd(
                         it,
                         RemoteConfig.admob_native_feature_two_id,
-                        "splash"
+                        "feature_two"
                     )
 
                 }
@@ -410,7 +410,7 @@ class SplashFragment : BaseFragment() {
                     NativePreLoadAdManager.loadFullScreenAd(
                         it,
                         RemoteConfig.admob_native_full_screen_id,
-                        "splash"
+                        "full_screen"
                     )
 
                 }

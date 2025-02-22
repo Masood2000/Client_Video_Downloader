@@ -258,7 +258,7 @@ class ObInterestFragment : Fragment() {
                     NativePreLoadAdManager.loadFeatureOneAd(
                         it,
                         RemoteConfig.admob_native_feature_one_id,
-                        "splash"
+                        "feature_one"
                     )
 
                 }
@@ -277,7 +277,7 @@ class ObInterestFragment : Fragment() {
                     NativePreLoadAdManager.loadFeatureTwoAd(
                         it,
                         RemoteConfig.admob_native_feature_two_id,
-                        "splash"
+                        "feature_two"
                     )
 
                 }
@@ -297,7 +297,7 @@ class ObInterestFragment : Fragment() {
                     NativePreLoadAdManager.loadFullScreenAd(
                         it,
                         RemoteConfig.admob_native_full_screen_id,
-                        "splash"
+                        "full_screen"
                     )
 
                 }

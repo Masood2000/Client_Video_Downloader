@@ -6,6 +6,7 @@ import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.os.CountDownTimer
 import android.util.Log
+import com.example.apiproject.ui.activity.MainActivity
 import com.example.apiproject.util.ApplicationConstants.appOpenAndInterstitialTimeElapsed
 import com.example.apiproject.util.ApplicationConstants.app_open_and_interstitial_time
 import com.example.apiproject.util.ApplicationConstants.capping_time
@@ -67,7 +68,7 @@ object InterstitialHelper {
                                     mInterstitialAd = null
                                     LoadingDialog.hideLoadingDialog(activity)
                                     interstitialAdShowListener?.onInterstitialAdImpression()
-                                    // postAnalytic(activity, "${screenName.lowercase()}_inter_impression")
+                                     postAnalytic("${screenName.lowercase()}_inter_impression",activity )
                                     Log.i(
                                         TAG,
                                         "onAdImpression: Interstitial Ad Impression Received"
@@ -85,7 +86,7 @@ object InterstitialHelper {
                                         TAG,
                                         "onAdDismissedFullScreenContent: Interstitial Ad is Dismissed"
                                     )
-                                    //postAnalytic(activity)
+                                    postAnalytic("${screenName.lowercase()}_inter_dismissed",activity )
                                     loadInterstitialAd(activity, adId, screenName)
                                     isInterstitialAdShowing = false
                                 }
@@ -188,7 +189,7 @@ object InterstitialHelper {
                                 TAG,
                                 "loadAndShowInterstitial: Interstitial ad failed to load with error: ${adError.message}"
                             )
-                            postAnalytic("${screenName.lowercase()}_inter_fail")
+                            postAnalytic("${screenName.lowercase()}_inter_fail", activity)
                             try {
                                 timerShowAndLoad?.cancel()
                             } catch (e: Exception) {
@@ -201,7 +202,7 @@ object InterstitialHelper {
                         override fun onAdLoaded(interstitialAd: InterstitialAd) {
 
                             Log.i(TAG, "loadAndShowInterstitial: Interstitial Ad loaded")
-                            postAnalytic("${screenName.lowercase()}_inter_loaded")
+                            postAnalytic("${screenName.lowercase()}_inter_loaded",activity)
                             mInterstitialLoadAndShowAd = interstitialAd
 
                             mInterstitialLoadAndShowAd?.fullScreenContentCallback =
@@ -210,7 +211,7 @@ object InterstitialHelper {
                                         super.onAdDismissedFullScreenContent()
                                         isInterstitialAdShowing = false
                                         LoadingDialog.hideLoadingDialog(activity)
-                                        postAnalytic("${screenName.lowercase()}_inter_dismiss")
+                                        postAnalytic("${screenName.lowercase()}_inter_dismiss",activity)
                                         interstitialAdShowListener.onInterstitialAdDismissed()
                                         Log.i(
                                             TAG,
@@ -223,7 +224,7 @@ object InterstitialHelper {
                                         LoadingDialog.hideLoadingDialog(activity)
                                         mInterstitialLoadAndShowAd = null
                                         interstitialAdShowListener.onInterstitialAdImpression()
-                                        postAnalytic("${screenName.lowercase()}_inter_impression")
+                                        postAnalytic("${screenName.lowercase()}_inter_impression",activity)
                                         Log.i(
                                             TAG,
                                             "onAdImpression: Interstitial AD Impression received"
@@ -263,7 +264,7 @@ object InterstitialHelper {
                     override fun onAdFailedToLoad(adError: LoadAdError) {
                         mInterstitialAd = null
                         isAdLoading = false
-                        postAnalytic("${screenName.lowercase()}_inter_fail")
+                        postAnalytic("${screenName.lowercase()}_inter_fail",activity)
                         Log.i(
                             TAG,
                             "onAdFailedToLoad: Interstitial Ad Failed to load with error ${adError.message}"
@@ -273,7 +274,7 @@ object InterstitialHelper {
                     override fun onAdLoaded(interstitialAd: InterstitialAd) {
                         mInterstitialAd = interstitialAd
                         isAdLoading = false
-                        postAnalytic("${screenName.lowercase()}_inter_loaded")
+                        postAnalytic("${screenName.lowercase()}_inter_loaded",activity)
                         Log.i(TAG, "onAdLoaded: Interstitial AD Loaded")
                     }
                 })
@@ -302,10 +303,15 @@ object InterstitialHelper {
 
     }
 
-    private fun postAnalytic(text: String) {
+    private fun postAnalytic(text: String,context: Context) {
         try {
-            // todo add post analytic code here
-        } catch (_: Exception) {
+            try {
+                if (context is MainActivity){
+                    context.postAnalytic(text)
+                }
+            } catch (_: Exception) {
+            } catch (_: java.lang.Exception) {
+            }        } catch (_: Exception) {
         } catch (_: java.lang.Exception) {
         }
     }

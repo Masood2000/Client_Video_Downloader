@@ -445,7 +445,7 @@ class VideoCompletedFragment  : BaseFragment() {
                         NativeLayout.NATIVE_7B,
                         RemoteConfig.admob_native_downloaded_videos_id,
                         1,
-                        "Downloaded Videos Fragment",
+                        "downloaded_fragment",
                         false,
                         RemoteConfig.admob_native_downloaded_videos_cta_round,
                         RemoteConfig.admob_native_downloaded_videos_cta_color,

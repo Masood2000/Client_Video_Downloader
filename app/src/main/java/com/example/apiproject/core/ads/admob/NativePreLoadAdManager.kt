@@ -13,6 +13,7 @@ import android.widget.TextView
 import androidx.constraintlayout.utils.widget.ImageFilterView
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.apiproject.R
+import com.example.apiproject.ui.activity.MainActivity
 
 import com.example.videodownloader.core.ads.NativeLayout
 import com.facebook.shimmer.ShimmerFrameLayout
@@ -93,7 +94,7 @@ object NativePreLoadAdManager {
                     isHomeAdLoading = false
                     nativeHomeAd = null
                     adLoadListener?.onHomeAdFailedToLoad(p0.message)
-                    postAnalytic("${screenName.lowercase()}_native_fail")
+                    postAnalytic("${screenName.lowercase()}_native_fail",context)
                     Log.i(
                         TAG,
                         "PreLoadNative onAdFailedToLoad: Home  Native ad failed to load with error: ${p0.message}"
@@ -103,20 +104,20 @@ object NativePreLoadAdManager {
                 override fun onAdLoaded() {
                     super.onAdLoaded()
                     Log.i(TAG, "PreLoadNative onAdLoaded: Home native ad loaded")
-                    postAnalytic("${screenName.lowercase()}_native_loaded")
+                    postAnalytic("${screenName.lowercase()}_native_loaded",context)
                     adLoadListener?.onHomeAdLoaded(nativeHomeAd)
                 }
 
                 override fun onAdImpression() {
                     super.onAdImpression()
                     Log.i(TAG, "PreLoadNative onAdLoaded: Home native ad Impression")
-                    postAnalytic("${screenName.lowercase()}_native_impression")
+                    postAnalytic("${screenName.lowercase()}_native_impression",context)
                     //nativeHomeAd = null
                 }
 
                 override fun onAdClicked() {
                     super.onAdClicked()
-                    postAnalytic("${screenName.lowercase()}_native_click")
+                    postAnalytic("${screenName.lowercase()}_native_click",context)
                 }
 
 
@@ -151,7 +152,7 @@ object NativePreLoadAdManager {
                     isOnBoardingAdLoading = false
                     nativeOnBoardingAd = null
                     adLoadListener?.onOnBoardingAdFailedToLoad(p0.message)
-                    postAnalytic("${screenName.lowercase()}_native_fail")
+                    postAnalytic("${screenName.lowercase()}_native_fail",context)
                     Log.i(
                         TAG,
                         "PreLoadNative onAdFailedToLoad: ob  Native ad failed to load with error: ${p0.message}"
@@ -161,20 +162,20 @@ object NativePreLoadAdManager {
                 override fun onAdLoaded() {
                     super.onAdLoaded()
                     Log.i(TAG, "PreLoadNative onAdLoaded: ob native ad loaded")
-                    postAnalytic("${screenName.lowercase()}_native_loaded")
+                    postAnalytic("${screenName.lowercase()}_native_loaded",context)
                     adLoadListener?.onOnBoardingAdLoaded(nativeOnBoardingAd)
                 }
 
                 override fun onAdImpression() {
                     super.onAdImpression()
                     Log.i(TAG, "PreLoadNative onAdLoaded: OB native ad Impression")
-                    postAnalytic("${screenName.lowercase()}_native_impression")
+                    postAnalytic("${screenName.lowercase()}_native_impression",context)
                     nativeOnBoardingAd = null
                 }
 
                 override fun onAdClicked() {
                     super.onAdClicked()
-                    postAnalytic("${screenName.lowercase()}_native_click")
+                    postAnalytic("${screenName.lowercase()}_native_click",context)
                 }
 
 
@@ -209,7 +210,7 @@ object NativePreLoadAdManager {
                     isExitAdLoading = false
                     nativeExitAd = null
                     adLoadListener?.onExitAdFailedToLoad(p0.message)
-                    postAnalytic("${screenName.lowercase()}_native_fail")
+                    postAnalytic("${screenName.lowercase()}_native_fail",context)
                     Log.i(
                         TAG,
                         "PreLoadNative onAdFailedToLoad: Exit  Native ad failed to load with error: ${p0.message}"
@@ -219,20 +220,20 @@ object NativePreLoadAdManager {
                 override fun onAdLoaded() {
                     super.onAdLoaded()
                     Log.i(TAG, "PreLoadNative onAdLoaded: Exit native ad loaded")
-                    postAnalytic("${screenName.lowercase()}_native_loaded")
+                    postAnalytic("${screenName.lowercase()}_native_loaded",context)
                     adLoadListener?.onExitAdLoaded(nativeExitAd)
                 }
 
                 override fun onAdImpression() {
                     super.onAdImpression()
                     Log.i(TAG, "PreLoadNative onAdLoaded: Exit native ad Impression")
-                    postAnalytic("${screenName.lowercase()}_native_impression")
+                    postAnalytic("${screenName.lowercase()}_native_impression",context)
                     //nativeHomeAd = null
                 }
 
                 override fun onAdClicked() {
                     super.onAdClicked()
-                    postAnalytic("${screenName.lowercase()}_native_click")
+                    postAnalytic("${screenName.lowercase()}_native_click",context)
                 }
 
 
@@ -269,7 +270,7 @@ object NativePreLoadAdManager {
                     isFeatureOneAdLoading = false
                     nativeFeatureOneAd = null
                     adLoadListener?.onFeatureOneAdFailedToLoad(p0.message)
-                    postAnalytic("${screenName.lowercase()}_native_fail")
+                    postAnalytic("${screenName.lowercase()}_native_fail",context)
                     Log.i(
                         TAG,
                         "PreLoadNative onAdFailedToLoad: Feature One  Native ad failed to load with error: ${p0.message}"
@@ -279,20 +280,20 @@ object NativePreLoadAdManager {
                 override fun onAdLoaded() {
                     super.onAdLoaded()
                     Log.i(TAG, "PreLoadNative onAdLoaded: Feature One native ad loaded")
-                    postAnalytic("${screenName.lowercase()}_native_loaded")
+                    postAnalytic("${screenName.lowercase()}_native_loaded",context)
                     adLoadListener?.onFeatureOneAdLoaded(nativeFeatureOneAd)
                 }
 
                 override fun onAdImpression() {
                     super.onAdImpression()
                     Log.i(TAG, "PreLoadNative onAdLoaded: Feature One native ad Impression")
-                    postAnalytic("${screenName.lowercase()}_native_impression")
+                    postAnalytic("${screenName.lowercase()}_native_impression",context)
                     //nativeFeatureOneAd = null
                 }
 
                 override fun onAdClicked() {
                     super.onAdClicked()
-                    postAnalytic("${screenName.lowercase()}_native_click")
+                    postAnalytic("${screenName.lowercase()}_native_click",context)
                 }
 
 
@@ -328,7 +329,7 @@ object NativePreLoadAdManager {
                     isFeatureTwoAdLoading = false
                     nativeFeatureTwoAd = null
                     adLoadListener?.onFeatureTwoAdFailedToLoad(p0.message)
-                    postAnalytic("${screenName.lowercase()}_native_fail")
+                    postAnalytic("${screenName.lowercase()}_native_fail",context)
                     Log.i(
                         TAG,
                         "PreLoadNative onAdFailedToLoad: Feature Two  Native ad failed to load with error: ${p0.message}"
@@ -338,20 +339,20 @@ object NativePreLoadAdManager {
                 override fun onAdLoaded() {
                     super.onAdLoaded()
                     Log.i(TAG, "PreLoadNative onAdLoaded: Feature Two native ad loaded")
-                    postAnalytic("${screenName.lowercase()}_native_loaded")
+                    postAnalytic("${screenName.lowercase()}_native_loaded",context)
                     adLoadListener?.onFeatureTwoAdLoaded(nativeFeatureTwoAd)
                 }
 
                 override fun onAdImpression() {
                     super.onAdImpression()
                     Log.i(TAG, "PreLoadNative onAdLoaded: Feature Two native ad Impression")
-                    postAnalytic("${screenName.lowercase()}_native_impression")
+                    postAnalytic("${screenName.lowercase()}_native_impression",context)
                     //nativeFeatureTwoAd = null
                 }
 
                 override fun onAdClicked() {
                     super.onAdClicked()
-                    postAnalytic("${screenName.lowercase()}_native_click")
+                    postAnalytic("${screenName.lowercase()}_native_click",context)
                 }
 
 
@@ -388,7 +389,7 @@ object NativePreLoadAdManager {
                     isFullScreenAdLoading = false
                     nativeFullScreenAd = null
                     adLoadListener?.onFullScreenAdFailedToLoad(p0.message)
-                    postAnalytic("${screenName.lowercase()}_native_fail")
+                    postAnalytic("${screenName.lowercase()}_native_fail",context)
                     Log.i(
                         TAG,
                         "PreLoadNative onAdFailedToLoad: Full Screen Native ad failed to load with error: ${p0.message}"
@@ -398,20 +399,20 @@ object NativePreLoadAdManager {
                 override fun onAdLoaded() {
                     super.onAdLoaded()
                     Log.i(TAG, "PreLoadNative onAdLoaded: Full Screen native ad loaded")
-                    postAnalytic("${screenName.lowercase()}_native_loaded")
+                    postAnalytic("${screenName.lowercase()}_native_loaded",context)
                     adLoadListener?.onFullScreenAdLoaded(nativeFullScreenAd)
                 }
 
                 override fun onAdImpression() {
                     super.onAdImpression()
                     Log.i(TAG, "PreLoadNative onAdLoaded: Full Screen native ad Impression")
-                    postAnalytic("${screenName.lowercase()}_native_impression")
+                    postAnalytic("${screenName.lowercase()}_native_impression",context)
                     //nativeFullScreenAd = null
                 }
 
                 override fun onAdClicked() {
                     super.onAdClicked()
-                    postAnalytic("${screenName.lowercase()}_native_click")
+                    postAnalytic("${screenName.lowercase()}_native_click",context)
                 }
 
 
@@ -637,7 +638,7 @@ object NativePreLoadAdManager {
             }.withAdListener(object : AdListener() {
                 override fun onAdFailedToLoad(p0: LoadAdError) {
                     super.onAdFailedToLoad(p0)
-                    postAnalytic("${screenName.lowercase()}_native_fail")
+                    postAnalytic("${screenName.lowercase()}_native_fail",context)
                     Log.i(
                         TAG,
                         "PreLoadNative onAdFailedToLoad: Native ads failed to load with error: ${p0.message}"
@@ -647,17 +648,17 @@ object NativePreLoadAdManager {
                 override fun onAdLoaded() {
                     super.onAdLoaded()
                     Log.i(TAG, "PreLoadNative onAdLoaded: native ads loaded")
-                    postAnalytic("${screenName.lowercase()}_native_loaded")
+                    postAnalytic("${screenName.lowercase()}_native_loaded",context)
                 }
 
                 override fun onAdImpression() {
                     super.onAdImpression()
-                    postAnalytic("${screenName.lowercase()}_native_impression")
+                    postAnalytic("${screenName.lowercase()}_native_impression",context)
                 }
 
                 override fun onAdClicked() {
                     super.onAdClicked()
-                    postAnalytic("${screenName.lowercase()}_native_click")
+                    postAnalytic("${screenName.lowercase()}_native_click",context)
                 }
             })
             .withNativeAdOptions(
@@ -762,10 +763,15 @@ object NativePreLoadAdManager {
     }
 
 
-    private fun postAnalytic(text: String) {
+    private fun postAnalytic(text: String,context: Context) {
         try {
-            // todo add your post analytic code here
-        } catch (_: Exception) {
+            try {
+                if (context is MainActivity){
+                    context.postAnalytic(text)
+                }
+            } catch (_: Exception) {
+            } catch (_: java.lang.Exception) {
+            }        } catch (_: Exception) {
         } catch (_: java.lang.Exception) {
         }
     }

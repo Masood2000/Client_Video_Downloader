@@ -19,6 +19,7 @@ import android.widget.TextView
 import androidx.constraintlayout.utils.widget.ImageFilterView
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.apiproject.R
+import com.example.apiproject.ui.activity.MainActivity
 
 import com.example.videodownloader.core.ads.NativeLayout
 import com.facebook.shimmer.ShimmerFrameLayout
@@ -505,8 +506,13 @@ class NativeAdManager(private val context: Activity) {
 
     private fun postAnalytic(text: String) {
         try {
-            // todo add post analytic code here
-        } catch (_: Exception) {
+            try {
+                if (context is MainActivity){
+                    context.postAnalytic(text)
+                }
+            } catch (_: Exception) {
+            } catch (_: java.lang.Exception) {
+            }        } catch (_: Exception) {
         } catch (_: java.lang.Exception) {
         }
     }

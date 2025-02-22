@@ -234,7 +234,7 @@ class OnboardingFragment : Fragment() {
             activity.let {
                 if (it is MainActivity) {
 
-                    NativePreLoadAdManager.loadHomeAd(it, RemoteConfig.admob_native_home_id, "on_boarding")
+                    NativePreLoadAdManager.loadHomeAd(it, RemoteConfig.admob_native_home_id, "home")
 
                 }
             }
