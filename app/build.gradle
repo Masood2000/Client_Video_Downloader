@@ -19,7 +19,7 @@ android {
         minSdk 26
         targetSdk 34
         versionCode 9
-        versionName "1.9" // 22 feb 2025
+        versionName "1.9" //  22 feb 2025
         setProperty("archivesBaseName", "VideoDownloader ($versionCode) - $versionName")
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
