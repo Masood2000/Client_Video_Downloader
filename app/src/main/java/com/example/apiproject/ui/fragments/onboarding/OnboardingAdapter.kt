@@ -84,8 +84,6 @@ class OnboardingAdapter @Inject constructor() : RecyclerView.Adapter<RecyclerVie
             is AnimViewHolder -> {
                 with(holder.binding) {
                     Log.d(TAG, "onBindViewHolder: Anim view called")
-
-
                     if (isAdItemAvailable){
                         when (position) {
                             0 -> {

@@ -25,6 +25,7 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI.setupWithNavController
 import com.bumptech.glide.Glide
+import com.example.apiproject.BuildConfig
 import com.example.apiproject.R
 import com.example.apiproject.core.ads.admob.BannerAdManager
 import com.example.apiproject.core.ads.admob.InterstitialHelper
@@ -46,6 +47,7 @@ import com.example.apiproject.util.Helper.setOnOneClickListener
 import com.example.apiproject.util.NetworkHelper
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
+import com.google.firebase.analytics.FirebaseAnalytics
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -64,6 +66,8 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
     var onSplashLinkDetected = false
 
     var linkFromDeepLink:String = ""
+    private lateinit var myFirebaseAnalytics: FirebaseAnalytics
+    private lateinit var firebaseAnalytics: FirebaseAnalytics
 
 
     val viewModel: MainActivityViewModel by viewModels()
@@ -786,6 +790,25 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
         }
     }
 
+
+    fun postAnalytic(event: String?) {
+        val temp = "$event"
+        val bundle = Bundle()
+        bundle.putString(temp, temp)
+        if (event == null)
+            return
+        if (::myFirebaseAnalytics.isInitialized) {
+            Log.i("ANAL_TAG", "postAnalytic: logged $event")
+            myFirebaseAnalytics.logEvent(temp, bundle)
+        } else {
+            myFirebaseAnalytics = FirebaseAnalytics.getInstance(this)
+            myFirebaseAnalytics.logEvent(temp, bundle)
+            Log.i("ANAL_TAG", "postAnalytic: not initialized")
+        }
+        if (BuildConfig.DEBUG) {
+            Toast.makeText(this, "$event", Toast.LENGTH_SHORT).show()
+        }
+    }
 
     override fun onPause() {
         super.onPause()

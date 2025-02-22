@@ -18,8 +18,8 @@ android {
         applicationId "com.videodownloader.downloadhd.videos.fourkdownloader"
         minSdk 26
         targetSdk 34
-        versionCode 9
-        versionName "1.9" //  22 feb 2025
+        versionCode 10
+        versionName "2.0" //  22 feb 2025
         setProperty("archivesBaseName", "VideoDownloader ($versionCode) - $versionName")
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"

@@ -126,7 +126,6 @@ class HomeFragment : BaseFragment() {
                 it.showTopAndBottomBar()
             }
         }
-
         with(binding){
             downloadbutton.setOnOneClickListener {
                 if(linkfield.text.toString().isEmpty()){
