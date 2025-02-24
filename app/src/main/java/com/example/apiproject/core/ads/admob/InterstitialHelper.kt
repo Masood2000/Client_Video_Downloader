@@ -68,6 +68,7 @@ object InterstitialHelper {
                                     mInterstitialAd = null
                                     LoadingDialog.hideLoadingDialog(activity)
                                     interstitialAdShowListener?.onInterstitialAdImpression()
+                                    postAnalytic("ad_impression",activity)
                                      postAnalytic("${screenName.lowercase()}_inter_impression",activity )
                                     Log.i(
                                         TAG,
@@ -87,6 +88,7 @@ object InterstitialHelper {
                                         "onAdDismissedFullScreenContent: Interstitial Ad is Dismissed"
                                     )
                                     postAnalytic("${screenName.lowercase()}_inter_dismissed",activity )
+
                                     loadInterstitialAd(activity, adId, screenName)
                                     isInterstitialAdShowing = false
                                 }
@@ -94,6 +96,7 @@ object InterstitialHelper {
                                 override fun onAdFailedToShowFullScreenContent(p0: AdError) {
                                     super.onAdFailedToShowFullScreenContent(p0)
                                     LoadingDialog.hideLoadingDialog(activity)
+
 
                                     isInterstitialAdShowing = false
                                     Log.i(

@@ -140,6 +140,7 @@ class NativeAdManager(private val context: Activity) {
                         "Native Ad Failed to load; code: " + i.code + ", message: " + i.message
                     )
                     postAnalytic("${screenName.lowercase()}_native_fail")
+                    postAnalytic("ad_failure")
                     if (showBanner)
                         nativeContainer.visibility = View.GONE
                        /* loadBannerAd(
@@ -175,6 +176,7 @@ class NativeAdManager(private val context: Activity) {
                 override fun onAdImpression() {
                     super.onAdImpression()
                     postAnalytic("${screenName.lowercase()}_native_impression")
+                    postAnalytic("ad_impression")
 
                 }
 
